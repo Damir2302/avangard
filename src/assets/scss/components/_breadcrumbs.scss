@@ -1,0 +1,56 @@
+.breadcrumbs {
+
+    @include breakpoint(md) {
+        padding-top: 10px;
+        border-top: 1px solid #F2F0F0;
+    }
+}
+
+.breadcrumbs-wrapper {
+    display: none;
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.breadcrumbs-item {
+    font-weight: 400;
+    color: $gray3;
+
+    @include breakpointMax(xl) {
+        max-width: 360px;
+        @include textLimit(1);
+    }
+}
+
+.breadcrumbs-item span {
+    cursor: default;
+}
+
+.breadcrumbs-separator::after {
+    content: "";
+    margin: 0 15px;
+    background: $orange;
+    display: block;
+    width: 13px;
+    height: 1px;
+}
+
+.page-title {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+
+    @include breakpoint(lg) {
+        margin-top: 40px;
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 50px;
+    }
+}
