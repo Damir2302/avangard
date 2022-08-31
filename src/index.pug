@@ -1,5 +1,6 @@
 ---
 title: Avangard | Главная
+bodyClass: b-layout b-layout--page-main
 ---
 
 extends includes/_page
@@ -11,43 +12,27 @@ block main
         .b-layout__main-global
 
         .b-layout__main-content
-            .b-slider-main.swiper-container.c-first-screen.swiper-container-fade.swiper-container-initialized.swiper-container-horizontal.b-slider-main--js_init(data-b-slider-main-bemid='85')
+            .b-slider-main.c-first-screen.b-slider-main--js_init
                 .b-slider-main__wrapper.swiper-wrapper
 
-                    .b-slider-main__slide.swiper-slide.swiper-slide-duplicate.swiper-slide-prev(data-type='Акция')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Акция
-                                .b-slider-main__item-name.b-slide-7--font-size
-                                    | Второе дыхание
-                                .b-slider-main__item-descr
-                                    | -50% скидка на чехлы
-                                    br
-                                    | -35% скидки на матрасы при замене чехла
-                                    br
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/775/77561e89faf44e6243d4cb9ece13806f.jpg');")
-                                    a.b-slider-main__item-a(href='/news/aktsii/50nachekhly/')
-                                .b-slider-main__item-dotted.c-dotted
-
-                    .b-slider-main__slide.swiper-slide.swiper-slide-active(data-type='')
+                    .b-slider-main__slide.swiper-slide(data-type='')
                         .b-slider-main__item
                             .b-slider-main__item-content
                                 .b-slider-main__item-name.b-slide-0--font-size
                                     | Повышение цен с 1 сентября
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/b6c/b6cc829f3fd0e61b09082c56d6dc4cfb.jpg');")
+                                .b-slider-main__item-img(style="background-image: url('assets/images/b6cc829f3fd0e61b09082c56d6dc4cfb.jpg');")
                                 .b-slider-main__item-dotted.c-dotted
 
-                    .b-slider-main__slide.swiper-slide.swiper-slide-next(data-type='Новости')
+                    .b-slider-main__slide.swiper-slide(data-type='Новости')
                         .b-slider-main__item
                             .b-slider-main__item-content
                                 .b-slider-main__item-title Новости
                                 .b-slider-main__item-name.b-slide-1--font-size
                                     | Не подходят размеры? РешаемО!
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/df8/df87fd44693eadd5857295a7c37fce0d.jpg');")
-                                    a.b-slider-main__item-a(href='https://www.avangard.biz/news/aktsii/NepodkhodyatrazmeryReshaemO/')
+                                .b-slider-main__item-img(style="background-image: url('assets/images/df87fd44693eadd5857295a7c37fce0d.jpg');")
+                                    a.b-slider-main__item-a(href='#')
                                 .b-slider-main__item-dotted.c-dotted
 
                     .b-slider-main__slide.swiper-slide(data-type='Новости')
@@ -57,8 +42,8 @@ block main
                                 .b-slider-main__item-name.b-slide-2--font-size
                                     | Ищите премиальные условия?
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/417/417ec580e36a9d629fcf51281e73cc92.jpg');")
-                                    a.b-slider-main__item-a(href='https://www.avangard.biz/news/aktsii/Ishchitepremialnyeusloviya/')
+                                .b-slider-main__item-img(style="background-image: url('assets/images/417ec580e36a9d629fcf51281e73cc92.jpg');")
+                                    a.b-slider-main__item-a(href='#')
                                 .b-slider-main__item-dotted.c-dotted
 
                     .b-slider-main__slide.swiper-slide(data-type='Новости')
@@ -73,7 +58,7 @@ block main
                                     | Подробности акции уточняйте в салонах и в интернет магазине.
                                     br
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/acc/acc22147916ca477e78794a320b8020c.jpg');")
+                                .b-slider-main__item-img(style="background-image: url('assets/images/acc22147916ca477e78794a320b8020c.jpg');")
                                 .b-slider-main__item-dotted.c-dotted
 
                     .b-slider-main__slide.swiper-slide(data-type='Новости')
@@ -90,8 +75,8 @@ block main
                                     | Рассрочка без первого взноса и переплат
                                 .b-slider-main__item-descr Честная рассрочка без переплат до 36 месяцев!
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/3e0/3e00e51e72778e0de12f8fa00d31fc74.jpg');")
-                                    a.b-slider-main__item-a(href='/news/novosti/UspeypoluchitmebeldoNovogogoda/')
+                                .b-slider-main__item-img(style="background-image: url('assets/images/3e00e51e72778e0de12f8fa00d31fc74.jpg');")
+                                    a.b-slider-main__item-a(href='#')
                                 .b-slider-main__item-dotted.c-dotted
 
                     .b-slider-main__slide.swiper-slide(data-type='Акция')
@@ -106,8 +91,8 @@ block main
                                     |  Акция действует до 1 сентября 2022
                                     br
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/c55/c55ae89748d3705f0f1e29ab44899a4b.jpg');")
-                                    a.b-slider-main__item-a(href='/news/aktsii/Nazadvbudushchee/')
+                                .b-slider-main__item-img(style="background-image: url('assets/images/c55ae89748d3705f0f1e29ab44899a4b.jpg');")
+                                    a.b-slider-main__item-a(href='#')
                                 .b-slider-main__item-dotted.c-dotted
 
                     .b-slider-main__slide.swiper-slide(data-type='')
@@ -121,11 +106,11 @@ block main
                                     br
                                     | * В комплект входит: кровать + две тумбы + шкаф.
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/614/6141d7b87ad540795d97668a0c38f503.jpg');")
-                                    a.b-slider-main__item-a(href='/news/aktsii/30naspalniVerona/')
+                                .b-slider-main__item-img(style="background-image: url('assets/images/6141d7b87ad540795d97668a0c38f503.jpg');")
+                                    a.b-slider-main__item-a(href='#')
                                 .b-slider-main__item-dotted.c-dotted
 
-                    .b-slider-main__slide.swiper-slide.swiper-slide-duplicate-prev(data-type='Акция')
+                    .b-slider-main__slide.swiper-slide(data-type='Акция')
                         .b-slider-main__item
                             .b-slider-main__item-content
                                 .b-slider-main__item-title Акция
@@ -137,21 +122,12 @@ block main
                                     | -35% скидки на матрасы при замене чехла
                                     br
                             .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/775/77561e89faf44e6243d4cb9ece13806f.jpg');")
-                                    a.b-slider-main__item-a(href='/news/aktsii/50nachekhly/')
-                                .b-slider-main__item-dotted.c-dotted
-
-                    .b-slider-main__slide.swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-active(data-type='')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-name.b-slide-0--font-size
-                                    | Повышение цен с 1 сентября
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('/upload/iblock/b6c/b6cc829f3fd0e61b09082c56d6dc4cfb.jpg');")
+                                .b-slider-main__item-img(style="background-image: url('assets/images/77561e89faf44e6243d4cb9ece13806f.jpg');")
+                                    a.b-slider-main__item-a(href='#')
                                 .b-slider-main__item-dotted.c-dotted
 
                 .b-slider-main__controls
-                    .b-slider-main__pagination.swiper-pagination.swiper-pagination-fraction
+                    .b-slider-main__pagination.swiper-pagination
                         span.swiper-pagination-current 1
                         |  /
                         span.swiper-pagination-total 8
@@ -162,9 +138,11 @@ block main
                 .b-slider-main__down.b-slider-main__down--js_init(data-b-slider-main__down-bemid='87')
                     span.b-slider-main__down-content Вниз
                 span.swiper-notification(aria-live='assertive' aria-atomic='true')
+
             .b-block-advantages.b-block-advantages--js_init(data-b-block-advantages-bemid='3')
                 h2.c-color-gray Преимущества
                 .b-block-advantages__items
+
                     .b-block-advantages__item
                         .b-block-advantages__item-name Массив
                         .b-block-advantages__item-descr
@@ -172,30 +150,24 @@ block main
                         .b-block-advantages__item-image
                             .c-dotted
                             .b-block-advantages__item-image-wrap
-                                .c-hidden(itemscope='' itemtype='http://schema.org/ImageObject')
-                                    meta(itemprop='name' content='Натуральный массив дерева')
-                                    link(itemprop='contentUrl' href='/upload/iblock/172/172acd6d1118c8765be8b7d901362700.png')
-                                img.b-block-advantages__item-img(src='/upload/iblock/172/172acd6d1118c8765be8b7d901362700.png' alt='Натуральный массив дерева')
+                                img.b-block-advantages__item-img(src='assets/images/172acd6d1118c8765be8b7d901362700.png' alt='Натуральный массив дерева')
+
                     .b-block-advantages__item
                         .b-block-advantages__item-name Ткани
                         .b-block-advantages__item-descr
                             | При изготовлении мебели мы применяем только высококачественные ткани из натуральных материалов ведущих европейских производителей
                         .b-block-advantages__item-image
                             .b-block-advantages__item-image-wrap
-                                .c-hidden(itemscope='' itemtype='http://schema.org/ImageObject')
-                                    meta(itemprop='name' content='Ткани для обивки мебели')
-                                    link(itemprop='contentUrl' href='/upload/iblock/d09/d09f779ddf7913e591f6bd507715dbaa.png')
-                                img.b-block-advantages__item-img(src='/upload/iblock/d09/d09f779ddf7913e591f6bd507715dbaa.png' alt='Ткани для обивки мебели')
+                                img.b-block-advantages__item-img(src='assets/images/d09f779ddf7913e591f6bd507715dbaa.png' alt='Ткани для обивки мебели')
+
                     .b-block-advantages__item
                         .b-block-advantages__item-name Интерьер
                         .b-block-advantages__item-descr
                             | Стильная и функциональная мебель фабрики Авангард отлично подойдет для любой комнаты, подчеркнув особенности интерьера даже ограниченного пространства
                         .b-block-advantages__item-image
                             .b-block-advantages__item-image-wrap
-                                .c-hidden(itemscope='' itemtype='http://schema.org/ImageObject')
-                                    meta(itemprop='name' content='Стильные предметы интерьера')
-                                    link(itemprop='contentUrl' href='/upload/iblock/0c3/0c3c4146c7f91f836c6d32f231e706c3.png')
-                                img.b-block-advantages__item-img(src='/upload/iblock/0c3/0c3c4146c7f91f836c6d32f231e706c3.png' alt='Стильные предметы интерьера')
+                                img.b-block-advantages__item-img(src='assets/images/0c3c4146c7f91f836c6d32f231e706c3.png' alt='Стильные предметы интерьера')
+
             .b-block-top-sales.l-stretch-all-all
                 .b-block-top-sales__dotted-left.c-dotted
                 .b-block-top-sales__wrap.l-stretch-content
@@ -204,38 +176,38 @@ block main
                         span.c-stroke.c-stroke--color_gray-light продаж
                     .b-block-top-sales__items
                         .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='/products/toledo/')
-                                .b-block-top-sales__img(style="background-image: url('/upload/iblock/0e3/0e3b12ad050d3d35a9854e8619393b7c.jpg');")
+                            a.b-block-top-sales__image(href='#')
+                                .b-block-top-sales__img(style="background-image: url('assets/images/0e3b12ad050d3d35a9854e8619393b7c.jpg');")
                             .b-block-top-sales__content
                                 .b-block-top-sales__name Толедо
                                 .b-block-top-sales__descr диван
                         .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='/products/chelsi/')
-                                .b-block-top-sales__img(style="background-image: url('/upload/iblock/de0/de0a503c4a90b3aa5767821e45b4311e.png');")
+                            a.b-block-top-sales__image(href='#')
+                                .b-block-top-sales__img(style="background-image: url('assets/images/de0a503c4a90b3aa5767821e45b4311e.png');")
                             .b-block-top-sales__content
                                 .b-block-top-sales__name Челси
                                 .b-block-top-sales__descr диван двухместный
                         .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='/products/palermo-v-kozhe/')
-                                .b-block-top-sales__img(style="background-image: url('/upload/iblock/165/165352a5f781948fe7a03de1bb0b0f33.jpg');")
+                            a.b-block-top-sales__image(href='#')
+                                .b-block-top-sales__img(style="background-image: url('assets/images/165352a5f781948fe7a03de1bb0b0f33.jpg');")
                             .b-block-top-sales__content
                                 .b-block-top-sales__name Палермо
                                 .b-block-top-sales__descr диван
                         .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='/products/krovat-verona/')
-                                .b-block-top-sales__img(style="background-image: url('/upload/iblock/b0d/b0d264021f2071bf12c421a75746a1d8.jpg');")
+                            a.b-block-top-sales__image(href='#')
+                                .b-block-top-sales__img(style="background-image: url('assets/images/b0d264021f2071bf12c421a75746a1d8.jpg');")
                             .b-block-top-sales__content
                                 .b-block-top-sales__name Верона
                                 .b-block-top-sales__descr кровать
                         .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='/products/vitrina-verona/')
-                                .b-block-top-sales__img(style="background-image: url('/upload/iblock/2d9/2d9846be77f357a048b91b079f073dde.jpg');")
+                            a.b-block-top-sales__image(href='#')
+                                .b-block-top-sales__img(style="background-image: url('assets/images/2d9846be77f357a048b91b079f073dde.jpg');")
                             .b-block-top-sales__content
                                 .b-block-top-sales__name Верона
                                 .b-block-top-sales__descr витрина
                         .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='/products/vitrina-dolores-three/')
-                                .b-block-top-sales__img(style="background-image: url('/upload/iblock/7e5/7e5671c45965a16863a609db9cced1df.jpg');")
+                            a.b-block-top-sales__image(href='#')
+                                .b-block-top-sales__img(style="background-image: url('assets/images/7e5671c45965a16863a609db9cced1df.jpg');")
                             .b-block-top-sales__content
                                 .b-block-top-sales__name Долорес
                                 .b-block-top-sales__descr витрина

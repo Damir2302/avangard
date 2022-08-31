@@ -62,3 +62,17 @@ main {
     max-width: 100%;
     overflow: hidden;
 }
+
+body .c-first-screen {
+    height: calc(100vh - 3rem)!important;
+    overflow: hidden!important;
+
+    @include breakpointCustom(1201px) {
+        height: calc(100vh - 5.4rem)!important;
+    }
+}
+
+body .c-dotted {
+    background-image: radial-gradient(at top,#ee1d24 1px,transparent 0);
+    background-size: 14px 14px;
+}
