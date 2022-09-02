@@ -340,3 +340,423 @@
         right: 500%
     }
 }
+
+.b-block-advantages {
+    margin: 0 0 4rem;
+}
+
+.b-block-advantages h2 {
+
+    @include breakpointCustom(1000px) {
+        font-size: 5rem;
+    }
+}
+
+.b-block-advantages__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: item;
+}
+
+.b-block-advantages__item {
+    position: relative;
+    width: 100%;
+    padding: 5rem 0 2rem 2.5rem;
+    transition: all 1s ease-in-out;
+    transform: translateY(calc(100% + 5rem));
+
+    @include breakpointCustom(580px) {
+        width: calc(50% - 1rem);
+    }
+
+    @include breakpointCustom(1400px) {
+        padding: 5rem 0 5rem 5rem;
+        width: calc(33.333333% - 1.34rem);
+    }
+}
+
+.b-block-advantages__item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: counter(item);
+    counter-increment: item;
+    line-height: 1;
+    font-size: 11rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 1px 1px 0 #c2bdba, 1px -1px 0 #c2bdba, -1px 1px 0 #c2bdba, -1px -1px 0 #c2bdba;
+    transition: .5s ease-in-out;
+
+    @include breakpointCustom(1400px) {
+        left: 2.5rem;
+    }
+}
+
+.b-block-advantages__item:hover:before {
+    text-shadow: 1px 1px 0 #ee1d24,1px -1px 0 #ee1d24,-1px 1px 0 #ee1d24,-1px -1px 0 #ee1d24
+}
+
+.b-block-advantages__items.visible .b-block-advantages__item {
+    transform: translateY(0)
+}
+
+.b-block-advantages__item:first-child .c-dotted {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    z-index: 3;
+    width: 4.3rem;
+    height: 4.3rem;
+    transform: translate(40%,-50%)
+}
+
+.b-block-advantages__item:first-child .b-block-advantages__item-img {
+
+    @include breakpointCustom(1400px) {
+        left:auto;
+        transform: translate(-4.5rem,-50%)
+    }
+}
+
+.b-block-advantages__item:nth-child(2) {
+
+    @include breakpointCustom(1400px) {
+        margin-top:19rem
+    }
+}
+
+.b-block-advantages__item:nth-child(2) .b-block-advantages__item-img {
+
+    @include breakpointCustom(1400px) {
+        top: auto;
+        bottom: 0;
+        left: auto;
+        -webkit-transform: translate(-4.5rem,4.5rem);
+        transform: translate(-4.5rem,4.5rem)
+    }
+}
+
+.b-block-advantages__item:nth-child(3) {
+
+    @include breakpointCustom(1400px) {
+        padding-left:0;
+        padding-right: 5rem
+    }
+}
+
+.b-block-advantages__item:nth-child(3):before {
+
+    @include breakpointCustom(1400px) {
+        left: -2.5rem
+    }
+}
+
+.b-block-advantages__item:nth-child(3) .b-block-advantages__item-img {
+
+    @include breakpointCustom(1400px) {
+        top: 0;
+        left: auto;
+        right: 0;
+        transform: translate(4.5rem,-4.5rem)
+    }
+}
+
+.b-block-advantages__item-url {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%
+}
+
+.b-block-advantages__item-name {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2.5rem;
+    font-size: 2.7rem;
+    font-weight: 700;
+
+    @include breakpointCustom(1400px) {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.b-block-advantages__item-descr {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+
+    @include breakpointCustom(1400px) {
+        margin-bottom: 4rem;
+    }
+}
+
+.b-block-advantages__item-image {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    transition: .5s ease-in-out;
+
+    @include breakpointCustom(1601px) {
+        padding: 1rem;
+    }
+}
+
+.b-block-advantages__item-image-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.b-block-advantages__item-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.l-stretch-all-all {
+    margin-left: -1rem!important;
+    margin-right: -1rem!important;
+
+    @include breakpointCustom(361px) {
+        margin-left: -1.5rem!important;
+        margin-right: -1.5rem!important;
+    }
+
+    @include breakpointCustom(1201px) {
+        margin-left: -3rem!important;
+        margin-right: -3rem!important;
+    }
+
+    @include breakpointCustom(1601px) {
+        margin-left: -5.4rem!important;
+        margin-right: -5.4rem!important;
+    }
+}
+
+.b-block-top-sales {
+    position: relative;
+    margin: 0 0 4rem;
+    padding: 4rem 0 2rem;
+    background-color: #f8f8f8;
+}
+
+.b-block-top-sales__dotted-left {
+    position: absolute;
+    left: 0.8rem;
+    top: -8rem;
+    content: "";
+    z-index: 1;
+    width: 14rem;
+    height: 25rem;
+}
+
+.b-block-top-sales__wrap {
+    position: relative;
+    z-index: 10;
+}
+
+.l-stretch-all-all .l-stretch-content {
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+
+    @include breakpointCustom(361px) {
+        padding-left: 1.5rem!important;
+        padding-right: 1.5rem!important;
+    }
+
+    @include breakpointCustom(1201px) {
+        padding-left: 3rem!important;
+        padding-right: 3rem!important;
+    }
+
+    @include breakpointCustom(1601px) {
+        padding-left: 5.4rem!important;
+        padding-right: 5.4rem!important;
+    }
+}
+
+.b-block-top-sales h2 {
+
+    @include breakpointCustom(1000px) {
+        font-size: 5rem;
+    }
+}
+
+.b-block-top-sales__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.b-block-top-sales__item {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include breakpointCustom(580px) {
+        width: calc(50% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include breakpointCustom(1400px) {
+        width: calc(33.333333% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.b-block-top-sales__image {
+    display: block;
+    text-decoration: none;
+}
+
+.b-block-top-sales__img {
+    width: 100%;
+    padding-top: 60.82%;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.b-block-top-sales__content {
+    padding: 1.1rem 0;
+    background-color: transparent;
+    transition: .5s ease-in-out;
+}
+
+.b-block-top-sales__name {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding: 0 2rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.b-block-top-sales__name:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: #ee1d24;
+    transform: translateX(-50%);
+    transition: .5s ease-in-out;
+}
+
+.b-block-top-sales__item:hover .b-block-top-sales__content {
+    background-color: #ee1d24
+}
+
+.b-block-top-sales__item:hover .b-block-top-sales__name {
+    color: #fff
+}
+
+.b-block-top-sales__item:hover .b-block-top-sales__name:after {
+    width: 80%;
+    background-color: #fff
+}
+
+.b-block-top-sales__item:hover .b-block-top-sales__descr {
+    color: #fff
+}
+
+.b-block-bottom-text {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+}
+
+.b-layout__main-content>:last-child {
+    margin-bottom: 0!important;
+}
+
+.b-block-bottom-text__img {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: calc(100% + 6rem);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transform: translateX(-5rem);
+
+    @include breakpointCustom(820px) {
+        height: calc(100% + 10rem);
+    }
+}
+
+.b-block-bottom-text__img-element {
+    width: auto;
+    height: 100%;
+    stroke: #c2bdba;
+    stroke-dasharray: 0 100000;
+    -webkit-transition: 7s ease-in-out;
+    -o-transition: 7s ease-in-out;
+    transition: 7s ease-in-out;
+}
+
+.b-block-bottom-text.visible .b-block-bottom-text__img-element {
+    stroke-dasharray: 11000 100000
+}
+
+.b-block-bottom-text__title {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 2em;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+
+    @include breakpointCustom(480px) {
+        font-size: 2rem;
+    }
+
+    @include breakpointCustom(820px) {
+        width: 57%;
+        margin-bottom: 0;
+        padding-right: 3rem;
+        text-align: left;
+    }
+
+    @include breakpointCustom(1000px) {
+        font-size: 2.5rem;
+    }
+}
+
+.b-block-bottom-text__text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    @include breakpointCustom(820px) {
+        width: 43%;
+    }
+}
+
+body .b-block-bottom-text__title h1 {
+    font-size: inherit;
+    margin-bottom: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
