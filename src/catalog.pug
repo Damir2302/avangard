@@ -1,0 +1,83 @@
+---
+title: Avangard | Каталог
+bodyClass: b-layout b-layout--default
+page: catalog
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Каталог')
+
+            h1 Каталог
+
+            .b-block-catalogs
+                .b-block-catalogs__items
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/be7bf1309bf42abad1eec525f1208c42.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Коллекции мебели
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/e0a7774e94ecd46a56aa265510d87da6.png');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Диваны
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/f79a08cccf70b469cd744652303b8b77.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кровати
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/332e1d9e7789c838bc5ce6f376a0ec0d.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Корпусная мебель
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/375fa51d8567e02bdfe5047d6184319e.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Столы и стулья
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/66e940e4219fafced14784c047f491c0.png');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кресла
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='#')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/756a9f35d9d1f0743adb83fd626cd9bb.png');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Предметы интерьера
+
+                    .b-block-catalogs__item
+                        a.b-block-catalogs__link(href='№')
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/5e263337130e1452b7726b1e1c059322.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Матрасы и подушки
+
+            if page != 'main'
+                .c-space-block.c-center-all
+                    .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')

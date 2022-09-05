@@ -6,8 +6,10 @@ block footer
         .b-footer
 
             .b-footer__top
-                .b-footer__top-share
-                    .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
+
+                if page == 'main'
+                    .b-footer__top-share
+                        .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
 
                 .b-footer__top-left
                     #b-form__Questions-0.b-form.b-form--Questions.b-form--Questions630db262e184b
