@@ -1,0 +1,237 @@
+.b-big-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    margin-bottom: 4rem;
+
+    @include breakpointCustom(740px) {
+        margin-top: -3rem;
+    }
+}
+
+.b-big-banner__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: center;
+}
+
+@include breakpointCustom(740px) {
+    width: 80%;
+}
+
+.b-big-banner__content {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 1.5rem;
+    text-align: center;
+
+    @include breakpointCustom(740px) {
+        padding: 3rem 0;
+        text-align: left;
+    }
+}
+
+.b-big-banner__title {
+    display: none;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f1f1f1;
+
+    @include breakpointCustom(740px) {
+        display: block;
+        font-size: 5rem;
+        color: #202020;
+    }
+}
+
+.b-big-banner__descr {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: hsla(0,0%,100%,.7);
+    color: #202020;
+
+    @include breakpointCustom(740px) {
+        padding: 3rem 5rem;
+        background-color: #ee1d24;
+        color: #fff;
+        width: 65%;
+    }
+
+    @include breakpointCustom(1000px) {
+        width: 45%;
+    }
+
+    @include breakpointCustom(1200px) {
+        width: 65%;
+    }
+
+    @include breakpointCustom(1400px) {
+        width: 47%;
+    }
+}
+
+.b-big-banner__descr-title {
+    margin-bottom: 1.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.b-big-banner__descr-title--size_middle {
+    font-size: 1.5rem;
+
+    @include breakpointCustom(740px) {
+        font-size: 1.8rem;
+    }
+}
+
+.b-big-banner__descr-buttons {
+    margin-bottom: 1.1rem;
+}
+
+.b-big-banner__descr>:last-child {
+    margin-bottom: 0;
+}
+
+.b-big-banner__descr-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: #ee1d24;
+    border: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .7rem;
+    color: #fff;
+
+    @include breakpointCustom(740px) {
+        background-color: #fff;
+        color: #ee1d24;
+    }
+}
+
+.b-block-production-list {
+    margin-bottom: 4rem;
+}
+
+.b-block-production-list__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpointCustom(820px) {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+
+.b-block-production-list__col {
+    width: 100%;
+
+    @include breakpointCustom(820px) {
+        width: calc(50% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.b-block-production-list__col:nth-child(2) {
+
+    @include breakpointCustom(820px) {
+        padding-top: 10rem;
+    }
+}
+
+.b-block-production-list__item {
+    margin-bottom: 2rem;
+    padding-left: 4em;
+    font-size: 1.5rem;
+}
+
+.b-block-production-list--type_small .b-block-production-list__item {
+    font-size: .8rem;
+}
+
+.b-block-production-list__item-title {
+    display: flex;
+    align-items: center;
+    min-height: 3.2em;
+    position: relative;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.b-block-production-list__item-ico {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -4em;
+    width: 3.2em;
+    height: 3.2em;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.b-block-production-list__item-img {
+    width: 100%;
+}
+
+.l-stretch-all {
+    margin-left: -1rem!important;
+    margin-right: -1rem!important;
+
+    @include breakpointCustom(361px) {
+        margin-left: -1.5rem!important;
+        margin-right: -1.5rem!important;
+    }
+
+    @include breakpointCustom(1201px) {
+        margin-left: -3rem!important;
+        margin-right: -3rem!important;
+    }
+
+    @include breakpointCustom(1601px) {
+        margin-left: -5.4rem!important;
+        margin-right: -5.4rem!important;
+    }
+}
+
+.b-block-stretch {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.b-layout__main-content>:last-child {
+    margin-bottom: 0!important;
+}
+
+.b-block-stretch__content {
+    padding: 1rem 2rem;
+
+    @include breakpointCustom(740px) {
+        padding: 2rem 6rem;
+    }
+
+    @include breakpointCustom(1000px) {
+        padding: 3rem 10rem;
+    }
+
+    @include breakpointCustom(1400px) {
+        padding: 6rem 18rem;
+    }
+}
+
+
+

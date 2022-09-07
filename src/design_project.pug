@@ -1,0 +1,74 @@
+---
+title: Avangard | Дизайн-проект
+bodyClass: b-layout b-layout--page_design-project
+page: design_project
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Дизайн-проект')
+
+            .b-big-banner
+                .b-big-banner__image(style="background-image: url('assets/images/big-banner_1.jpg')")
+                .b-big-banner__content
+                    h1.b-big-banner__title Дизайн-проект
+                    .b-big-banner__descr
+                        .b-big-banner__descr-title.b-big-banner__descr-title--size_big Мебель у вас в интерьере
+                        .b-big-banner__descr-text Благодаря ДИЗАЙН-ПРОЕКТУ увидеть, как будет выглядеть ваша будущая мебель у себя в интерьере не составит труда
+                        .b-big-banner__descr-buttons
+                            a.b-big-banner__descr-button(href='#form_project_request') Оставить заявку
+
+            h2.c-page-h Что вы получите?
+
+            .animate.animate--slide-up
+                .b-slider-two
+                    .b-slider-two__content.swiper-container
+                        .b-slider-two__wrapper.swiper-wrapper
+                            .b-slider-two__slide.swiper-slide
+                                .b-slider-two__item
+                                    .b-slider-two__item-title Проект
+                                    img.b-slider-two__item-img(src='assets/images/slider-two_1.jpg' alt='Разработка дизайна')
+
+                            .b-slider-two__slide.swiper-slide
+                                .b-slider-two__item
+                                    .b-slider-two__item-title Реализация
+                                    img.b-slider-two__item-img(src='assets/images/slider-two_2.jpg' alt='Реализация проекта')
+
+                            .b-slider-two__slide.swiper-slide
+                                .b-slider-two__item
+                                    .b-slider-two__item-title Проект
+                                    img.b-slider-two__item-img(src='assets/images/slider-two_1.jpg' alt='Разработка дизайна')
+
+                            .b-slider-two__slide.swiper-slide
+                                .b-slider-two__item
+                                    .b-slider-two__item-title Реализация
+                                    img.b-slider-two__item-img(src='assets/images/slider-two_2.jpg' alt='Реализация проекта')
+
+                            .b-slider-two__slide.swiper-slide
+                                .b-slider-two__item
+                                    .b-slider-two__item-title Проект
+                                    img.b-slider-two__item-img(src='assets/images/slider-two_1.jpg' alt='Разработка дизайна')
+
+                            .b-slider-two__slide.swiper-slide
+                                .b-slider-two__item
+                                    .b-slider-two__item-title Реализация
+                                    img.b-slider-two__item-img(src='assets/images/slider-two_2.jpg' alt='Реализация проекта')
+
+                    .b-slider-two__controls
+                        .b-slider-two__controls-content
+                            .b-slider-two__button.b-slider-two__button--type_prev
+                                svg.b-slider-two__button-svg(width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M7 1L1 7L7 13' stroke='#EE1D24' stroke-linecap='round' stroke-linejoin='round')
+                            .b-slider-two__button.b-slider-two__button--type_next
+                                svg.b-slider-two__button-svg(width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M7 1L1 7L7 13' stroke='#EE1D24' stroke-linecap='round' stroke-linejoin='round')

@@ -12,9 +12,14 @@
 
 @import 'components/ya_share';
 @import 'components/breadcrumbs';
+@import 'components/form';
 
 @import 'pages/index';
 @import 'pages/catalog';
+@import 'pages/category';
+@import 'pages/product';
+@import 'pages/designer_products';
+@import 'pages/design_project';
 
 .b-layout {
     position: relative;

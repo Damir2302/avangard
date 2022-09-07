@@ -1,0 +1,459 @@
+.b-product {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 4rem;
+
+    @include breakpointCustom(740px) {
+        order: 1;
+    }
+}
+
+.b-product__left {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+
+    @include breakpointCustom(740px) {
+        order: 1;
+        width: 30%;
+        padding-left: 2rem;
+    }
+}
+
+.b-product__catalog {
+    margin-top: -0.4em;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.b-product__favourites {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+.b-product__favourites-ico {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+}
+
+.b-product__favourites-svg {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+.b-product__favourites-text {
+    display: block;
+    border-bottom: 1px dashed #ee1d24;
+    line-height: 1.3;
+}
+
+.b-product__favourites-text-active {
+    display: none;
+    border-bottom: 1px dashed #ee1d24;
+    line-height: 1.3;
+}
+
+.b-product__properties-public {
+    margin-bottom: auto;
+    font-size: .7rem;
+}
+
+.b-block-properties-public__item {
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+.b-block-properties-public__value {
+    font-weight: 300;
+}
+
+.b-block-properties__item {
+    margin-bottom: .4rem;
+    font-weight: 700;
+
+    @include breakpointCustom(480px) {
+        display: flex;
+    }
+}
+
+.b-block-properties__name {
+    width: 100%;
+
+    @include breakpointCustom(480px) {
+        max-width: 258px;
+    }
+}
+
+.b-block-properties__value {
+    font-weight: 300;
+
+    @include breakpointCustom(480px) {
+        margin-left: 20px;
+    }
+}
+
+.b-block-colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.b-block-colors__item {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: calc(33.333333% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @include breakpointCustom(420px) {
+        width: calc(25% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include breakpointCustom(650px) {
+        width: calc(20% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include breakpointCustom(820px) {
+        width: calc(16.666667% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.b-block-colors__color {
+    display: inline-block;
+    width: 100%;
+    max-width: 7.5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 1px solid #c2bdba;
+}
+
+.b-block-colors__color-wrap {
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.b-block-colors__name {
+    text-align: center;
+}
+
+.b-block-mattresses {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpointCustom(420px) {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+
+.b-block-mattresses__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    @include breakpointCustom(420px) {
+        width: calc(50% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include breakpointCustom(650px) {
+        width: calc(33.333333% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include breakpointCustom(820px) {
+        width: calc(25% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.b-block-mattresses__type {
+    position: absolute;
+    right: 0;
+    top: 6.5rem;
+    z-index: 1;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.b-block-mattresses__image {
+    width: 100%;
+    height: 6.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.b-block-mattresses__img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+.b-block-mattresses__name {
+    margin-bottom: 1rem;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.b-block-mattresses__descr {
+    font-size: .7rem;
+}
+
+.b-product__price {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.b-product__price-val {
+    font-size: 1.3rem;
+}
+
+.b-product__buttons {
+    margin-bottom: 1.5rem;
+    font-size: .7rem;
+}
+
+.b-product__right {
+    order: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
+
+    @include breakpointCustom(740px) {
+        order: 2;
+        width: 70%;
+        padding-left: 1rem;
+    }
+
+    @include breakpointCustom(1201px) {
+        padding-left: 2rem;
+    }
+}
+
+.b-product__images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include breakpointCustom(740px) {
+        height: 25rem;
+    }
+}
+
+.b-product__images-big {
+    position: relative;
+    width: 100%;
+    height: 56.25vw;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    @include breakpointCustom(740px) {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.b-product__img-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.b-product__img-item, .b-product__img-item--active {
+    justify-content: center;
+}
+
+.b-product__img-item--active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.b-product__img-big {
+    position: relative;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+
+    @include breakpointCustom(740px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.b-product__slider {
+    width: 100%;
+
+    @include breakpointCustom(740px) {
+        width: 10%;
+        height: 100%;
+        padding-left: 1rem;
+    }
+
+    @include breakpointCustom(1201px) {
+        padding-left: 2rem;
+    }
+}
+
+.b-product__slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include breakpointCustom(740px) {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.b-product .swiper-wrapper {
+    width: auto;
+    max-width: 100%;
+
+    @include breakpointCustom(740px) {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+}
+
+.b-product__slider-slide {
+    overflow: hidden;
+    height: 2rem;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    opacity: .5;
+
+    @include breakpointCustom(740px) {
+        height: 100%;
+    }
+}
+
+.b-product__slider-slide--active {
+    border-bottom: 4px solid #ee1d24;
+    opacity: 1;
+}
+
+.b-product .swiper-wrapper>:last-child {
+    margin-bottom: 0!important;
+    margin-right: 0!important;
+}
+
+.b-product__accordion {
+    order: 3;
+    width: 100%;
+}
+
+.b-block-accordion__title {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 1.5rem
+}
+
+.b-block-accordion__title:after,.b-block-accordion__title:before {
+    top: calc(50% - .3rem)
+}
+
+.b-block-accordion__title:hover {
+    color: #ee1d24
+}
+
+.b-block-accordion__title:hover:before {
+    color: #ee1d24!important
+}
+
+.b-block-accordion__title.accordion--active {
+    border: 0;
+    color: #ee1d24
+}
+
+.b-block-accordion__title.accordion--active:before {
+    color: #ee1d24!important
+}
+
+.b-block-accordion__name {
+    margin-bottom: 1rem
+}
+
+.b-block-accordion__body {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f1f1
+}
+
+.b-block-accordion__body .c-shops-column {
+    position: unset;
+    left: 0;
+
+    @include breakpointCustom(580px) {
+        position:absolute;
+        left: 60%
+    }
+
+    @include breakpointCustom(740px) {
+        position:absolute;
+        left: 400px
+    }
+}
+
+.b-block-accordion .b-block-accordion .b-block-accordion__title {
+    padding-left: 1rem!important;
+    font-size: 1rem!important
+}
+
+.b-block-accordion .b-block-accordion .b-block-accordion__title:before {
+    left: 0!important
+}
+
+.b-block-accordion .b-block-accordion .b-block-accordion__body {
+    padding-left: 1rem!important
+}
+
+.b-block-accordion .b-block-accordion .b-block-accordion__body ol,.b-block-accordion .b-block-accordion .b-block-accordion__body ul {
+    margin-left: 0
+}
+

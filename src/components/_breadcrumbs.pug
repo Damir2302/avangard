@@ -4,5 +4,11 @@ mixin breadcrumbs(...items)
         a.b-menu-breadcrumbs__item(href='/') Главная
 
         each item in items
-            |  —&nbsp;
-            span.b-menu-breadcrumbs__item.b-menu-breadcrumbs__item--last= item
+
+            if item == items[items.length - 1]
+                |  —&nbsp;
+                span.b-menu-breadcrumbs__item.b-menu-breadcrumbs__item--last= item
+
+            else
+                |  —&nbsp;
+                a.b-menu-breadcrumbs__item= item

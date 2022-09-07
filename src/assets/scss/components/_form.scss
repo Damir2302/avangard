@@ -1,0 +1,349 @@
+.b-form {
+    width: 100%;
+}
+
+.b-form__title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.3rem;
+
+    @include breakpointCustom(480px) {
+        font-size: 1.5rem;
+    }
+
+    @include breakpointCustom(740px) {
+        font-size: 2rem;
+    }
+}
+
+.b-block-stretch__content .b-form__title {
+    text-align: center;
+}
+
+.b-form__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.b-form>:last-child {
+    margin-bottom: 0;
+}
+
+.b-form__element {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.b-form__element--has-error .b-form__input {
+    border-bottom: 1px solid #0047ff!important;
+    color: #0047ff!important
+}
+
+.b-form__element--has-error .b-form__input::-webkit-input-placeholder {
+    color: #0047ff!important
+}
+
+.b-form__element--has-error .b-form__input:-ms-input-placeholder,.b-form__element--has-error .b-form__input::-ms-input-placeholder {
+    color: #0047ff!important
+}
+
+.b-form__element--has-error .b-form__input::placeholder {
+    color: #0047ff!important
+}
+
+.b-form__field {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.b-form__label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all .2s linear;
+
+    @include breakpointCustom(820px) {
+        font-size: 1.3rem;
+    }
+
+    @include breakpointCustom(1000px) {
+        font-size: 1.5rem;
+    }
+}
+
+.b-form__custom-select-field {
+    border-bottom: 1px solid #202020;
+    font-size: 1rem;
+    opacity: .5;
+
+    @include breakpointCustom(820px) {
+        font-size:1.3rem
+    }
+
+    @include breakpointCustom(1000px) {
+        font-size:1.5rem
+    }
+}
+
+.b-form__custom-select-field.open {
+    opacity: 1
+}
+
+.b-form__field--focus .b-form__label {
+    top: 0;
+    font-size: .8rem
+}
+
+.b-form__element--has-error .b-form__label {
+    color: #0047ff!important
+}
+
+.b-form__marker {
+    margin-left: -0.8em;
+}
+
+.b-form__input {
+    width: 100%;
+    background-color: transparent;
+    border-top: 0;
+    border-bottom: 1px solid transparent;
+    border-left: 0;
+    border-right: 0;
+    border-color: inherit!important;
+    padding: 0.5em 0;
+    line-height: 1;
+    font-size: 1rem;
+    color: inherit;
+    opacity: .5;
+
+    @include breakpointCustom(820px) {
+        font-size:1.3rem
+    }
+
+    @include breakpointCustom(1000px) {
+        font-size:1.5rem
+    }
+}
+
+.b-form__input:focus {
+    opacity: 1
+}
+
+.b-form__input::-webkit-input-placeholder {
+    color: #fff;
+    opacity: .5!important;
+    outline: none
+}
+
+.b-form__input:-ms-input-placeholder,.b-form__input::-ms-input-placeholder {
+    color: #fff;
+    opacity: .5!important;
+    outline: none
+}
+
+.b-form__input::placeholder {
+    color: #fff;
+    opacity: .5!important;
+    outline: none
+}
+
+.b-form__input[readonly=readonly] {
+    opacity: .4
+}
+
+.b-form__field:hover .b-form__input,.b-form__field:hover .custom-file-button__text {
+    opacity: 1
+}
+
+.b-form__text {
+    width: 100%;
+    height: 5rem;
+    background-color: transparent;
+    border-top: 0;
+    border-bottom: 1px solid transparent;
+    border-left: 0;
+    border-right: 0;
+    border-color: inherit!important;
+    padding: 0.5em 0;
+    line-height: 1;
+    font-size: 1rem;
+    color: inherit;
+    opacity: .5;
+
+    @include breakpointCustom(820px) {
+        font-size:1.3rem
+    }
+
+    @include breakpointCustom(1000px) {
+        font-size:1.5rem
+    }
+}
+
+.b-form__text:focus {
+    opacity: 1
+}
+
+.b-form__text::-webkit-input-placeholder {
+    color: #fff;
+    opacity: .5!important;
+    outline: none
+}
+
+.b-form__text:-ms-input-placeholder,.b-form__text::-ms-input-placeholder {
+    color: #fff;
+    opacity: .5!important;
+    outline: none
+}
+
+.b-form__text::placeholder {
+    color: #fff;
+    opacity: .5!important;
+    outline: none
+}
+
+.b-form__text[readonly=readonly] {
+    opacity: .4
+}
+
+.b-form__descr {
+    width: 100%;
+    font-size: .8rem;
+    margin-top: 0.5em;
+    opacity: .5;
+}
+
+.b-form__comment {
+    font-size: .7rem
+}
+
+.b-form__field-error {
+    width: 100%;
+    font-size: .8rem;
+    color: #0047ff;
+    margin-top: .5em
+}
+
+.b-form__button {
+    background-color: transparent;
+    border: 0;
+    text-transform: lowercase;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: .5;
+
+    @include breakpointCustom(740px) {
+        font-size:1.5rem
+    }
+}
+
+.b-form__button:hover {
+    opacity: 1
+}
+
+.b-form__stars {
+    direction: rtl;
+    font-size: 1.5rem;
+
+    @include breakpointCustom(820px) {
+        font-size:1.3rem
+    }
+
+    @include breakpointCustom(1000px) {
+        font-size:1.5rem
+    }
+}
+
+.b-form__stars-ico {
+    box-sizing: content-box;
+    padding-right: .5em;
+    cursor: pointer
+}
+
+.b-form__element--SCORE .b-form__label {
+    position: static;
+    transform: none;
+    transition: none
+}
+
+.b-form .custom-file-box {
+    width: 100%;
+    background-color: transparent;
+}
+
+.b-form .custom-file-button__text {
+    border-top: 0;
+    border-bottom: 1px solid transparent!important;
+    border-left: 0;
+    border-right: 0;
+    border-color: inherit!important;
+    padding: 0.5em 0;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.custom-file-box {
+    position: relative;
+    background-color: #fff;
+    font-size: 1.225rem;
+}
+
+.custom-file-button {
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.custom-file-button--hide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    overflow: hidden;
+    opacity: 0!important;
+    padding: 0!important;
+    cursor: pointer;
+}
+
+.custom-file-box>.custom-file-button {
+    position: relative;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMy41IDMuNVYxMGExLjUgMS41IDAgMCAwIDMgMFYzLjVhMyAzIDAgMCAwLTYgMFYxMGE0LjUgNC41IDAgMSAwIDkgMFYzLjUiIHN0cm9rZT0iIzkxOTdCMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+) 100% no-repeat;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.custom-file-button__text {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    font-size: .8em;
+}

@@ -1,0 +1,171 @@
+---
+title: Avangard | Мебель на заказ
+bodyClass: b-layout b-layout--page_designer_products
+page: designer_products
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Мебель на заказ')
+
+            .b-big-banner
+                .b-big-banner__image(style="background-image: url('assets/images/big-banner_2.jpg')")
+                .b-big-banner__content
+                    h1.b-big-banner__title
+                        | Мебель под заказ
+                        br
+                        |  по индивидуальным размерам
+                    .b-big-banner__descr
+                        .b-big-banner__descr-title.b-big-banner__descr-title--size_middle Реализуем любой дизайнерский эскиз — как индивидуальный, так и дорогую реплику
+                        .b-big-banner__descr-buttons
+                            a.b-big-banner__descr-button(href='#form_design_request') Оставить заявку
+
+            h2 Наши работы
+
+            .b-block-catalogs
+                .b-block-catalogs__items
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+                    .b-block-catalogs__item.full
+                        .b-block-catalogs__image
+                            .b-block-catalogs__img(style="background-image: url('assets/images/dp_1.jpg');")
+                        .b-block-catalogs__content
+                            .b-block-catalogs__name Кухни
+
+            h2 Почему мы
+
+            .b-block-production-list.b-block-production-list--type_small.b-block-production-list--margin_big
+                .b-block-production-list__items
+
+                    .b-block-production-list__col
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-ruler.svg');")
+                                .b-block-production-list__item-name Реализуем любой дизайнерский эскиз — как индивидуальный, так и дорогую реплику.
+                            img.b-block-production-list__item-img(src='assets/images/designer_products1.jpg' alt='Разработка дизайна мебели')
+
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-cloth.svg');")
+                                .b-block-production-list__item-name
+                                    | Предлагаем множество типов
+                                    span.c-color-red тканей
+                                    |  и вариаций отделки.
+                            img.b-block-production-list__item-img(src='assets/images/designer_products2.jpg' alt='Ткани для обивки мебели')
+
+                    .b-block-production-list__col
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-wood.svg');")
+                                .b-block-production-list__item-name
+                                    | Подбираем желаемые
+                                    span.c-color-red материалы
+                                    |  основания: массив, шпон и МДФ.
+                            img.b-block-production-list__item-img(src='assets/images/designer_products3.jpg' alt='Выбор материала для каркаса')
+
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-time.svg');")
+                                .b-block-production-list__item-name Изготавливаем в короткие сроки. Доставляем по всей России.
+                            img.b-block-production-list__item-img(src='assets/images/designer_products4.jpg' alt='Изготовление мебели на заказ')
+
+            .b-block-stretch.l-stretch-all(style="background-image: url('assets/images/block-stretch.jpg');")
+                .b-block-stretch__content
+                    a(name='form_design_request')
+
+                    .animate.animate--slide-up
+
+                        .c-content-form
+                            #b-form__DesignRequest-0.b-form.b-form--DesignRequest.b-form--DesignRequest631873f4530ef
+                                .b-form__title Заявка на индивидуальный дизайн
+
+                                form#tao-form-DesignRequest-0.b-form__form.b-form--ajax.b-form--DesignRequest.b-form--DesignRequest631873f4530ef(method='post' action='' enctype='multipart/form-data')
+                                    input#form__form-design-request--form_id(type='hidden' name='service[form_id]' value='DesignRequest631873f4530ef')
+                                    input#form__form-design-request--taoform(type='hidden' name='service[taoform]' value='DesignRequest')
+                                    input#form__form-design-request--lang(type='hidden' name='service[lang]' value='ru')
+
+                                    .b-form__element.b-form__element--NAME
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-design-request--NAME-0')
+                                                span.b-form__marker *
+                                                |  Имя
+                                            input#form__form-design-request--NAME-0.b-form__input.text.field-NAME(type='text' name='NAME' value='' placeholder='')
+
+                                    .b-form__element.b-form__element--PHONE
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-design-request--PHONE-0')
+                                                span.b-form__marker *
+                                                |  Телефон
+                                            input#form__form-design-request--PHONE-0.b-form__input.text.field-PHONE(type='text' name='PHONE' value='' placeholder='')
+
+                                    .b-form__element.b-form__element--COMMENT
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-design-request--COMMENT-0')
+                                                |  Комментарий
+                                            textarea#form__form-design-request--COMMENT-0.b-form__text.COMMENT(placeholder='' name='COMMENT')
+                                        .b-form__descr Здесь вы можете описать о вашем проекте, указать понравившиеся модели, желаемые цвета, габариты помещения
+
+                                    .b-form__element.b-form__element--FILE
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-design-request--FILE-0') Прикрепить эскиз
+                                            input#form__form-design-request--FILE.b-form__input.upload(type='file' name='FILE' value='')
+
+                                    .b-form__element
+                                        .b-form__field.c-right-all
+                                            .b-form__fast-result
+                                            .b-form__button Отправить
+
+                                    .b-form__element.b-form__element--small
+                                        .b-form__comment
+                                            | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                            a(href='#' style='color: #0047ff;') Подробнее...
