@@ -97,6 +97,13 @@
     margin-bottom: 1.1rem;
 }
 
+.b-big-banner__descr-button:hover {
+    background-color: #202020;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
 .b-big-banner__descr>:last-child {
     margin-bottom: 0;
 }
@@ -205,6 +212,11 @@
         margin-left: -5.4rem!important;
         margin-right: -5.4rem!important;
     }
+}
+
+.b-block-production-list__item-descr {
+    margin-bottom: 1rem;
+    font-size: .8rem;
 }
 
 .b-block-stretch {

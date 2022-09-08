@@ -1,0 +1,28 @@
+---
+title: Avangard | Детальная новость
+bodyClass: b-layout b-layout--page-news-detail
+page: news-detail
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Акции & Новости', 'Детальная новость')
+
+            h1 Детальная новость
+
+            .b-block-news-detail.c-adaptive-width-80
+
+                .b-block-news-detail__description В период проведения акции х МФ «Авангард» предоставляет уникальные дополнительные скидки на приобретение мебели. Скидка на мягкую мебель формируется: 25% + дополнительный % , соответствующий категории выбранной ткани.
+
+                .b-block-news-detail__date 01.09.2022
+

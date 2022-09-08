@@ -1,0 +1,84 @@
+---
+title: Avangard | Акции & Новости
+bodyClass: b-layout b-layout--page-news-list
+page: news
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Акции & Новости')
+
+            .b-filter
+                .b-filter__group.b-filter__group--cols_1
+                    .b-filter__group-items
+                        a.b-filter__group-item(href='#') Акции
+                        a.b-filter__group-item(href='#') Новости
+
+            h1 Акции & Новости
+
+            .b-block-news-list
+                .b-block-news-list__items
+                    .b-block-news-list__dotted-1.c-dotted
+                    .b-block-news-list__dotted-2.c-dotted
+
+                    .b-block-news-list__item.b-block-news-list__item--type_news
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/038777d80fae57741ded3ecfe4a706b5.jpg')
+                        .b-block-news-list__content
+                            .b-block-news-list__txt
+                                .b-block-news-list__name Рассрочка без первого взноса и переплат
+
+                    .b-block-news-list__item.b-block-news-list__item--type_news
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/4605dfbd383c09d702650653ac8b9487.png')
+                        .b-block-news-list__content
+                            .b-block-news-list__txt
+                                .b-block-news-list__name Успей до повышения
+
+                    .b-block-news-list__item.b-block-news-list__item--type_sale
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/0805704cb078fa3ac922b4d0d0aba5d7.jpg')
+                        .b-block-news-list__content
+                            .b-block-news-list__date 01.09.2022
+                            .b-block-news-list__txt
+                                .b-block-news-list__name Ищите премиальные условия?
+                                .b-block-news-list__descr Устали с поиском лучших цен? Тогда эта акция для Вас!
+
+                    .b-block-news-list__item.b-block-news-list__item--type_sale
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/a04896d57e6f902738810f962aed8140.jpg')
+                        .b-block-news-list__content
+                            .b-block-news-list__txt
+                                .b-block-news-list__name Назад в будущее
+
+                    .b-block-news-list__item.b-block-news-list__item--type_sale
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/18d20002e35f9078fe73cd26c5f49606.jpg')
+                        .b-block-news-list__content
+                            .b-block-news-list__txt
+                                .b-block-news-list__name Скидка 40% на спальню Марсель
+
+                    .b-block-news-list__item.b-block-news-list__item--type_sale
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/9dc1883781ea16a2b4204689740d1255.png')
+                        .b-block-news-list__content
+                            .b-block-news-list__txt
+                                .b-block-news-list__name Второе дыхание
+
+                    .b-block-news-list__item.b-block-news-list__item--type_sale
+                        a.b-block-news-list__link(href='#')
+                        img.b-block-news-list__img(src='assets/images/8323b849cfc73464f707d99fb9ed92f2.png')
+                        .b-block-news-list__content
+                            .b-block-news-list__txt
+                                .b-block-news-list__name -30% на спальни Верона
+                                .b-block-news-list__descr Скидка 30% на комплект спальни Верона до 1октября !

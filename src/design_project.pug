@@ -72,3 +72,141 @@ block main
                             .b-slider-two__button.b-slider-two__button--type_next
                                 svg.b-slider-two__button-svg(width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M7 1L1 7L7 13' stroke='#EE1D24' stroke-linecap='round' stroke-linejoin='round')
+
+            .b-bg.b-bg--color_red.l-stretch-all-all
+                .b-bg__content.l-stretch-content
+                    h2.c-page-h Почему мы?
+
+                    .animate.animate--slide-up
+                        .b-block-production-list.b-block-production-list--type_big.b-block-production-list--margin_small
+                            .b-block-production-list__items
+
+                                .b-block-production-list__col
+                                    .b-block-production-list__item
+                                        .b-block-production-list__item-title
+                                            .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-5.svg');")
+                                            .b-block-production-list__item-name Точная визуализация
+                                        .b-block-production-list__item-descr Отрисовка с помощью точных 3D программ позволяет с высокой точностью отразить проект в помещении
+                                        img.b-block-production-list__item-img(src='assets/images/production-list_1.jpg' alt='3D визуализация интерьера')
+
+                                    .b-block-production-list__item
+                                        .b-block-production-list__item-title
+                                            .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-7.svg');")
+                                            .b-block-production-list__item-name Выбор только за вами
+                                        .b-block-production-list__item-descr Реализуем проект любой сложности. Поможем подобрать материалы отделки и цвета для лучшего сочетания с интерьером
+                                        img.b-block-production-list__item-img(src='assets/images/production-list_3.jpg' alt='Выбор цветов и материалов')
+
+                                .b-block-production-list__col
+                                    .b-block-production-list__item
+                                        .b-block-production-list__item-title
+                                            .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-6.svg');")
+                                            .b-block-production-list__item-name Высокое качество
+                                        .b-block-production-list__item-descr В нашей команде только профессиональные дизайнеры, имеющие профильное образование и большой опыт работы
+                                        img.b-block-production-list__item-img(src='assets/images/production-list_2.jpg' alt='Разработка проекта дизайнером')
+
+                                    .b-block-production-list__item
+                                        .b-block-production-list__item-title
+                                            .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-8.svg');")
+                                            .b-block-production-list__item-name Быстрая реализация
+                                        .b-block-production-list__item-descr Подготовим итоговую визуализацию на третий день
+                                        img.b-block-production-list__item-img(src='assets/images/production-list_4.jpg' alt='Итоговый дизайн-проект')
+
+            h2.c-page-h Как заказать?
+
+            .animate.animate--slide-up
+                .b-list-numbers
+                    .b-list-numbers__item
+                        .b-list-numbers__item-num 1
+                        .b-list-numbers__item-title Ваш выбор
+                        .b-list-numbers__item-descr Напишите наименование продукции и выбранный цвет
+
+                    .b-list-numbers__item
+                        .b-list-numbers__item-num 2
+                        .b-list-numbers__item-title Фото/видео помещения
+                        .b-list-numbers__item-descr Сделайте несколько фото или видео с разных ракурсов
+
+                    .b-list-numbers__item
+                        .b-list-numbers__item-num 3
+                        .b-list-numbers__item-title Размеры
+                        .b-list-numbers__item-descr Укажите высоту и ширину комнаты
+
+                    .b-list-numbers__item
+                        .b-list-numbers__item-num 4
+                        .b-list-numbers__item-title Место расположения
+                        .b-list-numbers__item-descr Укажите предполагаемое место будущей мебели
+
+            .animate.animate--slide-up
+                .b-block-card.l-stretch-all-all
+                    .b-block-card__dots.c-dotted.c-dotted--color_gray
+
+                    .b-block-card__content.l-stretch-content
+                        .b-block-card__left
+                            .b-block-card__title Ваш дизайнер
+                            .b-block-card__descr
+                                p Над проектом работает профессиональный дизайнер, который продумает все важные аспекты вашего идеального интерьера. Дизайн-проект - это:
+                                ul
+                                    li грамотный подбор и расстановка мебели,
+                                    li учет эргономики помещения,
+                                    li цветовые решения,
+                                    li освещение,
+                                    li акцентные детали.
+                                p Проект составляется с учетом пожеланий клиента, рекомендаций дизайнера и актуальных трендов интерьерного дизайна.
+                        .b-block-card__right
+                            .b-block-card__image
+                                .b-block-card__img(style="background-image: url('assets/images/block-card.jpg');")
+
+            a(name="form_project_request")
+
+            h2.c-page-h Оставьте заявку на дизайн проект
+
+            .animate.animate--slide-up
+                .c-content-form
+                    #b-form__ProjectRequest-0.b-form.b-form--ProjectRequest.b-form--ProjectRequest631991f94fa42
+                        form#tao-form-ProjectRequest-0.b-form__form.b-form--ajax.b-form--ProjectRequest.b-form--ProjectRequest631991f94fa42(method='post' action='')
+                            input#form__form-design-request--form_id(type='hidden' name='service[form_id]' value='DesignRequest631873f4530ef')
+                            input#form__form-design-request--taoform(type='hidden' name='service[taoform]' value='DesignRequest')
+                            input#form__form-design-request--lang(type='hidden' name='service[lang]' value='ru')
+
+                            .b-form__element.b-form__element--NAME
+                                .b-form__field
+                                    label.b-form__label(for='form__form-design-request--NAME-0')
+                                        span.b-form__marker *
+                                        |  Имя
+                                    input#form__form-design-request--NAME-0.b-form__input.text.field-NAME(type='text' name='NAME' value='' placeholder='')
+
+                            .b-form__element.b-form__element--PHONE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-design-request--PHONE-0')
+                                        span.b-form__marker *
+                                        |  Телефон
+                                    input#form__form-design-request--PHONE-0.b-form__input.text.field-PHONE(type='text' name='PHONE' value='' placeholder='')
+
+                            .b-form__element.b-form__element--COMMENT
+                                .b-form__field
+                                    label.b-form__label(for='form__form-design-request--COMMENT-0')
+                                        |  Комментарий
+                                    textarea#form__form-design-request--COMMENT-0.b-form__text.COMMENT(placeholder='' name='COMMENT')
+                                .b-form__descr Здесь вы можете описать о вашем проекте, указать понравившиеся модели, желаемые цвета, габариты помещения
+
+                            .b-form__element.b-form__element--FILE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-design-request--FILE-0') Прикрепить эскиз
+                                    input#form__form-design-request--FILE.b-form__input.upload(type='file' name='FILE' value='')
+
+                            .b-form__element
+                                .b-form__field.c-right-all
+                                    .b-form__fast-result
+                                    .b-form__button Отправить
+
+                            .b-form__element
+                                .b-form__description
+                                    .c-h4.c-strong
+                                        | Или позвоните по телефону
+                                        br
+                                        span.c-color-red
+                                            a(href='tel:+79164065750') +7 (916) 406-57-50
+
+                            .b-form__element.b-form__element--small
+                                .b-form__comment
+                                    | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                    a(href='#' style='color: #0047ff;') Подробнее...

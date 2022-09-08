@@ -1,0 +1,106 @@
+.b-big-banner__descr-title--size_big {
+    font-size: 1.8rem;
+
+    @include breakpointCustom(740px) {
+        font-size: 2.2rem;
+    }
+}
+
+.b-big-banner__descr-text {
+    margin-bottom: 1.1rem;
+    font-size: .9rem;
+}
+
+.b-slider-two {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 4rem;
+}
+
+.b-slider-two__content {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.b-slider-two__wrapper {
+    align-items: stretch;
+    z-index: 10;
+}
+
+.b-slider-two__slide {
+    height: unset;
+}
+
+.b-slider-two__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.b-slider-two__item-title {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ee1d24;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.b-slider-two__item-img {
+    position: relative;
+    z-index: 8;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+.b-slider-two__item>:last-child {
+    margin-bottom: 0;
+}
+
+.b-slider-two__controls {
+    position: absolute;
+    z-index: 11;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.b-slider-two__controls-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpointCustom(740px) {
+        margin: 0 -1rem;
+    }
+}
+
+.b-slider-two__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.b-slider-two__button--type_next {
+    border: 2px solid #ee1d24;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.b-slider-two__button--type_prev {
+    border: 2px solid #ee1d24
+}
+
+.b-slider-two__button-svg {
+    stroke: #ee1d24;
+    width: 40%
+}
+
