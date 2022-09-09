@@ -1,0 +1,202 @@
+---
+title: Avangard | Гарантийное обслуживание
+bodyClass: b-layout b-layout--page_guarantee
+page: guarantee
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Услуги', 'Гарантийное обслуживание')
+
+            h1 Гарантийное обслуживание
+
+            .c-adaptive-width-80
+                ul
+                    li срок службы изделия - 5 лет;
+                    li гарантийный срок - 18 мес. со дня покупки;
+                    li недостатки изделия, выявленные в течение гарантийного срока и возникшие по вине Фабрики, будут устранены сервисной службой Фабрики бесплатно;
+                    li гарантийное обслуживание включает в себя проведение ремонтных работ и замену дефектных частей изделия;
+                    li претензии по внешнему виду изделия, некомплекту, а, также несоответствие заказа принимаются только непосредственно при получении изделия. В дальнейшем такие претензии не принимаются, и ремонт производится за счет Заказчика;
+                    li в случае приобретения уцененной мебели претензии по качеству и внешнему виду не принимаются.
+
+                h4 Гарантийное обслуживание не проводится в случае
+
+                ul
+                    li истечения гарантийного срока;
+                    li не соблюдения условий эксплуатации;
+                    li наличия на изделии механических повреждений;
+                    li превышения допустимых нагрузок на механизм трансформации;
+                    li нанесения ущерба изделию или его утери в случае действия обстоятельств непреодолимой силы (стихии, пожара, наводнений и т.д.);
+                    li нанесение ущерба изделию в результате умышленных или ошибочных действий Потребителя;
+                    li нанесения ущерба изделию, вызванного попаданием внутрь изделия посторонних предметов, жидкостей, животных, насекомых и др.;
+                    li наличия следов стороннего вмешательства в изделие или ремонта изделия самостоятельно, либо организациями, предприятиями или частными лицами, не уполномоченными Фабрикой;
+                    li нанесение изделию ущерба в результате внесения изменений в его конструкцию;
+                    li использование изделия в производственных целях.
+
+                p Во всех этих случаях сервисное обслуживание происходит за счет Покупателя по расценкам Фабрики. Характер дефекта определяет эксперт предприятия, который составляет при осмотре мебели акт экспертизы, о чем сообщает Покупателю.
+
+                h4 Порядок предъявления претензий
+
+                ul
+                    li ремонт производится на дому или на Фабрике, в зависимости от характера дефекта;
+                    li бесплатное и платное сервисное обслуживание осуществляется по заявлению Покупателя, поданному в салон, где была приобретена мебель, или в службу сервиса Фабрики. Устранение выявленных недостатков осуществляется службой сервиса Фабрики. Срок исполнения не более 45 календарных  дней с момента подачи заявления Покупателем;
+                    li Фабрика оставляет за собой право на модификацию изделия, способствующую улучшению эксплуатационных свойств мебели.
+
+                h4 Форма для предъявления претензий
+                br
+
+                .c-content-form
+                    #b-form__Guarantee-0.b-form.b-form--Guarantee.b-form--Guarantee631aefba9c044
+
+                        form#tao-form-Guarantee-0.b-form__form.b-form--ajax.b-form--Guarantee.b-form--Guarantee631aefba9c044(method='post' action='#')
+
+                            input#form__form-guarantee--form_id(type='hidden' name='service[form_id]' value='Guarantee631aefba9c044')
+                            input#form__form-guarantee--taoform(type='hidden' name='service[taoform]' value='Guarantee')
+                            input#form__form-guarantee--lang(type='hidden' name='service[lang]' value='ru')
+
+                            .b-form__element.b-form__element--NAME
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--NAME-0')
+                                        span.b-form__marker *
+                                        | Ф.И.О / организация
+                                input#form__form-guarantee--NAME-0.b-form__input.text.field-NAME(type='text' name='NAME' value='' placeholder='')
+
+                            .b-form__element.b-form__element--ADDRESS
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--ADDRESS-0')
+                                        span.b-form__marker *
+                                        | Адрес
+                                input#form__form-guarantee--ADDRESS-0.b-form__input.text.field-ADDRESS(type='text' name='ADDRESS' value='' placeholder='')
+
+                            .b-form__element.b-form__element--PHONE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--PHONE-0')
+                                        span.b-form__marker *
+                                        | Телефон
+                                input#form__form-guarantee--PHONE-0.b-form__input.text.field-PHONE(type='text' name='PHONE' value='' placeholder='')
+
+                            .b-form__element.b-form__element--EMAIL
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--EMAIL-0')
+                                        span.b-form__marker *
+                                        | E-mail
+                                input#form__form-guarantee--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
+
+                            .b-form__element.b-form__element--CONTACT_NAME
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--CONTACT_NAME-0')
+                                        span.b-form__marker *
+                                        | Контактное лицо
+                                input#form__form-guarantee--CONTACT_NAME-0.b-form__input.text.field-CONTACT_NAME(type='text' name='CONTACT_NAME' value='' placeholder='')
+
+                            .b-form__element.b-form__element--TRAIDING_POST
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--TRAIDING_POST-0')
+                                        span.b-form__marker *
+                                        | Торговая точка
+                                input#form__form-guarantee--TRAIDING_POST-0.b-form__input.text.field-TRAIDING_POST(type='text' name='TRAIDING_POST' value='' placeholder='')
+
+                            .b-form__element.b-form__element--NUMBER
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--NUMBER-0')
+                                        span.b-form__marker *
+                                        | Дата и номер договора купли продажи
+                                input#form__form-guarantee--NUMBER-0.b-form__input.text.field-NUMBER(type='text' name='NUMBER' value='' placeholder='')
+
+                            .b-form__element.b-form__element--PRODUCTION_NUMBER
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--PRODUCTION_NUMBER-0')
+                                        span.b-form__marker *
+                                        | Производственный номер
+                                input#form__form-guarantee--PRODUCTION_NUMBER-0.b-form__input.text.field-PRODUCTION_NUMBER(type='text' name='PRODUCTION_NUMBER' value='' placeholder='')
+                                .b-form__descr Указывается в паспорте на изделие и в маркировке на изделии
+
+                            .b-form__element.b-form__element--PRODUCTION_DATE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--PRODUCTION_DATE-0')
+                                        span.b-form__marker *
+                                        | Дата изготовления
+                                input#form__form-guarantee--PRODUCTION_DATE-0.b-form__input.text.field-PRODUCTION_DATE(type='text' name='PRODUCTION_DATE' value='' placeholder='')
+                                .b-form__descr Указывается в паспорте на изделие и в маркировке на изделии
+
+                            .b-form__element.b-form__element--POST_DATE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--POST_DATE-0')
+                                        span.b-form__marker *
+                                        | Дата доставки
+                                input#form__form-guarantee--POST_DATE-0.b-form__input.text.field-POST_DATE(type='text' name='POST_DATE' value='' placeholder='')
+
+                            .b-form__element.b-form__element--MODEL
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--MODEL-0')
+                                        span.b-form__marker *
+                                        | Модель
+                                input#form__form-guarantee--MODEL-0.b-form__input.text.field-MODEL(type='text' name='MODEL' value='' placeholder='')
+
+                            .b-form__element.b-form__element--EQUIPMENT
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--EQUIPMENT-0')
+                                        span.b-form__marker *
+                                        | Комплектация
+                                input#form__form-guarantee--EQUIPMENT-0.b-form__input.text.field-EQUIPMENT(type='text' name='EQUIPMENT' value='' placeholder='')
+
+                            .b-form__element.b-form__element--PRICE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--PRICE-0')
+                                        span.b-form__marker *
+                                        | Стоимость заказа
+                                input#form__form-guarantee--PRICE-0.b-form__input.text.field-PRICE(type='text' name='PRICE' value='' placeholder='')
+
+                            .b-form__element.b-form__element--PROBLEM_DATE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--PROBLEM_DATE-0')
+                                        span.b-form__marker *
+                                        | Дата возникновения проблемы
+                                input#form__form-guarantee--PROBLEM_DATE-0.b-form__input.text.field-PROBLEM_DATE(type='text' name='PROBLEM_DATE' value='' placeholder='')
+
+                            .b-form__element.b-form__element--DESCRIPTION
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--DESCRIPTION-0')
+                                        span.b-form__marker *
+                                        | Описание проблемы
+                                textarea#form__form-guarantee--DESCRIPTION-0.b-form__text.DESCRIPTION(placeholder='' name='DESCRIPTION')
+
+                            .b-form__element.b-form__element--IMAGE1
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--IMAGE1-0')
+                                        | Изображение
+                                input#form__form-guarantee--IMAGE1.b-form__input.upload(type='file' name='IMAGE1' value='')
+
+                            .b-form__element.b-form__element--REQUIREMENTS
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--REQUIREMENTS-0')
+                                        span.b-form__marker *
+                                        | Заявляемые требования
+                                textarea#form__form-guarantee--REQUIREMENTS-0.b-form__text.REQUIREMENTS(placeholder='' name='REQUIREMENTS')
+
+                            .b-form__element.b-form__element--DATE
+                                .b-form__field
+                                    label.b-form__label(for='form__form-guarantee--DATE-0')
+                                        span.b-form__marker *
+                                        | Дата
+                                input#form__form-guarantee--DATE-0.b-form__input.text.field-DATE(type='text' name='DATE' value='' placeholder='')
+
+                            .b-form__element
+                                .b-form__field.c-right-all
+                                    .b-form__fast-result
+                                    .b-form__button Отправить
+
+                            .b-form__element.b-form__element--small
+                                .b-form__comment
+                                    | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                    a(href='#' style='color: #0047ff;') Подробнее...

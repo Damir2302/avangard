@@ -1,0 +1,72 @@
+.b-block-feedback-list__button {
+    margin-bottom: 2rem
+}
+
+.b-block-feedback-list__item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f1f1f1
+}
+
+.b-block-feedback-list__item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0
+}
+
+.b-block-feedback-list__item>:last-child {
+    margin-bottom: 0
+}
+
+.b-block-feedback-list__date {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: .5rem;
+    line-height: 1
+}
+
+.b-block-feedback-list__score {
+    display: inline-block;
+    margin-left: 1rem;
+    line-height: 1
+}
+
+.b-block-feedback-list__score-star {
+    margin-right: .2rem
+}
+
+.b-block-feedback-list__name {
+    font-weight: 700
+}
+
+.b-block-feedback-list__comment {
+    margin-bottom: .5rem
+}
+
+.b-block-feedback-list__answer {
+    background-color: #f1f1f1;
+    padding: 2rem 4rem
+}
+
+.b-block-feedback-list__answer>:last-child {
+    margin-bottom: 0
+}
+
+.b-block-vacancies {
+    margin: 0 0 4rem
+}
+
+.b-block-vacancies__descr,.b-block-vacancies__prop {
+    margin-bottom: 2rem
+}
+
+.b-block-vacancies__prop-name {
+    font-weight: 700
+}
+
+.b-block-vacancies__form {
+    margin-left: -2rem;
+    padding: 2rem;
+    background-color: #f8f8f8
+}

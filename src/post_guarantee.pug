@@ -1,0 +1,131 @@
+---
+title: Avangard | Постгарантийное обслуживание
+bodyClass: b-layout b-layout--page_post-production
+page: pos_guarantee
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Услуги', 'Постгарантийное обслуживание')
+
+            h1 Постгарантийное обслуживание
+
+            .b-block-production-list.b-block-production-list--type_big.b-block-production-list--margin_big
+                .b-block-production-list__items
+
+                    .b-block-production-list__col
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-1.svg');")
+                                .b-block-production-list__item-name Замена чехла, обивки, матраса или механизма
+                            .b-block-production-list__item-buttons
+                                .b-block-production-list__item-button-click.c-button.c-button--color_red(data-id='1') Заказать
+                            .b-block-production-list__item-descr
+                                | Испачкался съемный чехол? Мы заменим его на дому. Износилась обивка дивана или вы хотите обновить дизайн? Мы заберем мебель на фабрику, поможем подобрать новую ткань и выполним переобивку. Узнайте подробнее,
+                                a(href='#') когда нужна замена ткани
+                                | . Если испортился механизм дивана или пришел в негодность матрас, мы с легкостью их заменим. Ваша мебель обретет новую жизнь и прослужит еще несколько лет!
+                            img.b-block-production-list__item-img(src='assets/images/production5.jpg' alt='Замена чехла, обивки, матраса или механизма')
+
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-2.svg');")
+                                .b-block-production-list__item-name Перетяжка моделей, снятых с производства
+                            .b-block-production-list__item-buttons
+                                .b-block-production-list__item-button-click.c-button.c-button--color_red(data-id='2') Заказать
+                            .b-block-production-list__item-descr Старый диван вышел из строя, а фабрика сняла эту модель с производства? Необязательно покупать новую мебель! Полноценная и качественная поддержка доступна в любой момент. Мы выполним переобивку, ремонт каркаса, регулировку механизма, замену мягких элементов, поврежденных деталей и комплектующих.
+                            img.b-block-production-list__item-img(src='assets/images/production6.jpg' alt='Перетяжка моделей, снятых с производства')
+
+                    .b-block-production-list__col
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-3.svg');")
+                                .b-block-production-list__item-name Реставрация декора
+                            .b-block-production-list__item-buttons
+                                .b-block-production-list__item-button-click.c-button.c-button--color_red(data-id='3') Заказать
+                            .b-block-production-list__item-descr Если декоративные элементы или другие части мебели после окончания гарантийного срока оказались изношены или повреждены, мы выполним их реставрацию или полную замену. Возможен ремонт деталей мебели из массива, восстановление повреждений, а также изготовление и монтаж новых частей. Проконсультируйтесь со специалистом фабрики.
+                            img.b-block-production-list__item-img(src='assets/images/production7.jpg' alt='Реставрация декора')
+
+                        .b-block-production-list__item
+                            .b-block-production-list__item-title
+                                .b-block-production-list__item-ico(style="background-image: url('assets/images/ico-4.svg');")
+                                .b-block-production-list__item-name Химчистка мебели
+                            .b-block-production-list__item-buttons
+                                .b-block-production-list__item-button-click.c-button.c-button--color_red(data-id='4') Заказать
+                            .b-block-production-list__item-descr Даже при соблюдении правил эксплуатации, с течением времени обивка мебели загрязняется и накапливает пыль. Мебельная ткань не предназначена для стирки в домашних условиях. Чтобы вернуть дивану чистоту и свежесть — закажите у нас услугу специализированной химчистки.
+                            img.b-block-production-list__item-img(src='assets/images/production8.jpg' alt='Химчистка мебели')
+
+            h4 Закажите постгарантийное обслуживание
+            br
+            .c-content-form
+                #b-form__Postguarantee-0.b-form.b-form--Postguarantee.b-form--Postguarantee631b133f0bf18
+
+                    form#tao-form-Postguarantee-0.b-form__form.b-form--ajax.b-form--Postguarantee.b-form--Postguarantee631b133f0bf18(method='post' action='')
+
+                        input#form__form-post-guarantee--form_id(type='hidden' name='service[form_id]' value='Postguarantee631b133f0bf18')
+                        input#form__form-post-guarantee--taoform(type='hidden' name='service[taoform]' value='Postguarantee')
+                        input#form__form-post-guarantee--lang(type='hidden' name='service[lang]' value='ru')
+
+                        .b-form__element.b-form__element--SERVICES
+                            .b-form__field
+                                label.b-form__label(for='form__form-post-guarantee--SERVICES-0')
+                                    span.b-form__marker *
+                                select#form__form-post-guarantee--SERVICES.b-form__select.select.field-SERVICES(name='SERVICES')
+                                    option.item(value='1') Замена чехла, обивки, матраса или механизма
+                                    option.item(value='2') Перетяжка моделей, снятых с производства
+                                    option.item(value='3') Реставрация декора
+                                    option.item(value='4') Химчистка мебели
+
+                        .b-form__element.b-form__element--NAME
+                            .b-form__field
+                                label.b-form__label(for='form__form-post-guarantee--NAME-0')
+                                    span.b-form__marker *
+                                    | Имя
+                                input#form__form-post-guarantee--NAME-0.b-form__input.text.field-NAME(type='text' name='NAME' value='' placeholder='')
+
+                        .b-form__element.b-form__element--PHONE
+                            .b-form__field
+                                label.b-form__label(for='form__form-post-guarantee--PHONE-0')
+                                    span.b-form__marker *
+                                    | Телефон
+                                input#form__form-post-guarantee--PHONE-0.b-form__input.text.field-PHONE(type='text' name='PHONE' value='' placeholder='')
+
+                        .b-form__element.b-form__element--EMAIL
+                            .b-form__field
+                                label.b-form__label(for='form__form-post-guarantee--EMAIL-0')
+                                    span.b-form__marker *
+                                    | E-mail
+                                input#form__form-post-guarantee--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
+
+                        .b-form__element.b-form__element--COMMENT
+                            .b-form__field
+                                label.b-form__label(for='form__form-post-guarantee--COMMENT-0')
+                                    | Комментарий
+                                textarea#form__form-post-guarantee--COMMENT-0.b-form__text.COMMENT(placeholder='' name='COMMENT')
+
+                        .b-form__element
+                            .b-form__field.c-right-all
+                                .b-form__fast-result
+                                .b-form__button Отправить
+
+                        .b-form__element
+                            .b-form__description
+                                .c-h4.c-strong
+                                    | Или позвоните по телефону
+                                    br
+                                    span.c-color-red
+                                        a(href='tel:+79165215654') +7 (916) 521-56-54
+
+                        .b-form__element.b-form__element--small(style='')
+                            .b-form__comment
+                                | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                a(href='/privacy_policy/' style='color: #0047ff;') Подробнее...

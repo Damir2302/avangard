@@ -1,0 +1,102 @@
+---
+title: Avangard | Вакансии
+bodyClass: b-layout b-layout--page_vacancies
+page: about
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('О фабрике', 'Вакансии')
+
+            h1 Вакансии
+
+            .b-block-vacancies
+                .b-block-vacancies__items.b-block-accordion.accordion
+                    .b-block-vacancies__item.b-block-accordion__title.accordion-title Продавец-консультант
+
+                    .b-block-vacancies__body.b-block-accordion__body.accordion-body.c-adaptive-width-80
+                        .b-block-vacancies__descr Приглашаем молодых, амбициозных, креативных, желающих развиваться!
+
+                        .b-block-vacancies__prop
+                            .b-block-vacancies__prop-name Требования
+                            .b-block-vacancies__prop-descr Опыт работы от 0,5 года в розничной торговле (ТНП). Грамотная речь, навыки делового общения.
+
+                        .b-block-vacancies__prop
+                            .b-block-vacancies__prop-name Условия работы
+                            .b-block-vacancies__prop-descr Режим работы согласно режима работы торгового центра.
+
+                        .b-block-vacancies__prop
+                            .b-block-vacancies__prop-name Оплата
+                            .b-block-vacancies__prop-descr Фиксированный оклад + проценты с продаж + премии, от 40 000 тысяч рублей. Оформление согласно ТК РФ.
+
+                        .b-block-vacancies__prop
+                            .b-block-vacancies__prop-name Дополнительно
+                            .b-block-vacancies__prop-descr
+                                | ТЦ «ЗВЕЗДНЫЙ», г. Королев, ул. Силикатная, д. 11.
+                                br
+                                | ТЦ «Мосмарт», Боровское шоссе, Ленинский район, строение 20.
+
+                        .b-block-vacancies__form
+                            #b-form__Vacancies-548.b-form.b-form--Vacancies.b-form--Vacancies631b413d54829
+                                .b-form__title Откликнуться на вакансию
+
+                                form#tao-form-Vacancies-548.b-form__form.b-form--ajax.b-form--Vacancies.b-form--Vacancies631b413d54829(method='post' action='')
+                                    input#form__form-vacancies--form_id(type='hidden' name='service[form_id]' value='Vacancies631b413d54829')
+                                    input#form__form-vacancies--taoform(type='hidden' name='service[taoform]' value='Vacancies')
+                                    input#form__form-vacancies--lang(type='hidden' name='service[lang]' value='ru')
+                                    input.text.field-VACANCY(type='hidden' name='VACANCY' value='548')
+
+                                    .b-form__element.b-form__element--FIO
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-vacancies--FIO-548')
+                                                span.b-form__marker *
+                                                | Имя
+                                            input#form__form-vacancies--FIO-548.b-form__input.text.field-FIO(type='text' name='FIO' value='' placeholder='')
+
+                                    .b-form__element.b-form__element--PHONE
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-vacancies--PHONE-548')
+                                                span.b-form__marker *
+                                                | Телефон
+                                            input#form__form-vacancies--PHONE-548.b-form__input.text.field-PHONE(type='text' name='PHONE' value='' placeholder='')
+
+                                    .b-form__element.b-form__element--FILE
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-vacancies--FILE-548')
+                                                span.b-form__marker *
+                                                | Ваше резюме
+                                            input#form__form-vacancies--FILE.b-form__input.upload(type='file' name='FILE' value='')
+
+                                    .b-form__element.b-form__element--COMMENT
+                                        .b-form__field
+                                            label.b-form__label(for='form__form-vacancies--COMMENT-548') Комментарий
+                                            input#form__form-vacancies--COMMENT-548.b-form__input.text.field-COMMENT(type='text' name='COMMENT' value='' placeholder='')
+
+                                    .b-form__element
+                                        .b-form__field.c-right-all
+                                            .b-form__fast-result
+                                            .b-form__button Отправить
+
+                                    .b-form__element.b-form__element--small
+                                        .b-form__comment
+                                            | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                            a(href='#' style='color: #0047ff;') Подробнее...
+
+            p Мебельная фабрика Авангард признана "Привлекательным работодателем" по результатам работы с порталом SuperJob в 2020 году.
+            p
+                | Если Вы не нашли интересующую вакансию в списке, отправьте свое резюме на адрес
+                a(href='mailto:info@avangard.biz') info@avangard.biz
+                | , мы обязательно его рассмотрим и в случае взаимной заинтересованности обязательно с Вами свяжемся!
+            p
+                | Или позвоните нам по телефону:
+                b (495) 357-13-00

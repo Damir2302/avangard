@@ -1,0 +1,46 @@
+---
+title: Avangard | Избранное
+bodyClass: b-layout b-layout--page_favourites
+page: favourites
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Избранное')
+
+            h1 Избранное
+
+            .b-block-products
+                .b-block-products__items
+                    .b-block-products__item
+                        a.b-block-products__link(href='#')
+                        .b-block-products__favourites-ico(data-id='476')
+                            svg.b-block-products__favourites-svg(width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M2 8.1005C2 9.23281 2.44772 10.2579 3.17157 11L10 18L16.8284 11C17.5523 10.2579 18 9.23281 18 8.1005C18 5.83583 16.2091 4 14 4C12 4 11 5.02513 10 6.05025C9 5.02513 8 4 6 4C3.79086 4 2 5.83583 2 8.1005Z' stroke='#EE1D24' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+                        .b-block-products__icons
+                        .b-block-products__image
+                            .b-block-products__img(style="background-image: url('/upload/iblock/ed7/ed7135d9fde3541ab9f39e5bf4b91250.jpg');")
+                        .b-block-products__content
+                            .b-block-products__name Амадеус
+                            .b-block-products__content-wrap
+                            .b-block-products__text
+                            .b-block-products__text
+                            hr.b-block-products__line
+                            .b-block-products__content-wrap
+                            .b-block-products__text.b-block-products__text--grey
+                            .b-block-products__text.b-block-products__text--grey
+                                | Цена от:
+                                b.b-block-products__price
+
+            p.ml-favourites-no-txt У Вас пока ничего нет в Избранном. Добавьте сюда любые понравившиеся товары.
+

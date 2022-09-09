@@ -1,0 +1,83 @@
+---
+title: Avangard | Статьи
+bodyClass: b-layout b-layout--page_articles-list
+page: articles
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Полезная информация', 'Статьи')
+
+            h1 Статьи
+
+            .b-block-articles-list
+                .b-block-articles-list__items
+                    .b-block-articles-list__dotted-1.c-dotted
+                    .b-block-articles-list__dotted-2.c-dotted
+
+                    .b-block-articles-list__item
+                        a.b-block-articles-list__link(href='#')
+                        img.b-block-articles-list__img(src='assets/images/d25fb60cb9922b8879bd12a2d48f7305.png')
+                        .b-block-articles-list__content
+                            .b-block-articles-list__date 12.04.2021
+                            .b-block-articles-list__txt
+                                .b-block-articles-list__name Мал да удал: чем хорош диван-кушетка
+                                .b-block-articles-list__descr Когда-то кушетка была неотъемлемой частью интерьера аристократов. Небольшой декоративный диванчик, часто с одним локотником, размещался в будуарах или комнатах для приема гостей.
+
+                    .b-block-articles-list__item
+                        a.b-block-articles-list__link(href='#')
+                        img.b-block-articles-list__img(src='assets/images/d25fb60cb9922b8879bd12a2d48f7305.png')
+                        .b-block-articles-list__content
+                            .b-block-articles-list__date 12.04.2021
+                            .b-block-articles-list__txt
+                                .b-block-articles-list__name Мал да удал: чем хорош диван-кушетка
+                                .b-block-articles-list__descr Когда-то кушетка была неотъемлемой частью интерьера атъемлемой частью интерьера атъемлемой частью интерьера атъемлемой частью интерьера аристократов. Небольшой декоративный диванчик, часто с одним локотником, размещался в будуарах или комнатах для приема гостей.
+
+                    .b-block-articles-list__item
+                        a.b-block-articles-list__link(href='#')
+                        img.b-block-articles-list__img(src='assets/images/d25fb60cb9922b8879bd12a2d48f7305.png')
+                        .b-block-articles-list__content
+                            .b-block-articles-list__date 12.04.2021
+                            .b-block-articles-list__txt
+                                .b-block-articles-list__name Мал да удал: чем хорош диван-кушетка
+                                .b-block-articles-list__descr Когда-то кушетка была неотъемлемой частью интерьера аристократов. Небольшой декоративный диванчик, часто с одним локотником, размещался в будуарах или комнатах для приема гостей.
+
+                    .b-block-articles-list__item
+                        a.b-block-articles-list__link(href='#')
+                        img.b-block-articles-list__img(src='assets/images/d25fb60cb9922b8879bd12a2d48f7305.png')
+                        .b-block-articles-list__content
+                            .b-block-articles-list__date 12.04.2021
+                            .b-block-articles-list__txt
+                                .b-block-articles-list__name Мал да удал: чем хорош диван-кушетка
+                                .b-block-articles-list__descr Когда-то кушетка была неотъемлемой частью интерьера аристократов. Небольшой декоративный диванчик, часто с одним локотником, размещался в будуарах или комнатах для приема гостей.
+
+                    .b-block-articles-list__item
+                        a.b-block-articles-list__link(href='#')
+                        img.b-block-articles-list__img(src='assets/images/d25fb60cb9922b8879bd12a2d48f7305.png')
+                        .b-block-articles-list__content
+                            .b-block-articles-list__date 12.04.2021
+                            .b-block-articles-list__txt
+                                .b-block-articles-list__name Мал да удал: чем хорош диван-кушетка
+                                .b-block-articles-list__descr Когда-то кушетка была неотъемлемой частью интерьера аристократов. Небольшой декоративный диванчик, часто с одним локотником, размещался в будуарах или комнатах для приема гостей.
+
+            .b-pagination
+                .b-pagination__arrows.navigation-arrows(style='display: none;')
+                    span.arrow ←
+                    span.ctrl  ctrl
+                    span.disabled Пред.
+                    a#navigation_1_next_page(href='#') След.
+                    span.ctrl ctrl
+                    span.arrow →
+                .b-pagination__items
+                    span.b-pagination__item.b-pagination__item--current 1
+                    a.b-pagination__item(href='#') 2

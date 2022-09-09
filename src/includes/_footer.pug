@@ -7,9 +7,14 @@ block footer
 
             .b-footer__top
 
-                if page == 'main'
-                    .b-footer__top-share
-                        .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
+                case page
+                    when 'catalog'
+                        div
+                    when 'product'
+                        div
+                    default
+                        .b-footer__top-share
+                            .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
 
                 .b-footer__top-left
                     #b-form__Questions-0.b-form.b-form--Questions.b-form--Questions630db262e184b
@@ -24,14 +29,14 @@ block footer
                                 .b-form__field
                                     label.b-form__label(for='form__questions--FIO-0')
                                         span.b-form__marker *
-                                        | Имя
+                                        |  Имя
                                     input#form__questions--FIO-0.b-form__input.text.field-FIO(type='text' name='FIO' value='' placeholder='')
 
                             .b-form__element.b-form__element--EMAIL
                                 .b-form__field
                                     label.b-form__label(for='form__questions--EMAIL-0')
                                         span.b-form__marker *
-                                        | E-mail
+                                        |  E-mail
                                     input#form__questions--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
 
                             .b-form__element.b-form__element--QUESTION

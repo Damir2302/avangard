@@ -1,0 +1,47 @@
+---
+title: Avangard | Контакты
+bodyClass: b-layout b-layout--page-contacts
+page: contacts
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Контакты')
+
+            h1 Контакты
+
+            .b-contacts
+                .b-contacts__left
+                    p
+                        | Фабрика Авангард,
+                        br
+                        | 141281, Московская обл., г. Ивантеевка, ул. Заречная, д. 1, территория ООО «ИВНИТЬ»
+                    p 17-й км. МКАД; Ярославское шоссе; 14 км. от МКАД, поворот на санаторий «Рускаково», далее всё время по прямой до территории ООО «ИВНИТЬ»
+
+                .b-contacts__right
+                    .b-contacts__phone.click-phone
+                        a(href='tel:+79165644460') +7 (916) 564-44-60
+                        br
+                        a(href='tel:+79165644460') +7 (916) 564-44-60
+                    .b-contacts__phone-text ежедневно с 9:00 до 18:00
+                    .b-contacts__mail
+                        a(href='mailto:info@avangard.biz') info@avangard.biz
+
+                .b-contacts__map
+                    .b-block-yandex-map(style="background: url('https://static-maps.yandex.ru/1.x/?ll=37.924969,55.970979&z=17&l=map&size=650,450') center center no-repeat; background-size: cover;" data-auto-load='yes' data-load='no' data-map-id='1')
+                        .b-block-yandex-map__preloader
+                        script(type='text/javascript').
+                            var yandexMapOptions_1 = {center: [55.970979, 37.924969], zoom: 17, };
+                            var yandexMapMarkGeometry_1 = [[55.970979, 37.924969],];
+                            var yandexMapMarkProperties_1 = [{balloonContent: 'Территория ООО «ИВНИТЬ»', },];
+                            var yandexMapMarkOptions_1 = [];

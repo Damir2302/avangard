@@ -1,0 +1,33 @@
+---
+title: Avangard | Дилерам
+bodyClass: b-layout b-layout--page-info
+page: info
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Партнерство', 'Дилерам')
+
+            h1 Дилерам
+
+            .b-block-text-files
+                .b-block-text-files__description
+                    div Если вы хотите стать нашим дилером, звоните нам по телефонам:
+                    div
+                        a(href='tel:+74953571300') 8 (495) 357 13 00
+                    div
+                        a(href='tel:+79164065750') 8 (916) 406 57 50
+                    br
+                    div Или пишите на электронную почту:
+                    div
+                        a(href='mailto:info@avangard.biz') info@avangard.biz
