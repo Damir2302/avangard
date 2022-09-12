@@ -1,0 +1,121 @@
+---
+title: Avangard | Поиск
+bodyClass: b-layout b-layout--page_search
+page: search
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('Результаты поиска')
+
+            h1 Результаты поиска
+
+            .b-search-page.search-page.c-adaptive-width-80
+
+                form.b-search-page__form(action='' method='get')
+                    input(type='hidden' name='tags' value='')
+                    input(type='hidden' name='how' value='r')
+                    input.b-search-page__form-query.search-query(type='text' name='q' value='' placeholder='поиск')
+                    input.b-search-page__form-button.search-button(type='submit' value='')
+
+                noindex
+                    .b-search-page__advanced.search-advanced
+                    .b-search-page__advanced-result.search-advanced-result
+
+                .b-search-page__result.search-result
+
+                    // Результаты поиска::Start
+                    .b-search-page__item.search-item
+                        .b-search-page__item-name
+                            a.b-search-page__item-link(href='#') Подбор дивана по знаку зодиака
+                        .b-search-page__item-preview.search-preview
+                            | В былые времена люди выбирали
+                            b диваны
+                            |  из пенополиуретана, полагаясь исключительно на толщину своего кошелька и вкусовые пристрастия
+                            | В былые времена люди выбирали
+                            b диваны
+                            |  ...
+                    // Результаты поиска::End
+
+                    // Ничего не найдено::Start
+                    .b-search-page__message К сожалению, на ваш поисковый запрос ничего не найдено.
+                    // Ничего не найдено::End
+
+                    // Пустой запрос::Start
+                    p В поисковой фразе обнаружена ошибка:
+                    p
+                        font.errortext Пустой поисковый запрос (запрос не содержит букв или цифр).
+                    p Исправьте поисковую фразу и повторите поиск.
+                    br
+                    br
+                    p
+                        b Синтаксис поискового запроса:
+                        br
+                        br
+                        | Обычно запрос представляет из себя просто одно или несколько слов, например:
+                        br
+                        i контактная информация
+                        br
+                        | По такому запросу будут найдены страницы, на которых встречаются оба слова запроса.
+                        br
+                        br
+                        | Логические операторы позволяют строить более сложные запросы, например:
+                        br
+                        i контактная информация или телефон
+                        br
+                        | По такому запросу будут найдены страницы, на которых встречаются либо слова "контактная" и "информация", либо слово "телефон".
+                        br
+                        br
+                        i контактная информация не телефон
+                        br
+                        |  По такому запросу будут найдены страницы, на которых встречаются либо слова "контактная" и "информация", но не встречается слово "телефон".
+                        br
+                        |  Вы можете использовать скобки для построения более сложных запросов.
+                        br
+                        br
+                        b Логические операторы:
+
+                    table(border='0' cellpadding='5')
+                        tbody
+                            tr
+                                td(align='center' valign='top') Оператор
+                                td(valign='top')  Синонимы
+                                td Описание
+                            tr
+                                td(align='center' valign='top') и
+                                td(valign='top') and, &, +
+                                td
+                                    | Оператор
+                                    i логическое "и"
+                                    |  подразумевается, его можно опускать: запрос "контактная информация" полностью эквивалентен запросу "контактная и информация".
+                            tr
+                                td(align='center' valign='top') или
+                                td(valign='top') or, |
+                                td
+                                    | Оператор
+                                    i логическое "или"
+                                    |  позволяет искать товары, содержащие хотя бы один из операндов.
+                            tr
+                                td(align='center' valign='top') не
+                                td(valign='top') not, ~
+                                td
+                                    | Оператор
+                                    i логическое "не"
+                                    |  ограничивает поиск страниц, не содержащих слово, указанное после оператора.
+                            tr
+                                td(align='center' valign='top') ( )
+                                td(valign='top')
+                                td
+                                    i Круглые скобки
+                                    |  задают порядок действия логических операторов.
+                    // Пустой запрос::End

@@ -1,0 +1,33 @@
+---
+title: Avangard | Наши партнеры
+bodyClass: b-layout b-layout--page-partners-list
+page: about
+---
+
+extends includes/_page
+
+block main
+
+    main.b-layout__main.no_main
+
+        .b-layout__main-global
+
+        .b-layout__main-content
+            .b-layout__main-content-dots.c-dotted
+
+            include components/_breadcrumbs
+            +breadcrumbs('О фабрике', 'Наши партнеры')
+
+            h1 Наши партнеры
+
+            .b-block-partners-list
+                .b-block-partners-list__items
+
+                    .b-block-partners-list__item
+                        a.b-block-partners-list__link(href='vkusnoitochka.ru' target='_blank' rel='nofollow')
+                        .b-block-partners-list__image(href='vkusnoitochka.ru' target='_blank')
+                            img.b-block-partners-list__img(src='assets/images/vkusnoitochka.ru.png')
+                            span.b-block-partners-list__url vkusnoitochka.ru
+                        .b-block-partners-list__content
+                            .b-block-partners-list__name Вкусно - и точка!
+                            .b-block-partners-list__descr Лидера в сфере предприятий быстрого обслуживания в России.
