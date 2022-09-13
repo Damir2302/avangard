@@ -33,32 +33,89 @@ block main
                         .b-product__favourites-text-active убрать из избранного
 
                     .b-product__properties-public
+                        .b-block-properties-watched
+                            .watched-icon
+                                .fal.fa-eye
+                            span
+                                | Уже&nbsp;
+                                b 729
+                                | &nbsp;человек смотрели этот товар сегодня
                         .b-block-properties-public
                             .b-block-properties-public__item
                                 .b-block-properties-public__name Комплектность
                                 span.b-block-properties-public__value Кресло-кровать
                             .b-block-properties-public__item
-                                .b-block-properties-public__name Ширина
-                                span.b-block-properties-public__value 960 / 1060
-                            .b-block-properties-public__item
-                                .b-block-properties-public__name Глубина
-                                span.b-block-properties-public__value 1080
+                                .b-block-properties-public__name Механизм
+                                span.b-block-properties-public__value Аккордеон
                             .b-block-properties-public__item
                                 .b-block-properties-public__name Высота
                                 span.b-block-properties-public__value 900
                             .b-block-properties-public__item
+                                .b-block-properties-public__name Глубина
+                                span.b-block-properties-public__value 1080
+                            .b-block-properties-public__item.b-block-properties-has-child
                                 .b-block-properties-public__name Спальное место
-                                span.b-block-properties-public__value 700х2000 / 800х2000
+                                span.b-block-properties-public__value 1200x2000
+                                ul.b-block-properties-list
+                                    li 900x1600
+                                    li 1000x2000
+                                    li 1100x1900
+                                    li 1200x2000
                             .b-block-properties-public__item
-                                .b-block-properties-public__name Механизм
-                                span.b-block-properties-public__value аккордеон
+                                .b-block-properties-public__name Ширина
+                                span.b-block-properties-public__value 1510
+
+                        .b-block-mattresses
+
+                            .b-block-properties__item
+                                .b-block-properties-public__name Выбор матраса
+                                span.b-block-properties-public__value OPTO-1
+
+                            .b-block-mattresses-list
+
+                                .b-block-mattresses__item.selected
+                                    .b-block-mattresses__image
+                                        img.b-block-mattresses__img(src='assets/images/5c4d1d321acb8426838f7137a3c833d1.jpg' alt='ОРТО-1')
+                                    .b-block-mattresses__name ОРТО-1
+
+                                .b-block-mattresses__item
+                                    .b-block-mattresses__image
+                                        img.b-block-mattresses__img(src='assets/images/9aa67eb3969029d2ea84fd44e2c73fcc.jpg' alt='ОРТО-2')
+                                    .b-block-mattresses__name ОРТО-2
+
+                                .b-block-mattresses__item
+                                    .b-block-mattresses__image
+                                        img.b-block-mattresses__img(src='assets/images/96278e3c1766aa7bcc3108ac6069e967.jpg' alt='ОРТО-3')
+                                    .b-block-mattresses__name ОРТО-3
+
+                                .b-block-mattresses__item
+                                    .b-block-mattresses__image
+                                        img.b-block-mattresses__img(src='assets/images/9aa67eb3969029d2ea84fd44e2c73fcc.jpg' alt='ОРТО-4')
+                                    .b-block-mattresses__name ОРТО-4
+
+                                .b-block-mattresses__item
+                                    .b-block-mattresses__image
+                                        img.b-block-mattresses__img(src='assets/images/96278e3c1766aa7bcc3108ac6069e967.jpg' alt='ОРТО-5')
+                                    .b-block-mattresses__name ОРТО-5
 
                     .b-product__price
-                        | Цена: от
-                        span.b-product__price-val 67 593₽
+                        | Цена: от&nbsp;&nbsp;
+                        span.b-product__price-val 71 388₽
+
+                    .b-product__credit
+                        .b-product__credit-text Доступна рассрочка
+                        .b-product__credit-select
+                            .b-product__credit-price от 2975 ₽
+                            .b-product__credit-period
+                                .b-product__credit-period-val 24 мес.
+                                ul.b-product__credit-period-select
+                                    li 12 мес.
+                                    li 18 мес.
+                                    li 24 мес.
 
                     .b-product__buttons
                         .b-product__button-buy.c-button.c-button--color_red Хочу купить
+                        .b-product__button-buy.c-button.c-button--red Где купить?
 
                     .b-product__share
                         .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='m' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
@@ -74,70 +131,10 @@ block main
                             .b-product__slider-container.swiper-container
                                 .b-product__slider-wrapper.swiper-wrapper
                                     .b-product__slider-slide.b-product__slider-slide--active.swiper-slide(data-id="0" style="background-image: url('assets/images/item-24242.jpg');")
-                                    .b-product__slider-slide.swiper-slide(data-id="1" style="background-image: url('assets/images/item-24242.jpg');")
+                                    .b-product__slider-slide.swiper-slide(data-id="1" style="background-image: url('assets/images/0e3b12ad050d3d35a9854e8619393b7c.jpg');")
 
                 .b-product__accordion
                     .b-block-accordion.accordion(data-active-element="1")
-
-                        .b-block-accordion__title.accordion-title
-                            span.b-block-accordion__name Описание
-                        .b-block-accordion__body.accordion-body кресло-кровать
-
-                        .b-block-accordion__title.accordion-title
-                            span.b-block-accordion__name Все характеристики
-                        .b-block-accordion__body.accordion-body
-                            .b-block-properties
-                                .b-block-properties__item
-                                    .b-block-properties__name Комплектность
-                                    span.b-block-properties__value Кресло-кровать
-                                .b-block-properties__item
-                                    .b-block-properties__name Ширина
-                                    span.b-block-properties__value 960 / 1060
-                                .b-block-properties__item
-                                    .b-block-properties__name Глубина
-                                    span.b-block-properties__value 1080
-                                .b-block-properties__item
-                                    .b-block-properties__name Высота
-                                    span.b-block-properties__value 900
-                                .b-block-properties__item
-                                    .b-block-properties__name Спальное место
-                                    span.b-block-properties__value 700х2000 / 800х2000
-                                .b-block-properties__item
-                                    .b-block-properties__name Размер в разложенном виде
-                                    span.b-block-properties__value 2150
-                                .b-block-properties__item
-                                    .b-block-properties__name Глубина сиденья
-                                    span.b-block-properties__value 600
-                                .b-block-properties__item
-                                    .b-block-properties__name Высота сиденья от пола
-                                    span.b-block-properties__value 450
-                                .b-block-properties__item
-                                    .b-block-properties__name Механизм
-                                    span.b-block-properties__value аккордеон
-                                .b-block-properties__item
-                                    .b-block-properties__name Материал каркаса
-                                    span.b-block-properties__value бук
-                                .b-block-properties__item
-                                    .b-block-properties__name Тип каркаса
-                                    span.b-block-properties__value Металлокаркас
-                                .b-block-properties__item
-                                    .b-block-properties__name Ортопедическое основание
-                                    span.b-block-properties__value Да
-                                .b-block-properties__item
-                                    .b-block-properties__name Настилочный материал
-                                    span.b-block-properties__value Высокоэластичная пена
-                                .b-block-properties__item
-                                    .b-block-properties__name Материал обивки
-                                    span.b-block-properties__value Ткань
-                                .b-block-properties__item
-                                    .b-block-properties__name Съемный чехол
-                                    span.b-block-properties__value Да
-                                .b-block-properties__item
-                                    .b-block-properties__name Особенности
-                                    span.b-block-properties__value 5 вариантов чехлов
-                                .b-block-properties__item
-                                    .b-block-properties__name Наличие ящика
-                                    span.b-block-properties__value Нет
 
                         .b-block-accordion__title.accordion-title
                             span.b-block-accordion__name Цвет массива
@@ -187,83 +184,6 @@ block main
                                     .b-block-colors__color
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/284a72db54030fc8b2412baece21ebda.jpg');")
                                     .b-block-colors__name Покраска по RAL
-
-                        .b-block-accordion__title.accordion-title
-                            span.b-block-accordion__name Где купить
-                        .b-block-accordion__body.accordion-body
-                            p.c-shops-column
-                                a(href='#') БЦ Румянцево
-                            p
-                                a(href='#') Гипермаркет Интерьер Плаза
-                            p.c-shops-column
-                                a(href='#') МебельГрад
-                            p
-                                a(href='#') Мебельгуд
-                            p.c-shops-column
-                                a(href='#') МебельМаркет (Чайнатаун)
-                            p
-                                a(href='#') МТК Армада
-                            p.c-shops-column
-                                a(href='#') МЦ ROOMER
-                            p
-                                a(href='#') Твой Дом
-                            p.c-shops-column
-                                a(href='#') ТК Три Кита
-                            p
-                                a(href='#') Торговый центр «Мебель Молл»
-                            p.c-shops-column
-                                a(href='#') ТЦ  Город Косино
-                            p
-                                a(href='#') ТЦ «Атлас»
-                            p.c-shops-column
-                                a(href='#') ТЦ Большая медведица
-                            p
-                                a(href='#') ТЦ Вагант
-                            p.c-shops-column
-                                a(href='#') ТЦ ГОРОД
-                            p
-                                a(href='#') ТЦ Грант
-                            p.c-shops-column
-                                a(href='#') ТЦ Империя
-                            p
-                                a(href='#') ТЦ Каширский двор
-                            p.c-shops-column
-                                a(href='#') ТЦ Комод
-                            p
-                                a(href='#') ТЦ Красный кит
-                            p.c-shops-column
-                                a(href='#') ТЦ Мебель
-                            p
-                                a(href='#') ТЦ Мебель Гуд
-                            p.c-shops-column
-                                a(href='#') ТЦ Формат
-                            p
-                                a(href='#') ТЦ Эдельвейс
-
-                        .b-block-accordion__title.accordion-title
-                            span.b-block-accordion__name Матрасы
-                        .b-block-accordion__body.accordion-body
-                            .b-block-mattresses
-                                .b-block-mattresses__item
-                                    .b-block-mattresses__type
-                                        .b-block-mattresses__image
-                                            img.b-block-mattresses__img(src='assets/images/5c4d1d321acb8426838f7137a3c833d1.jpg' alt='Матрас ОРТО-1')
-                                        .b-block-mattresses__name Матрас ОРТО-1
-                                        .b-block-mattresses__descr Эта модель матраса реализует эффект “слоеного пирога”, который обеспечивает ощущение мягкой упругости, то есть комфорта и умеренно жесткой поддержки позвоночника в местах естественных изгибов.
-
-                                .b-block-mattresses__item
-                                    .b-block-mattresses__type
-                                        .b-block-mattresses__image
-                                            img.b-block-mattresses__img(src='assets/images/9aa67eb3969029d2ea84fd44e2c73fcc.jpg' alt='Матрас ОРТО-2')
-                                        .b-block-mattresses__name Матрас ОРТО-2
-                                        .b-block-mattresses__descr В данной модели за счет высокой плотности и латексных добавок работает эффект “миллиона пружинок”, которые более жестко поддерживают естественные изгибы позвоночника.
-
-                                .b-block-mattresses__item
-                                    .b-block-mattresses__type
-                                        .b-block-mattresses__image
-                                            img.b-block-mattresses__img(src='assets/images/96278e3c1766aa7bcc3108ac6069e967.jpg' alt='Матрас ОРТО-3')
-                                        .b-block-mattresses__name Матрас ОРТО-3
-                                        .b-block-mattresses__descr Благодаря своей сложной конструкции такой матрас обеспечивает владельцу эффект «stretching», то есть легкого вытяжения позвоночника, что снижает давление между позвонками.
 
             h3 Похожие товары
 

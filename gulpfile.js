@@ -224,22 +224,22 @@ function cleancss(cb) {
     cb();
 }
 
-function jsPlugins(cb) {
-	return gulp.src([
-        pathTo.resolve('node_modules', 'jquery/*/jquery.min.js'),
-        pathTo.resolve('node_modules', 'swiper/swiper-bundle.min.js'),
-        pathTo.resolve('node_modules', 'inputmask/*/inputmask.min.js')
-	])
-    .pipe(plumber({
-		errorHandler: notify.onError("Error: <%= error.message %>")
-	}))
-    .pipe(concat('plugins.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(path.build.js + '/plugins/'))
-	.pipe(browserSync.reload({ stream: true }))
+// function jsPlugins(cb) {
+// 	return gulp.src([
+//         pathTo.resolve('node_modules', 'jquery/*/jquery.min.js'),
+//         pathTo.resolve('node_modules', 'swiper/swiper-bundle.min.js'),
+//         pathTo.resolve('node_modules', 'inputmask/*/inputmask.min.js')
+// 	])
+//     .pipe(plumber({
+// 		errorHandler: notify.onError("Error: <%= error.message %>")
+// 	}))
+//     .pipe(concat('plugins.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest(path.build.js + '/plugins/'))
+// 	.pipe(browserSync.reload({ stream: true }))
 
-    cb();
-};
+//     cb();
+// };
 
 function js(cb) {
     return src(path.src.js, {base: srcPath + 'assets/js/'})
@@ -356,7 +356,7 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(pughtml, scss, css, js, jsPlugins, img, svg, fonts));
+const build = gulp.series(clean, gulp.parallel(pughtml, scss, css, js, img, svg, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 /* Exports Tasks */
@@ -364,7 +364,6 @@ exports.pughtml = pughtml;
 exports.scss = scss;
 exports.css = css;
 exports.js = js;
-exports.js = jsPlugins;
 exports.img = img;
 exports.svg = svg;
 exports.fonts = fonts;
