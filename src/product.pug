@@ -133,57 +133,80 @@ block main
                                     .b-product__slider-slide.b-product__slider-slide--active.swiper-slide(data-id="0" style="background-image: url('assets/images/item-24242.jpg');")
                                     .b-product__slider-slide.swiper-slide(data-id="1" style="background-image: url('assets/images/0e3b12ad050d3d35a9854e8619393b7c.jpg');")
 
-                .b-product__accordion
-                    .b-block-accordion.accordion(data-active-element="1")
+                    .b-block-colors
 
-                        .b-block-accordion__title.accordion-title
-                            span.b-block-accordion__name Цвет массива
-                        .b-block-accordion__body.accordion-body
-                            .b-block-colors
-                                .b-block-colors__item
-                                    .b-block-colors__color
+                        .b-block-properties__item
+                            .b-block-properties-public__name Выберите вариант декора:&nbsp;&nbsp;&nbsp;
+                            span.b-block-properties-public__value Топленый мед
+
+                        .b-block-colors__container.swiper
+
+                            .swiper-wrapper
+
+                                .b-block-colors__item.swiper-slide.selected
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/81666213d94fa4e97179ee7f6144e668.jpg');")
-                                    .b-block-colors__name Топленный мед
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Орех")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/4c304087330eb3789d18f4f38203efdd.jpg');")
-                                    .b-block-colors__name Орех
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Испанский орех")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/a7f31352b89617c0a1fd4d82621e22cc.jpg');")
-                                    .b-block-colors__name Испанский орех
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/0f372a01a8d7a6a9aa7f21727dbcc269.jpg');")
-                                    .b-block-colors__name Пепел
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/9799753ed0fe74b3b3a4814742f9d730.jpg');")
-                                    .b-block-colors__name Махагон
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/7eaba342c1cffcd2caae9e1fe400e673.jpg');")
-                                    .b-block-colors__name Венге
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/665dcbbc9dffbf36bc9321d214ea45ca.jpg');")
-                                    .b-block-colors__name Ваниль
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/3ce1260c8937c3816fdb54639684b78b.jpg');")
-                                    .b-block-colors__name Ваниль с золотом
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/1453f5a442072f837316658d98d1b3d3.jpg');")
-                                    .b-block-colors__name Ваниль с серебром
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/b0f651d062624cad57c1f9fc20774e6d.jpg');")
-                                    .b-block-colors__name Декапе
-                                .b-block-colors__item
-                                    .b-block-colors__color
+
+                                .b-block-colors__item.swiper-slide
+                                    .b-block-colors__color(data-color="Топленый мед")
                                         .b-block-colors__color-wrap(style="background-image: url('assets/images/284a72db54030fc8b2412baece21ebda.jpg');")
-                                    .b-block-colors__name Покраска по RAL
+
+                    .b-block-video
+                        .b-block-video__play
+                            .b-block-video__play-icon
+                                i.fad.fa-play
+                            p Смотреть видео
+                        video#product_video(poster="assets/images/item-24242.jpg")
+                            source(src="assets/images/movie.mp4" type="video/mp4")
+
+                    .b-block-description
+                        h3 Описание
+                        p Яркий представитель стильной и функциональной мягкой мебели, в основе которой лежит комфорт, удобство и натуральность материалов. Сдержанный дизайн модели, строгие формы подлокотников, выполненные из массива восточного бука и декорированные элементами в виде металлических заклепок, будут органично смотреться в вашей комнате, наполняя её уютом и гармонией.
+                          br
+                          br
+                          |Благодаря наличию механизма «аккордеон», диван в считанные секунды превратится в комфортную и просторную кровать. Прочный и надежный металлический каркас, оснащенный березовыми ламелями, и 5 видов анатомических матрасов из высокоэластичной пены создают ортопедический эффект для позвоночника. Нагрузка на ровное спальное место будет распределяться равномерно, что обеспечит правильное положение тела и здоровый сон.
+                          br
+                          br
+                          |Особым цветовым акцентом является съемный чехол, выполненный из высококачественных мебельных тканей, простеганный на ПериоТеке. Данный материал хорошо держит форму, не вызывает аллергию и полностью безопасен для здоровья. В процессе эксплуатации вы можете почистить чехол или заказать у нас новый, из другой подходящей ткани.
+                          br
+                          br
+                          |Диван «Кантри» подходит не только для частного дома, но и для квартиры, позволяя абстрагироваться от городской суеты и полноценно расслабиться. При раскладывании механизм выезжает на прорезиненных колесиках, не повреждая напольное покрытие. Для хранения постельных принадлежностей встраивается бельевой ящик, в котором легко сделать влажную уборку.
 
             h3 Похожие товары
 

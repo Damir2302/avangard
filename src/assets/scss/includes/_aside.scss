@@ -12,11 +12,19 @@
 }
 
 .b-menu-left {
-    position: sticky;
+    position: fixed;
     top: 5.4rem;
-    width: 100%;
+    width: 15%;
     margin: 0;
     padding: 0;
+
+    @include breakpointCustom(1400px) {
+        width: 14%;
+    }
+
+    @include breakpointCustom(1601px) {
+        width: 15%;
+    }
 }
 
 .b-menu-left__item {

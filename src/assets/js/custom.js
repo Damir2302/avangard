@@ -4,9 +4,15 @@
 
 // Слайдер
 var swiper = new Swiper('.b-product__slider-container', {
-    direction: 'vertical',
+    direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: 20
+    spaceBetween: 20,
+
+    breakpoints: {
+        740: {
+            direction: 'vertical',
+        }
+    }
 })
 
 // Спальное место
@@ -43,4 +49,30 @@ $('.b-product__credit-period-select li').on('click', function(e) {
     $('.credit_select__val').text($(this).html())
     $('.credit_select__val').removeClass('credit_select__val')
     $('.b-product__credit-period-select').slideUp('fast')
+})
+
+// Выбор цвета
+var colorSlider = new Swiper('.b-block-colors__container', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+
+    breakpoints: {
+        740: {
+            spaceBetween: 15
+        }
+    }
+})
+
+// Видео
+$('.b-block-video__play-icon').on('click', function() {
+    $('.b-block-video').addClass('play')
+    $('#product_video')[0].play()
+    $('#product_video')[0].controls = true
+})
+
+// Видео (моб.)
+$('.b-block-video__play').on('click', function() {
+    $('#product_video').slideToggle()
+    $('#product_video')[0].play()
+    $('#product_video')[0].controls = true
 })
