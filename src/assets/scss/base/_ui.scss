@@ -130,6 +130,14 @@ button,select {
     text-transform: none
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    max-width: 1480px;
+    box-sizing: border-box;
+}
+
 [type=reset],[type=submit],button,html [type=button] {
     -webkit-appearance: button
 }
@@ -325,6 +333,10 @@ html.no-scroll {
 body {
     display: flex;
     min-width: 360px;
+}
+
+body.b-layout--page-main {
+    display: block;
 }
 
 body * {

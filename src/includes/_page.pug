@@ -25,20 +25,20 @@ html(lang="ru")
 
             .b-layout__content
 
-                .b-layout__left
-                    block aside
-                        include _aside
+                if page != 'main'
+                    .b-layout__left
+                        block aside
+                            include _aside
 
                 .b-layout__right
-
-                    // Main::Start
-                    block main
-                    // Main::End
-
                     // Header::Start
                     block header
                         include _header
                     // Header::End
+
+                    // Main::Start
+                    block main
+                    // Main::End
 
                     // Footer::Start
                     block footer

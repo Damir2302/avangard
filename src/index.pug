@@ -8,217 +8,35 @@ extends includes/_page
 
 block main
 
-    main.b-layout__main.main
+    main
 
-        .b-layout__main-global
+        .hero
 
-        .b-layout__main-content
+            .swiper
 
-            .b-slider-main.swiper-container.c-first-screen
+                .swiper-wrapper
 
-                .b-slider-main__wrapper.swiper-wrapper
+                    .swiper-slide.hero__slide(style="background-image: url(assets/images/Rectangle2.jpg)")
+                        p.hero__slide-title Комплекты для спальни -50%
+                        a.hero__slide-btn(href="#") Подробнее
 
-                    .b-slider-main__slide.swiper-slide(data-type='')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-name.b-slide-0--font-size
-                                    | Повышение цен с 1 сентября
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/b6cc829f3fd0e61b09082c56d6dc4cfb.jpg');")
-                                .b-slider-main__item-dotted.c-dotted
+                    .swiper-slide.hero__slide(style="background-image: url(assets/images/Rectangle2.jpg)")
+                        p.hero__slide-title Комплекты для спальни -50%
+                        a.hero__slide-btn(href="#") Подробнее
 
-                    .b-slider-main__slide.swiper-slide(data-type='Новости')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Новости
-                                .b-slider-main__item-name.b-slide-1--font-size
-                                    | Не подходят размеры? РешаемО!
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/df87fd44693eadd5857295a7c37fce0d.jpg');")
-                                    a.b-slider-main__item-a(href='#')
-                                .b-slider-main__item-dotted.c-dotted
+                    .swiper-slide.hero__slide(style="background-image: url(assets/images/Rectangle2.jpg)")
+                        p.hero__slide-title Комплекты для спальни -50%
+                        a.hero__slide-btn(href="#") Подробнее
 
-                    .b-slider-main__slide.swiper-slide(data-type='Новости')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Новости
-                                .b-slider-main__item-name.b-slide-2--font-size
-                                    | Ищите премиальные условия?
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/417ec580e36a9d629fcf51281e73cc92.jpg');")
-                                    a.b-slider-main__item-a(href='#')
-                                .b-slider-main__item-dotted.c-dotted
+                    .swiper-slide.hero__slide(style="background-image: url(assets/images/Rectangle2.jpg)")
+                        p.hero__slide-title Комплекты для спальни -50%
+                        a.hero__slide-btn(href="#") Подробнее
 
-                    .b-slider-main__slide.swiper-slide(data-type='Новости')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Новости
-                                .b-slider-main__item-name.b-slide-3--font-size
-                                    | Cкидка до 60%
-                                .b-slider-main__item-descr
-                                    | Предоставляется скидка до 60%.
-                                    br
-                                    | Подробности акции уточняйте в салонах и в интернет магазине.
-                                    br
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/acc22147916ca477e78794a320b8020c.jpg');")
-                                .b-slider-main__item-dotted.c-dotted
+                .swiper-pagination
 
-                    .b-slider-main__slide.swiper-slide(data-type='Новости')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Новости
-                                .b-slider-main__item-name.b-slide-4--font-size Рассрочка без первого взноса и переплат
-                                .b-slider-main__item-descr Честная рассрочка без переплат до 36 месяцев!
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/3e00e51e72778e0de12f8fa00d31fc74.jpg');")
-                                    a.b-slider-main__item-a(href='#')
-                                .b-slider-main__item-dotted.c-dotted
-
-                    .b-slider-main__slide.swiper-slide(data-type='Акция')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Акция
-                                .b-slider-main__item-name.b-slide-5--font-size Назад в будущее
-                                .b-slider-main__item-descr Скидка от 25%
-                                    br
-                                    |  Акция действует до 1 сентября 2022
-                                    br
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/c55ae89748d3705f0f1e29ab44899a4b.jpg');")
-                                    a.b-slider-main__item-a(href='#')
-                                .b-slider-main__item-dotted.c-dotted
-
-                    .b-slider-main__slide.swiper-slide(data-type='')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Акция
-                                .b-slider-main__item-name.b-slide-6--font-size Верона -30%
-                                .b-slider-main__item-descr
-                                    | До 1 сентября 30% на комплект спальни Верона
-                                    br
-                                    | * В комплект входит: кровать + две тумбы + шкаф.
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/6141d7b87ad540795d97668a0c38f503.jpg');")
-                                    a.b-slider-main__item-a(href='#')
-                                .b-slider-main__item-dotted.c-dotted
-
-                    .b-slider-main__slide.swiper-slide(data-type='Акция')
-                        .b-slider-main__item
-                            .b-slider-main__item-content
-                                .b-slider-main__item-title Акция
-                                .b-slider-main__item-name.b-slide-7--font-size Второе дыхание
-                                .b-slider-main__item-descr
-                                    | -50% скидка на чехлы
-                                    br
-                                    | -35% скидки на матрасы при замене чехла
-                                    br
-                            .b-slider-main__item-image
-                                .b-slider-main__item-img(style="background-image: url('assets/images/77561e89faf44e6243d4cb9ece13806f.jpg');")
-                                    a.b-slider-main__item-a(href='#')
-                                .b-slider-main__item-dotted.c-dotted
-
-                .b-slider-main__controls
-                    .b-slider-main__pagination.swiper-pagination
-                    .b-slider-main__type
-                    .b-slider-main__button-prev
-                    .b-slider-main__button-next
-
-                .b-slider-main__down
-                    span.b-slider-main__down-content Вниз
-
-            .b-block-advantages
-
-                h2.c-color-gray Преимущества
-
-                .b-block-advantages__items
-
-                    .b-block-advantages__item
-                        .b-block-advantages__item-name Массив
-                        .b-block-advantages__item-descr В производстве мы используем только натуральную древесину – массив бука высокогорных районов Северного Кавказа высокого качества
-                        .b-block-advantages__item-image
-                            .c-dotted
-                            .b-block-advantages__item-image-wrap
-                                img.b-block-advantages__item-img(src='assets/images/172acd6d1118c8765be8b7d901362700.png' alt='Натуральный массив дерева')
-
-                    .b-block-advantages__item
-                        .b-block-advantages__item-name Ткани
-                        .b-block-advantages__item-descr При изготовлении мебели мы применяем только высококачественные ткани из натуральных материалов ведущих европейских производителей
-                        .b-block-advantages__item-image
-                            .b-block-advantages__item-image-wrap
-                                img.b-block-advantages__item-img(src='assets/images/d09f779ddf7913e591f6bd507715dbaa.png' alt='Ткани для обивки мебели')
-
-                    .b-block-advantages__item
-                        .b-block-advantages__item-name Интерьер
-                        .b-block-advantages__item-descr Стильная и функциональная мебель фабрики Авангард отлично подойдет для любой комнаты, подчеркнув особенности интерьера даже ограниченного пространства
-                        .b-block-advantages__item-image
-                            .b-block-advantages__item-image-wrap
-                                img.b-block-advantages__item-img(src='assets/images/0c3c4146c7f91f836c6d32f231e706c3.png' alt='Стильные предметы интерьера')
-
-            .b-block-top-sales.l-stretch-all-all
-                .b-block-top-sales__dotted-left.c-dotted
-
-                .b-block-top-sales__wrap.l-stretch-content
-
-                    h2.c-color-red
-                        | Хиты
-                        span.c-stroke.c-stroke--color_gray-light продаж
-
-                    .b-block-top-sales__items
-                        .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='#')
-                                .b-block-top-sales__img(style="background-image: url('assets/images/0e3b12ad050d3d35a9854e8619393b7c.jpg');")
-                            .b-block-top-sales__content
-                                .b-block-top-sales__name Толедо
-                                .b-block-top-sales__descr диван
-
-                        .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='#')
-                                .b-block-top-sales__img(style="background-image: url('assets/images/de0a503c4a90b3aa5767821e45b4311e.png');")
-                            .b-block-top-sales__content
-                                .b-block-top-sales__name Челси
-                                .b-block-top-sales__descr диван двухместный
-
-                        .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='#')
-                                .b-block-top-sales__img(style="background-image: url('assets/images/165352a5f781948fe7a03de1bb0b0f33.jpg');")
-                            .b-block-top-sales__content
-                                .b-block-top-sales__name Палермо
-                                .b-block-top-sales__descr диван
-
-                        .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='#')
-                                .b-block-top-sales__img(style="background-image: url('assets/images/b0d264021f2071bf12c421a75746a1d8.jpg');")
-                            .b-block-top-sales__content
-                                .b-block-top-sales__name Верона
-                                .b-block-top-sales__descr кровать
-
-                        .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='#')
-                                .b-block-top-sales__img(style="background-image: url('assets/images/2d9846be77f357a048b91b079f073dde.jpg');")
-                            .b-block-top-sales__content
-                                .b-block-top-sales__name Верона
-                                .b-block-top-sales__descr витрина
-
-                        .b-block-top-sales__item
-                            a.b-block-top-sales__image(href='#')
-                                .b-block-top-sales__img(style="background-image: url('assets/images/7e5671c45965a16863a609db9cced1df.jpg');")
-                            .b-block-top-sales__content
-                                .b-block-top-sales__name Долорес
-                                .b-block-top-sales__descr витрина
-
-            .b-block-bottom-text
-                .b-block-bottom-text__img.l-stretch-left-all
-                    svg.b-block-bottom-text__img-element.animate(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1140 1080')
-                        path(d='M-2.5,1044H292.7c0-.57-.09-1.16-.14-1.76ZM811.1,902.64c-8.07-1.1-14.68,15.53-13.68,62.16.51,23.93,1.77,39.89,4.06,50.55C824.82,925,819.35,903.08,811.1,902.64ZM255.74,238.56c-5,1,10.9,17.24,18.48,32.16S308.9,341,313.34,354.24a586.16,586.16,0,0,1,19.1,70q8.47-8,17.71-17.06c-4.86-20.11-11.47-38.49-18.09-55.14-17.66-44.4-39.71-79.49-57.07-101.51C263.86,242.92,256.8,237.83,255.74,238.56Zm581,798.72c-19.52-.82-30.09,2.24-35.3-21.93-.91,3.53-1.86,7.15-2.86,10.89-6.43,13.41-19.25,13.79-28.56,6.72-24.07-18.27-31.2-133.44-31.2-133.44s-123.49-1.51-234.52-2c-6.33.2-11.81.39-16.28.56-61.51,2.3-119.59,6.82-140.4,12-3.83.95-7.37,1.86-10.64,2.82a125.36,125.36,0,0,1,1.52,19.74c.71,42.65-19.3,95.49-29.28,97.44-7.5,1.47-11.06-60.23,1.44-96.72,4-11.8,12.73-16.5,26.32-20.46-2-10.84-5.14-9.39-5.68-13.14-.34-2.36,82.16-2.64,173-2.24,80.8-2.63,299.85-8.12,314.2-8.08,15.47,0,19-5.17,25.44-14.64s13.29-22,25-43.92c42.91-80.52,91.95-224.16,98.64-260.88,16.76-91.95-26.5-88.3-40.77-87.35-8.86.58-23.37,6.22-39,36.15-2,57.31-4.75,162.91-17,230.24-12.31,69.93-36,115.53-46.56,115.44-7.79-.06,6.75-80.42,12.72-119.28,13.82-126.31,33-192.2,50.83-226.4.57-16.31,1.08-28.72,1.73-35.2-.52-17,61.44-.62,61.44-10.32,0-3.15-11.4-17.07-64.56-19.44-85-3.8-83.78,5.77-103.44-2.64C743.11,434.13,859.92,125.3,849.74,73,842,43.62,821.89,36.31,777.5,47,579.09,95,489.94,96.36,346,60.48,258.84,38.76,223.63,29.94,206.06,44.64c-41.86,35-1.63,86.9,22.08,197.28,5.44,25.3,28.81,194.73,30.24,200.88.37,5-1.49,5.79-4.8,5.76-19.4-4.13-92.32-10.41-102,27.12-2.11,8.2,11-14.78,42.72-13.92,13.28.36,29.09,5.81,40.8,13.44,5.35,3.48,4.75-7.44,19.68-8.64,13.2-1.06,15,7.5,23.76,1.92,3.37-2.15,6.93-4.62,10.69-7.37-7.84-70.63-18.14-135.66-25.33-173.35-2.86-15-19.82-63.13-16.32-63.12,3.81.05,14.27,9.24,27.41,25.93,29.37,20.18,87.16,58.27,138.43,54.95,19.14-1.24,37.3-11.21,52.33-21.87q9.86-11.07,20.15-22.77c14.4-16.35,13.74-12.9,4.73,3.21,5.9-4.79,10.23-8,12.55-8,64.83,4.53,102.16,304.86,47.76,302.4-2.77-.13-33-10.52-65.52-10.56-60.26-.07-66.14,10.31-93.12,21.12-7.51,3-27.23,15.94-28.32-10.08-3.48-83.07,99.51-246.35,126.65-294.87-6.55,5.33-15.05,12.59-24.88,19.56-45.74,51.43-84.07,92.53-115.6,123.57,10.61,43.86,12.94,96-10.89,156.3-5,12.71-18.52,39.87-22.56,39.84-3.38,0,8.31-21.26,10.56-29.28,9.07-32.33,20.34-74.56,5.18-149.8q-24.85,23.33-43.21,36.83c5.12,46.17,9.2,94.73,10.67,139.61.32,9.62-7.16,33.59,6,33.36,12.61-.15,31-27.77,61.92-40.08,61-24.25,133.58-37.55,264-18.48C778.65,597,829.34,688.23,829.34,694.08c0,8.84-217.86,78.51-545.52,5.52-8.12-1.81-13.58-8.25-13.68-14.4-.23-14.12,22.27-37.94,31-46.32,5.36-5.17-33.18-1.67-51.31,39.57,8.71,77.77,22.06,198.51,16,198.51-2.68,0-12.41-37.63-17.28-61.68s-10-72-7.2-102.48a109.77,109.77,0,0,1,8.45-34.35c-2.71-24.19-5-44.22-6-55.17-4.58-46.15-7-84.26-6.72-85S233.35,482,231.26,480s-19.4-10.48-30.48-11.76c-33.28-3.83-52,25.35-53,35.52,0,0,27.66,399.12,135.12,399.12,0,0,6.86,102.54,9.7,139.36l829.82-5S847.23,1037.72,836.78,1037.28Z' style='fill:none; stroke-miterlimit:10; stroke-width:2px;')
-
-                .b-block-bottom-text__title
-                    h1
-                        | Фабрика мягкой
-                        span.c-br
-                        |  мебели
-                        span.c-color-red «Авангард»
-
-                .b-block-bottom-text__text
-                    p Фабрика мягкой мебели «Авангард Лайн» создана в 1996 году на базе крупнейшего мебельного предприятия — Ассоциация производителей мебели «Аллегро». С 2000-го года компания выходит на новый качественный уровень. Из двухсот моделей мебели, созданных на фабрике, семьдесят занимали верхние строчки в рейтинге продаж в различные годы.
-                    p Мы используем в производстве натуральную древесину — массив бука высокогорных районов Северного Кавказа высокого качества, мягкие элементы из высокоэластичного пенополиуретана, обивочные материалы из мебельной ткани и натуральной кожи ведущих европейских производителей.
+                .hero__buttons
+                    .buttons-container
+                        button.slider-button.slider-button--prev
+                            i.far.fa-chevron-left
+                        button.slider-button.slider-button--next
+                            i.far.fa-chevron-right

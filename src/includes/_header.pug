@@ -1,345 +1,415 @@
 block header
 
-    header.b-layout__header.b-layout__header--fixed
+    if page != 'main'
+        header.b-layout__header.b-layout__header--fixed
 
-        .b-header
+            .b-header
 
-            .b-header__content
+                .b-header__content
 
-                .b-header__menu
+                    .b-header__menu
 
-                    .b-menu-left-mobile
+                        .b-menu-left-mobile
 
-                        .b-menu-left-mobile__burger
+                            .b-menu-left-mobile__burger
 
-                        .b-menu-left-mobile__body
-                            .b-menu-left-mobile__block.b-menu-left-mobile__block--main.b-menu-left-mobile__block--active.b-menu-left-mobile__block--id_0
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Каталог
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_1
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | Каталог
+                            .b-menu-left-mobile__body
+                                .b-menu-left-mobile__block.b-menu-left-mobile__block--main.b-menu-left-mobile__block--active.b-menu-left-mobile__block--id_0
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Каталог
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_1
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | Каталог
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Коллекции мебели
-                                            span.b-menu-left-mobile__ico
-                                                i.fas.fa-chevron-right.fa-fw
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Коллекции мебели
+                                                span.b-menu-left-mobile__ico
+                                                    i.fas.fa-chevron-right.fa-fw
 
-                                            .b-menu-left-mobile__block.b-menu-left-mobile__block--id_2
-                                                .b-menu-left-mobile__back
-                                                    i.fas.fa-chevron-left.fa-fw
-                                                    | Коллекции мебели
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Верона
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Челси
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Толедо
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Палермо
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Сиена
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Кантри
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Делия
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Амадеус
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Верди
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Байрон
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Долорес
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Венеция
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Медичи
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Шаде
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Марсель
+                                                .b-menu-left-mobile__block.b-menu-left-mobile__block--id_2
+                                                    .b-menu-left-mobile__back
+                                                        i.fas.fa-chevron-left.fa-fw
+                                                        | Коллекции мебели
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Верона
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Челси
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Толедо
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Палермо
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Сиена
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Кантри
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Делия
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Амадеус
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Верди
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Байрон
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Долорес
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Венеция
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Медичи
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Шаде
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Марсель
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Диваны
-                                            span.b-menu-left-mobile__ico
-                                                i.fas.fa-chevron-right.fa-fw
-                                            .b-menu-left-mobile__block.b-menu-left-mobile__block--id_3
-                                                .b-menu-left-mobile__back
-                                                    i.fas.fa-chevron-left.fa-fw
-                                                    | Диваны
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По типу
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По механизму
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По количеству мест
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По типам комнат
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По функциональности
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По цвету
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По материалу
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По форме
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По конструкции
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По размеру
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По стилю интерьера
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Диваны
+                                                span.b-menu-left-mobile__ico
+                                                    i.fas.fa-chevron-right.fa-fw
+                                                .b-menu-left-mobile__block.b-menu-left-mobile__block--id_3
+                                                    .b-menu-left-mobile__back
+                                                        i.fas.fa-chevron-left.fa-fw
+                                                        | Диваны
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По типу
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По механизму
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По количеству мест
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По типам комнат
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По функциональности
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По цвету
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По материалу
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По форме
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По конструкции
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По размеру
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По стилю интерьера
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Кровати
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Кровати
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Корпусная мебель
-                                            span.b-menu-left-mobile__ico
-                                                i.fas.fa-chevron-right.fa-fw
-                                            .b-menu-left-mobile__block.b-menu-left-mobile__block--id_4
-                                                .b-menu-left-mobile__back
-                                                    i.fas.fa-chevron-left.fa-fw
-                                                    | Корпусная мебель
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По типу
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По коллекции
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Корпусная мебель
+                                                span.b-menu-left-mobile__ico
+                                                    i.fas.fa-chevron-right.fa-fw
+                                                .b-menu-left-mobile__block.b-menu-left-mobile__block--id_4
+                                                    .b-menu-left-mobile__back
+                                                        i.fas.fa-chevron-left.fa-fw
+                                                        | Корпусная мебель
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По типу
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По коллекции
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Столы и стулья
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Столы и стулья
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Кресла
-                                            span.b-menu-left-mobile__ico
-                                                i.fas.fa-chevron-right.fa-fw
-                                            .b-menu-left-mobile__block.b-menu-left-mobile__block--id_5
-                                                .b-menu-left-mobile__back
-                                                    i.fas.fa-chevron-left.fa-fw
-                                                    | Кресла
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') По типу
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Кресла
+                                                span.b-menu-left-mobile__ico
+                                                    i.fas.fa-chevron-right.fa-fw
+                                                .b-menu-left-mobile__block.b-menu-left-mobile__block--id_5
+                                                    .b-menu-left-mobile__back
+                                                        i.fas.fa-chevron-left.fa-fw
+                                                        | Кресла
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') По типу
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Предметы интерьера
-                                            span.b-menu-left-mobile__ico
-                                                i.fas.fa-chevron-right.fa-fw
-                                            .b-menu-left-mobile__block.b-menu-left-mobile__block--id_6
-                                                .b-menu-left-mobile__back
-                                                    i.fas.fa-chevron-left.fa-fw
-                                                    | Предметы интерьера
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Подушки и пледы
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Светильники и торшеры
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Зеркала
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Модели кораблей
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Предметы интерьера
+                                                span.b-menu-left-mobile__ico
+                                                    i.fas.fa-chevron-right.fa-fw
+                                                .b-menu-left-mobile__block.b-menu-left-mobile__block--id_6
+                                                    .b-menu-left-mobile__back
+                                                        i.fas.fa-chevron-left.fa-fw
+                                                        | Предметы интерьера
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Подушки и пледы
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Светильники и торшеры
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Зеркала
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Модели кораблей
 
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Матрасы и подушки
-                                            span.b-menu-left-mobile__ico
-                                                i.fas.fa-chevron-right.fa-fw
-                                            .b-menu-left-mobile__block.b-menu-left-mobile__block--id_7
-                                                .b-menu-left-mobile__back
-                                                    i.fas.fa-chevron-left.fa-fw
-                                                    | Матрасы и подушки
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Матрасы
-                                                .b-menu-left-mobile__elem
-                                                    a.b-menu-left-mobile__link(href='#') Подушки
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Матрасы и подушки
+                                                span.b-menu-left-mobile__ico
+                                                    i.fas.fa-chevron-right.fa-fw
+                                                .b-menu-left-mobile__block.b-menu-left-mobile__block--id_7
+                                                    .b-menu-left-mobile__back
+                                                        i.fas.fa-chevron-left.fa-fw
+                                                        | Матрасы и подушки
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Матрасы
+                                                    .b-menu-left-mobile__elem
+                                                        a.b-menu-left-mobile__link(href='#') Подушки
 
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Мебель на заказ
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Мебель на заказ
 
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Дизайн-проект
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Дизайн-проект
 
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Акции & Новости
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_8
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | Акции & Новости
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Новости
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Акции
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Акции & Новости
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_8
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | Акции & Новости
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Новости
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Акции
 
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Где купить
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_9
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | Где купить
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Москва
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Московская область
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Где купить
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_9
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | Где купить
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Москва
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Московская область
 
-                                .b-menu-left-mobile__elem
-                                    span.b-menu-left-mobile__name Услуги
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_10
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | Услуги
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Гарантийное обслуживание
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Постгарантийное обслуживание
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Доставка мебели
+                                    .b-menu-left-mobile__elem
+                                        span.b-menu-left-mobile__name Услуги
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_10
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | Услуги
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Гарантийное обслуживание
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Постгарантийное обслуживание
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Доставка мебели
 
-                                .b-menu-left-mobile__elem
-                                    span.b-menu-left-mobile__name Полезная информация
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_11
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | Полезная информация
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Статьи
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Скачать схемы сборки
+                                    .b-menu-left-mobile__elem
+                                        span.b-menu-left-mobile__name Полезная информация
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_11
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | Полезная информация
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Статьи
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Скачать схемы сборки
 
-                                .b-menu-left-mobile__elem
-                                    span.b-menu-left-mobile__name Партнерство
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_12
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | Партнерство
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Интернет-магазинам
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Дилерам
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Дизайнерам
+                                    .b-menu-left-mobile__elem
+                                        span.b-menu-left-mobile__name Партнерство
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_12
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | Партнерство
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Интернет-магазинам
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Дилерам
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Дизайнерам
 
-                                .b-menu-left-mobile__elem
-                                    span.b-menu-left-mobile__name О фабрике
-                                    span.b-menu-left-mobile__ico
-                                        i.fas.fa-chevron-right.fa-fw
-                                    .b-menu-left-mobile__block.b-menu-left-mobile__block--id_13
-                                        .b-menu-left-mobile__back
-                                            i.fas.fa-chevron-left.fa-fw
-                                            | О фабрике
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Производство мебели
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Инженерные разработки
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Отзывы
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Наши партнеры
-                                        .b-menu-left-mobile__elem
-                                            a.b-menu-left-mobile__link(href='#') Вакансии
+                                    .b-menu-left-mobile__elem
+                                        span.b-menu-left-mobile__name О фабрике
+                                        span.b-menu-left-mobile__ico
+                                            i.fas.fa-chevron-right.fa-fw
+                                        .b-menu-left-mobile__block.b-menu-left-mobile__block--id_13
+                                            .b-menu-left-mobile__back
+                                                i.fas.fa-chevron-left.fa-fw
+                                                | О фабрике
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Производство мебели
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Инженерные разработки
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Отзывы
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Наши партнеры
+                                            .b-menu-left-mobile__elem
+                                                a.b-menu-left-mobile__link(href='#') Вакансии
 
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Контакты
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Контакты
 
-                                .b-menu-left-mobile__elem
-                                    a.b-menu-left-mobile__link(href='#') Избранное
+                                    .b-menu-left-mobile__elem
+                                        a.b-menu-left-mobile__link(href='#') Избранное
 
-                a.b-header__logo
+                    a.b-header__logo
 
-                .b-header__button письмо директору
+                    .b-header__button письмо директору
 
-                .b-header__text
-                    a.b-header__text-phone.click-phone(href='tel:+74953571300')
-                        | +7 (495)
-                        span.c-strong  357-13-00
+                    .b-header__text
+                        a.b-header__text-phone.click-phone(href='tel:+74953571300')
+                            | +7 (495)
+                            span.c-strong  357-13-00
 
-                form.b-search-header(action='#' method='get')
-                    input#b-search-header__input.b-search-header__input(placeholder='Поиск' name='q' value='')
-                    label.b-search-header__label(for='b-search-header__input')
+                    form.b-search-header(action='#' method='get')
+                        input#b-search-header__input.b-search-header__input(placeholder='Поиск' name='q' value='')
+                        label.b-search-header__label(for='b-search-header__input')
 
-        if page != 'main'
-            section.b-banners
+            if page != 'main'
+                section.b-banners
 
-                .b-banners__slider
+                    .b-banners__slider
 
-                    .b-banners__slider-container.swiper-container
+                        .b-banners__slider-container.swiper-container
 
-                        .b-banners__slider-wrapper.swiper-wrapper
+                            .b-banners__slider-wrapper.swiper-wrapper
 
-                            .b-banners__slider-slide.swiper-slide
-                                .b-banners__text
-                                    p.b-banners__section
-                                    p.b-banners__title Успей до повышения
-                                    p.b-banners__anons до 1 октября
-                                    .b-banners__dot
-                                .b-banners__image
-                                    img(src='assets/images/cafb4e916d3b3412a234d6604405b5d2.jpg' alt='Успей до повышения')
+                                .b-banners__slider-slide.swiper-slide
+                                    .b-banners__text
+                                        p.b-banners__section
+                                        p.b-banners__title Успей до повышения
+                                        p.b-banners__anons до 1 октября
+                                        .b-banners__dot
+                                    .b-banners__image
+                                        img(src='assets/images/cafb4e916d3b3412a234d6604405b5d2.jpg' alt='Успей до повышения')
 
-                            .b-banners__slider-slide.swiper-slide
-                                .b-banners__text
-                                    p.b-banners__section Новости
-                                    p.b-banners__title Ищите премиальные условия?
-                                    p.b-banners__anons
-                                    .b-banners__dot
-                                .b-banners__image
-                                    img(src='assets/images/883062a9f6c78bd77d746501adbe4dc4.jpg' alt='Ищите премиальные условия?')
-                                a.b-banners__link(href='#')
+                                .b-banners__slider-slide.swiper-slide
+                                    .b-banners__text
+                                        p.b-banners__section Новости
+                                        p.b-banners__title Ищите премиальные условия?
+                                        p.b-banners__anons
+                                        .b-banners__dot
+                                    .b-banners__image
+                                        img(src='assets/images/883062a9f6c78bd77d746501adbe4dc4.jpg' alt='Ищите премиальные условия?')
+                                    a.b-banners__link(href='#')
 
-                            .b-banners__slider-slide.swiper-slide
-                                .b-banners__text
-                                    p.b-banners__section Новости
-                                    p.b-banners__title Рассрочка без первого взноса и переплат
-                                    p.b-banners__anons Честная рассрочка без переплат до 36 месяцев!
-                                    .b-banners__dot
-                                .b-banners__image
-                                    img(src='assets/images/bb4a99b3a3f6b045caf6806a16c1b703.jpg' alt='Рассрочка без первого взноса и переплат')
-                                a.b-banners__link(href='#')
+                                .b-banners__slider-slide.swiper-slide
+                                    .b-banners__text
+                                        p.b-banners__section Новости
+                                        p.b-banners__title Рассрочка без первого взноса и переплат
+                                        p.b-banners__anons Честная рассрочка без переплат до 36 месяцев!
+                                        .b-banners__dot
+                                    .b-banners__image
+                                        img(src='assets/images/bb4a99b3a3f6b045caf6806a16c1b703.jpg' alt='Рассрочка без первого взноса и переплат')
+                                    a.b-banners__link(href='#')
 
-                            .b-banners__slider-slide.swiper-slide
-                                .b-banners__text
-                                    p.b-banners__section Акция
-                                    p.b-banners__title Назад в будущее
-                                    p.b-banners__anons
-                                    | Скидка от 25%
-                                    br
-                                    |  Акция действует до 1 октября 202...
-                                    .b-banners__dot
-                                .b-banners__image
-                                    img(src='assets/images/d7c0f2ff6a4c0b8083a33f1cd844eb56.jpg' alt='Назад в будущее')
-                                a.b-banners__link(href='#')
+                                .b-banners__slider-slide.swiper-slide
+                                    .b-banners__text
+                                        p.b-banners__section Акция
+                                        p.b-banners__title Назад в будущее
+                                        p.b-banners__anons
+                                        | Скидка от 25%
+                                        br
+                                        |  Акция действует до 1 октября 202...
+                                        .b-banners__dot
+                                    .b-banners__image
+                                        img(src='assets/images/d7c0f2ff6a4c0b8083a33f1cd844eb56.jpg' alt='Назад в будущее')
+                                    a.b-banners__link(href='#')
 
-                            .b-banners__slider-slide.swiper-slide
-                                .b-banners__text
-                                    p.b-banners__section Акция
-                                    p.b-banners__title Верона -30%
-                                    p.b-banners__anons
-                                    | Скидка 30% до 1 октября
-                                    br
-                                    | На комплект спальни Вер...
-                                    .b-banners__dot
-                                .b-banners__image
-                                    img(src='assets/images/43f038eac69f15e215aefc79ac2af282.jpg' alt='Верона -30% ')
-                                a.b-banners__link(href='#')
+                                .b-banners__slider-slide.swiper-slide
+                                    .b-banners__text
+                                        p.b-banners__section Акция
+                                        p.b-banners__title Верона -30%
+                                        p.b-banners__anons
+                                        | Скидка 30% до 1 октября
+                                        br
+                                        | На комплект спальни Вер...
+                                        .b-banners__dot
+                                    .b-banners__image
+                                        img(src='assets/images/43f038eac69f15e215aefc79ac2af282.jpg' alt='Верона -30% ')
+                                    a.b-banners__link(href='#')
 
-                            .b-banners__slider-slide.swiper-slide
-                                .b-banners__text
-                                    p.b-banners__section Акция
-                                    p.b-banners__title Второе дыхание
-                                    p.b-banners__anons
-                                    | -50% скидка на чехлы
-                                    br
-                                    | -35% скидки на матрасы при...
-                                    .b-banners__dot
-                                .b-banners__image
-                                    img(src='assets/images/2b65c2deabd17abea00aa24d68fabba9.jpg' alt='Второе дыхание')
-                                a.b-banners__link(href='#')
+                                .b-banners__slider-slide.swiper-slide
+                                    .b-banners__text
+                                        p.b-banners__section Акция
+                                        p.b-banners__title Второе дыхание
+                                        p.b-banners__anons
+                                        | -50% скидка на чехлы
+                                        br
+                                        | -35% скидки на матрасы при...
+                                        .b-banners__dot
+                                    .b-banners__image
+                                        img(src='assets/images/2b65c2deabd17abea00aa24d68fabba9.jpg' alt='Второе дыхание')
+                                    a.b-banners__link(href='#')
+
+    else
+        header.header
+
+            .container
+
+                .header__top
+
+                    .header__logo
+                        img(src="assets/images/logo_whitetext.svg", alt="logo")
+
+                    .header__search
+                        form
+                            input(type="search" placeholder="Поиск среди товаров")
+                            button(type="submit")
+                                i.far.fa-search
+
+                    .header__cat
+                        .header-sales-link
+                            a(href="#")
+                                i.fal.fa-percent
+                                p Скидки
+
+                        .header-news-link
+                            a(href="#")
+                                i.fal.fa-fire
+                                p Новинки
+
+                        .header-favorite-link
+                            a(href="#")
+                                i.fal.fa-heart
+                                p Избранное
+
+                nav.header__nav
+
+                    ul.navbar__menu
+                        li.navbar__item
+                            a.navbar__item-link(href="#") диваны
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") кровати
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") шкафы
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") тумбы и комоды
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") витрины
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") кресла
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") столы и стулья
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") лампы и торшеры
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") матрасы и подушки
+
+                        li.navbar__item
+                            a.navbar__item-link(href="#") аксессуары
+
+                    .navbar__phone
+                        a(href="tel:+7 (495) 357-13-00") +7 (495) 357-13-00
+                        span перезвоните мне

@@ -1,196 +1,306 @@
 include _mixins
 block footer
 
-    footer.b-layout__footer
+    if page != 'main'
+        footer.b-layout__footer
 
-        .b-footer
+            .b-footer
 
-            .b-footer__top
+                .b-footer__top
 
-                case page
-                    when 'catalog'
-                        div
-                    when 'product'
-                        div
-                    default
-                        .b-footer__top-share
-                            .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
+                    case page
+                        when 'catalog'
+                            div
+                        when 'product'
+                            div
+                        default
+                            .b-footer__top-share
+                                .ya-share2(data-curtain='' data-shape='round' data-limit='5' data-more-button-type='short' data-size='l' data-services='vkontakte,odnoklassniki,telegram,whatsapp,twitter,moimir,skype')
 
-                .b-footer__top-left
-                    #b-form__Questions-0.b-form.b-form--Questions.b-form--Questions630db262e184b
-                        .b-form__title Обратная связь
+                    .b-footer__top-left
+                        #b-form__Questions-0.b-form.b-form--Questions.b-form--Questions630db262e184b
+                            .b-form__title Обратная связь
 
-                        form#tao-form-Questions-0.b-form__form.b-form--ajax.b-form--Questions.b-form--Questions630db262e184b(method='post' action='')
-                            input#form__questions--form_id(type='hidden' name='service[form_id]' value='Questions630db262e184b')
-                            input#form__questions--taoform(type='hidden' name='service[taoform]' value='Questions')
-                            input#form__questions--lang(type='hidden' name='service[lang]' value='ru')
+                            form#tao-form-Questions-0.b-form__form.b-form--ajax.b-form--Questions.b-form--Questions630db262e184b(method='post' action='')
+                                input#form__questions--form_id(type='hidden' name='service[form_id]' value='Questions630db262e184b')
+                                input#form__questions--taoform(type='hidden' name='service[taoform]' value='Questions')
+                                input#form__questions--lang(type='hidden' name='service[lang]' value='ru')
 
-                            .b-form__element.b-form__element--FIO
-                                .b-form__field
-                                    label.b-form__label(for='form__questions--FIO-0')
-                                        span.b-form__marker *
-                                        |  Имя
-                                    input#form__questions--FIO-0.b-form__input.text.field-FIO(type='text' name='FIO' value='' placeholder='')
+                                .b-form__element.b-form__element--FIO
+                                    .b-form__field
+                                        label.b-form__label(for='form__questions--FIO-0')
+                                            span.b-form__marker *
+                                            |  Имя
+                                        input#form__questions--FIO-0.b-form__input.text.field-FIO(type='text' name='FIO' value='' placeholder='')
 
-                            .b-form__element.b-form__element--EMAIL
-                                .b-form__field
-                                    label.b-form__label(for='form__questions--EMAIL-0')
-                                        span.b-form__marker *
-                                        |  E-mail
-                                    input#form__questions--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
+                                .b-form__element.b-form__element--EMAIL
+                                    .b-form__field
+                                        label.b-form__label(for='form__questions--EMAIL-0')
+                                            span.b-form__marker *
+                                            |  E-mail
+                                        input#form__questions--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
 
-                            .b-form__element.b-form__element--QUESTION
-                                .b-form__field
-                                    label.b-form__label(for='form__questions--QUESTION-0')
-                                        | Вопрос
-                                    input#form__questions--QUESTION-0.b-form__input.text.field-QUESTION(type='text' name='QUESTION' value='' placeholder='')
+                                .b-form__element.b-form__element--QUESTION
+                                    .b-form__field
+                                        label.b-form__label(for='form__questions--QUESTION-0')
+                                            | Вопрос
+                                        input#form__questions--QUESTION-0.b-form__input.text.field-QUESTION(type='text' name='QUESTION' value='' placeholder='')
 
-                            .b-form__element
-                                .b-form__field.c-right-all
-                                    .b-form__fast-result
-                                    .b-form__button Отправить
+                                .b-form__element
+                                    .b-form__field.c-right-all
+                                        .b-form__fast-result
+                                        .b-form__button Отправить
 
-                            .b-form__element.b-form__element--small(style='')
-                                .b-form__comment
-                                    | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
-                                    a(href='#' style='color: #0047ff;') Подробнее...
+                                .b-form__element.b-form__element--small(style='')
+                                    .b-form__comment
+                                        | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                        a(href='#' style='color: #0047ff;') Подробнее...
 
-                .b-footer__top-right
-                    .b-footer__form
-                        .b-footer__form-content
-                            #b-form__Subscribe-0.b-form.b-form--Subscribe.b-form--Subscribe630db262e1f3d
+                    .b-footer__top-right
+                        .b-footer__form
+                            .b-footer__form-content
+                                #b-form__Subscribe-0.b-form.b-form--Subscribe.b-form--Subscribe630db262e1f3d
 
-                                form#tao-form-Subscribe-0.b-form__form.b-form--ajax.b-form--Subscribe.b-form--Subscribe630db262e1f3d(method='post' action='/local/vendor/techart/bitrix.tao/api/form-ajax.php')
-                                    input#form__subscribe--form_id(type='hidden' name='service[form_id]' value='Subscribe630db262e1f3d')
-                                    input#form__subscribe--taoform(type='hidden' name='service[taoform]' value='Subscribe')
-                                    input#form__subscribe--lang(type='hidden' name='service[lang]' value='ru')
+                                    form#tao-form-Subscribe-0.b-form__form.b-form--ajax.b-form--Subscribe.b-form--Subscribe630db262e1f3d(method='post' action='/local/vendor/techart/bitrix.tao/api/form-ajax.php')
+                                        input#form__subscribe--form_id(type='hidden' name='service[form_id]' value='Subscribe630db262e1f3d')
+                                        input#form__subscribe--taoform(type='hidden' name='service[taoform]' value='Subscribe')
+                                        input#form__subscribe--lang(type='hidden' name='service[lang]' value='ru')
 
-                                    .b-form__element.b-form__element--EMAIL
-                                        .b-form__field
-                                            label.b-form__label(for='form__subscribe--EMAIL-0')
-                                                span.b-form__marker *
-                                                | 	Подпишитесь на рассылку
-                                            input#form__subscribe--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
+                                        .b-form__element.b-form__element--EMAIL
+                                            .b-form__field
+                                                label.b-form__label(for='form__subscribe--EMAIL-0')
+                                                    span.b-form__marker *
+                                                    | 	Подпишитесь на рассылку
+                                                input#form__subscribe--EMAIL-0.b-form__input.text.field-EMAIL(type='text' name='EMAIL' value='' placeholder='')
 
-                                    .b-form__element
-                                        .b-form__field.c-right-all
-                                            .b-form__fast-result
-                                            .b-form__button Отправить
+                                        .b-form__element
+                                            .b-form__field.c-right-all
+                                                .b-form__fast-result
+                                                .b-form__button Отправить
 
-                                    .b-form__element.b-form__element--small(style='margin: 2.6rem 0;')
-                                        .b-form__comment
-                                            | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
-                                            a(href='#' style='color: #0047ff;') Подробнее...
-                    .b-footer__forms
-                        .b-socials
-                            .b-socials__item.b-socials__item--call
-                            .b-socials__item.b-socials__item--sub
+                                        .b-form__element.b-form__element--small(style='margin: 2.6rem 0;')
+                                            .b-form__comment
+                                                | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                                                a(href='#' style='color: #0047ff;') Подробнее...
+                        .b-footer__forms
+                            .b-socials
+                                .b-socials__item.b-socials__item--call
+                                .b-socials__item.b-socials__item--sub
 
-                    .b-footer__social
-                        .b-socials
-                            a.b-socials__item.b-socials__item--vk(href='#' target='_blank')
+                        .b-footer__social
+                            .b-socials
+                                a.b-socials__item.b-socials__item--vk(href='#' target='_blank')
 
-            .b-footer__menu
-                .b-menu-footer
+                .b-footer__menu
+                    .b-menu-footer
 
-                    .b-menu-footer__block
-                        .b-menu-footer__main-item
-                            a.b-menu-footer__main-link(href='#') Каталог
+                        .b-menu-footer__block
+                            .b-menu-footer__main-item
+                                a.b-menu-footer__main-link(href='#') Каталог
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Коллекции мебели
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Коллекции мебели
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Диваны
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Диваны
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Кровати
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Кровати
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Корпусная мебель
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Корпусная мебель
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Столы и стулья
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Столы и стулья
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Кресла
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Кресла
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Предметы интерьера
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Предметы интерьера
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Матрасы и подушки
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Матрасы и подушки
 
-                    .b-menu-footer__block
-                        .b-menu-footer__main-item
-                            span.b-menu-footer__main-name Услуги
+                        .b-menu-footer__block
+                            .b-menu-footer__main-item
+                                span.b-menu-footer__main-name Услуги
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Гарантийное обслуживание
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Гарантийное обслуживание
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Постгарантийное обслуживание
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Постгарантийное обслуживание
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Доставка мебели
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Доставка мебели
 
-                    .b-menu-footer__block
-                        .b-menu-footer__main-item
-                            span.b-menu-footer__main-name Полезная информация
+                        .b-menu-footer__block
+                            .b-menu-footer__main-item
+                                span.b-menu-footer__main-name Полезная информация
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Статьи
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Статьи
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Скачать схемы сборки
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Скачать схемы сборки
 
-                    .b-menu-footer__bloc
-                        .b-menu-footer__main-item
-                            span.b-menu-footer__main-name Партнерство
+                        .b-menu-footer__bloc
+                            .b-menu-footer__main-item
+                                span.b-menu-footer__main-name Партнерство
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Интернет-магазинам
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Интернет-магазинам
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Дилерам
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Дилерам
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Дизайнерам
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Дизайнерам
 
-                    .b-menu-footer__block
-                        .b-menu-footer__main-item
-                            span.b-menu-footer__main-name О фабрике
+                        .b-menu-footer__block
+                            .b-menu-footer__main-item
+                                span.b-menu-footer__main-name О фабрике
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Производство мебели
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Производство мебели
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Инженерные разработки
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Инженерные разработки
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Отзывы
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Отзывы
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Наши партнеры
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Наши партнеры
 
-                        .b-menu-footer__item
-                            a.b-menu-footer__link(href='#') Вакансии
+                            .b-menu-footer__item
+                                a.b-menu-footer__link(href='#') Вакансии
 
-                    .b-menu-footer__block
-                        .b-menu-footer__main-item
-                            a.b-menu-footer__main-link(href='#') Мебель на заказ
+                        .b-menu-footer__block
+                            .b-menu-footer__main-item
+                                a.b-menu-footer__main-link(href='#') Мебель на заказ
 
-                        .b-menu-footer__main-item
-                            a.b-menu-footer__main-link(href='#') Где купить
+                            .b-menu-footer__main-item
+                                a.b-menu-footer__main-link(href='#') Где купить
 
-                        .b-menu-footer__main-item
-                            a.b-menu-footer__main-link(href='#') Акции & Новости
+                            .b-menu-footer__main-item
+                                a.b-menu-footer__main-link(href='#') Акции & Новости
 
-                        .b-menu-footer__main-item
-                            a.b-menu-footer__main-link(href='#') Контакты
+                            .b-menu-footer__main-item
+                                a.b-menu-footer__main-link(href='#') Контакты
 
-            .b-footer__copyright
-                .b-footer__copyright-site © 2009-2022 Мебельная фабрика Авангард
-                .b-footer__copyright-techart
-                    p
-                        a(target='_blank' href='https://di-project.studio/') Поддержка сайта di-project.studio
+                .b-footer__copyright
+                    .b-footer__copyright-site © 2009-2022 Мебельная фабрика Авангард
+                    .b-footer__copyright-techart
+                        p
+                            a(target='_blank' href='https://di-project.studio/') Поддержка сайта di-project.studio
+
+    else
+        footer.footer
+
+            .container
+
+                .footer__top
+
+                    .footer__top-item
+                        a.footer__item-link(href="#") КАТАЛОГ
+                        ul.footer__menu
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Коллекции мебели
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Диваны
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Кровати
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Корпусная мебель
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Столы и стулья
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Кресла
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Предметы интерьера
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Матрасы и подушки
+
+                    .footer__top-item
+                        a.footer__item-link(href="#") УСЛУГИ
+                        ul.footer__menu
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Гарантийное обслуживание
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Постгарантийное обслуживание
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Доставка мебели
+
+                    .footer__top-item
+                        a.footer__item-link(href="#") ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+                        ul.footer__menu
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Статьи
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Скачать схемы сборки
+
+                    .footer__top-item
+                        a.footer__item-link(href="#") Партнерство
+                        ul.footer__menu
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Интернет-магазинам
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Дилерам
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Дизайнерам
+
+                    .footer__top-item
+                        a.footer__item-link(href="#") О фабрике
+                        ul.footer__menu
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Производство мебели
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Инженерные разработки
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Отзывы
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Наши партнеры
+                            li.footer__menu-item
+                                a.footer__menu-link(href="#") Вакансии
+
+                    .footer__top-item
+                        a.footer__item-link(href="#") МЕБЕЛЬ НА ЗАКАЗ
+                        a.footer__item-link(href="#") ГДЕ КУПИТЬ
+                        a.footer__item-link(href="#") АКЦИИ & НОВОСТИ
+                        a.footer__item-link(href="#") КОНТАКТЫ
+
+                .footer__middle
+
+                    .footer__middle-left
+
+                        .footer__logo
+                            img(src="assets/images/logo_whitetext.svg", alt="logo")
+
+                        .footer__phone
+                            a(href="tel:+7 (916) 564-44-60") +7 (916) 564-44-60
+                            a(href="tel:+7 (495) 032-67-94") +7 (495) 032-67-94
+                            p ежедневно с 9:00 до 18:00
+
+                    .footer__email
+                        p E-mail:
+                        a(href="mailto:info@avangard.biz") info@avangard.biz
+
+                    .footer__address
+                        p
+                            b Фабрика Авангард, 141281, Московская обл., г. Ивантеевка, ул. Заречная, д. 1, территория ООО «ИВНИТЬ»
+                        p 17-й км. МКАД; Ярославское шоссе; 14 км. от МКАД, поворот на санаторий «Рускаково», далее всё время по прямой до территории ООО «ИВНИТЬ»
+
+                .footer__bottom
+
+                    .footer__copyright © 2009-2022 Мебельная фабрика Авангард
+                    .footer__sitemap
+                        a(href="#") Карта сайта
+
+                    .footer__policy
+                        a(href="#") Политика конфиденциальности
+
+                    .footer__dev
+                        a(href="https://di-project.studio/") Разработка сайта
+                        | Di-Project

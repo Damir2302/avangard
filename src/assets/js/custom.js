@@ -76,3 +76,35 @@ $('.b-block-video__play').on('click', function() {
     $('#product_video')[0].play()
     $('#product_video')[0].controls = true
 })
+
+////////////////////////////////////////
+/////// КАТЕГОРИЯ
+////////////////////////////////////////
+$('.b-block-hide-show__button').on('click', function() {
+    $('.b-filter__group').each(function(e) {
+        if (e > 2) {
+            $(this).slideToggle()
+        }
+    })
+})
+
+////////////////////////////////////////
+/////// ГЛАВНАЯ СТРАНИЦА
+////////////////////////////////////////
+
+// Слайдер
+let heroSlider = new Swiper('.hero .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+      },
+
+    navigation: {
+        nextEl: '.slider-button--next',
+        prevEl: '.slider-button--prev',
+    }
+})

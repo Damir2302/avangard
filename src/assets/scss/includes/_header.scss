@@ -321,26 +321,6 @@
     cursor: pointer
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .b-header__logo {
     width: 11.5rem;
     height: 2rem;
@@ -480,6 +460,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+    overflow: hidden;
 }
 
 .b-banners__slider-slide {
@@ -547,4 +528,138 @@
     left: 0;
     top: 0;
     z-index: 10;
+}
+
+/////////////////////////////////////////////////////////////
+/// NEW HEADER
+////////////////////////////////////////////////////////////
+.header {
+    padding: 28px 0 34px;
+    background: #202020;
+    width: 100%;
+    color: #fff;
+    z-index: 10;
+}
+
+.header a {
+    color: inherit;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 199px;
+    height: 48px;
+}
+
+.header__search {
+    position: relative;
+    width: 100%;
+    max-width: 710px;
+}
+
+.header__search form {
+    width: 100%;
+}
+
+.header__search input {
+    padding: 18px 40px 17px 23px;
+    background: transparent;
+    width: 100%;
+    color: #fff;
+    border: 1px solid rgba(222, 222, 222, 0.3);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.header__search input::placeholder {
+    color: #fff;
+}
+
+.header__search button {
+    position: absolute;
+    top: 18px;
+    right: 23px;
+    color: #949494;
+    cursor: pointer;
+}
+
+.header__cat {
+    display: flex;
+}
+
+.header__cat div {
+    text-align: center;
+}
+
+.header__cat div ~ div {
+    margin-left: 60px;
+}
+
+.header__cat a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #CECECE;
+    text-decoration: none;
+}
+
+.header__cat i {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.header__cat p {
+    margin: 6px 0 0;
+}
+
+.header__nav {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar__item {
+    margin: 0;
+}
+
+.navbar__item ~ .navbar__item {
+    margin-left: 23px;
+}
+
+.navbar__item-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar__phone {
+    min-width: 143px;
+}
+
+.navbar__phone a {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.navbar__phone span {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.17em;
 }
