@@ -765,7 +765,11 @@ body .b-block-bottom-text__title h1 {
 /// NEW INDEX
 ////////////////////////////////////////////////////////////
 .hero {
-    padding: 20px 0 35px;
+    padding: 10px 0 30px;
+
+    @include breakpoint(md) {
+        padding: 20px 0 35px;
+    }
 }
 
 .hero .swiper {
@@ -773,34 +777,101 @@ body .b-block-bottom-text__title h1 {
 }
 
 .hero__slide {
-    padding: 133px 0 105px;
-    width: 953px;
+    padding-top: calc((100vw / 1.7) / 3.333);
+    padding-left: calc((100vw / 1.7) / 22);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100vw / 1.7);
+    min-height: 220px;
+
+    @include breakpoint(lg) {
+        padding-top: 150px;
+        height: 475px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 133px 0 105px;
+        position: relative;
+        width: 953px;
+        opacity: 0.3;
+    }
+}
+
+.hero__slide::before {
+
+    @include breakpoint(xl) {
+        content: '';
+        background: linear-gradient(270deg, rgba(32, 32, 32, 0) 40.83%, rgba(32, 32, 32, 0.55) 72.53%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+}
+
+.hero__slide.swiper-slide-active {
+
+    @include breakpoint(xl) {
+        opacity: 1;
+    }
+}
+
+.hero__slide.swiper-slide-active::before {
+    content: none;
 }
 
 .hero__slide-title {
     margin: 0;
-    margin-left: 120px;
-    max-width: 300px;
+    max-width: 190px;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 24px;
     color: #FFFFFF;
+
+    @include breakpoint(md) {
+        margin-left: 70px;
+        max-width: 300px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 120px;
+    }
 }
 
 .hero__slide-btn {
-    margin-top: 120px;
-    margin-left: 120px;
-    padding: 18px 42px;
+    margin-top: 22px;
+    padding: 12px 32px;
     display: inline-block;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
     color: #fff;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid #FFFFFF;
+
+    @include breakpoint(md) {
+        margin-top: 70px;
+        margin-left: 70px;
+        padding: 18px 42px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 70px;
+        margin-left: 120px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
 }
 
 .hero .swiper-pagination {
@@ -822,15 +893,435 @@ body .b-block-bottom-text__title h1 {
 }
 
 .hero__buttons {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+    display: none;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: calc(50% - 25px);
+        width: 100%;
+        z-index: 2;
+    }
 }
 
 .buttons-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    max-width: 953px;
+    max-width: 990px;
+}
+
+.slider-button {
+    background: #202020;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home-cat .container {
+    position: relative;
+}
+
+.cat__tabs {
+    border-bottom: 1px solid #F4F4F4;
+
+    @include breakpoint(md) {
+        display: inline-flex;
+    }
+}
+
+.cat__tabs-item {
+    padding: 15px 12px;
+    width: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8D9C;
+    cursor: pointer;
+}
+
+.cat__tabs-item.active {
+    color: #353745;
+    border-bottom: 1px solid #222222;
+}
+
+.cat__tabs-item ~ .cat__tabs-item {
+    margin-left: 13px;
+}
+
+.cat__container {
+    margin-top: 25px;
+
+    @include breakpoint(md) {
+        margin-top: 56px;
+    }
+}
+
+.cat__slide {
+    width: 222px;
+}
+
+.cat__slide a {
+    text-decoration: none;
+}
+
+.cat__image {
+    padding-bottom: 100%;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.cat__label {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+}
+
+.cat__title {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.cat__price {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.cat__price span {
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: #BDBDBD;
+}
+
+.cat__colors {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.color-list {
+    display: flex;
+}
+
+.color-item {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-item ~ .color-item {
+    margin-left: 15px;
+}
+
+.color-item.active {
+    border: 1px solid #CECECE;
+}
+
+.color-item.inactive {
+    border: 1px solid #CECECE;
+    cursor: default;
+}
+
+.color-item-color {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    border-radius: 50%;
+}
+
+.color-item.inactive .color-item-color {
+    background: #E9E5E4!important;
+}
+
+.cat__colors-link {
+    margin-left: 15px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.cat__buttons {
+    display: none;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+}
+
+.cat-button {
+    background: #F4F4F4;
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cat-button ~ .cat-button {
+    margin-left: 12px;
+}
+
+.features {
+    padding: 60px 0 35px;
+
+    @include breakpoint(md) {
+        padding: 60px 0 90px;
+    }
+}
+
+.features .s-title {
+    margin-bottom: 32px;
+
+    @include breakpoint(md) {
+        margin-bottom: 50px;
+    }
+}
+
+.features__inner {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.features__block {
+    margin-bottom: 10px;
+    padding: 56px 21px 22px 34px;
+    background-size: cover;
+    position: relative;
+    height: 267px;
+    border-radius: 5px;
+
+    @include breakpoint(md) {
+        padding: 56px 15px 22px;
+        width: 467px;
+        height: 475px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 56px 34px 22px;
+        height: 400px;
+    }
+
+    @include breakpoint(xl) {
+        height: 267px;
+    }
+}
+
+.features__block ~ .features__block {
+
+    @include breakpoint(md) {
+        margin-left: 20px;
+    }
+}
+
+.features__block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.features__block:nth-child(1)::before {
+    background: linear-gradient(180deg, rgba(82, 55, 36, 0.4108) 53%, rgba(75, 41, 10, 0.79) 100%);
+}
+
+.features__block:nth-child(2)::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4108) 53%, rgba(0, 0, 0, 0.79) 100%);
+}
+
+.features__block:nth-child(3)::before {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0.4108) 53%, rgba(26, 26, 26, 0.79) 100%);
+}
+
+.features__title {
+    margin-left: 26px;
+    position: relative;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #fff;
+    z-index: 1;
+}
+
+.features__title::before {
+    content: attr(data-number);
+    position: absolute;
+    top: -56px;
+    left: -26px;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 156px;
+    opacity: 0.3;
+}
+
+.features__text {
+    margin-top: 35px;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #fff;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        margin-top: 70px;
+        font-size: 16px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 35px;
+    }
+}
+
+.about {
+    padding-bottom: 60px;
+
+    @include breakpoint(md) {
+        padding-bottom: 75px;
+    }
+}
+
+.about .s-title span {
+    color: red;
+}
+
+.about__inner {
+    margin-top: 50px;
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint(md) {
+        width: calc(((100% / 12) * 5) - 20px);
+    }
+}
+
+.about__block {
+    margin-top: 50px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: calc(((100% / 12) * 7) - 20px);
+    }
+}
+
+.about__block div {
+    font-size: 16px;
+
+    @include breakpoint(md) {
+        width: 50%;
+    }
+}
+
+.about__block > p {
+    font-size: 16px;
+
+    @include breakpoint(md) {
+        width: 40%;
+    }
+}
+
+.work .s-title {
+    margin-bottom: 32px;
+
+    @include breakpoint(md) {
+        margin-bottom: 50px;
+    }
+}
+
+.work__inner {
+    display: flex;
+    justify-content:  space-between;
+}
+
+.work__inner .swiper-slide {
+
+    @include breakpoint(md) {
+        width: auto;
+    }
+}
+
+.work__block {
+    position: relative;
+}
+
+.work__block a {
+    padding: 14px 34px;
+    display: flex;
+    width: 351px;
+    height: 505px;
+    text-decoration: none;
+}
+
+.work__block a::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.64%, rgba(0, 0, 0, 0.5925) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.work__block p {
+    margin-top: auto;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.work__partners {
+    padding: 20px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+
+    @include breakpoint(md) {
+        padding: 60px 0;
+    }
+}
+
+.partner-img {
+    width: calc(100% / 7);
+    opacity: 0.5;
+}
+
+.partner-img ~ .partner-img {
+    margin-left: 32px;
 }

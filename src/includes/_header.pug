@@ -358,7 +358,9 @@ block header
                     .header__search
                         form
                             input(type="search" placeholder="Поиск среди товаров")
-                            button(type="submit")
+                            button.form-submit(type="submit")
+                                i.far.fa-search
+                            button.mob-form-submit(type="submit")
                                 i.far.fa-search
 
                     .header__cat
@@ -376,6 +378,10 @@ block header
                             a(href="#")
                                 i.fal.fa-heart
                                 p Избранное
+
+                    .mobile-burger
+                        i.fal.fa-bars
+                        i.fal.fa-times.hidden
 
                 nav.header__nav
 

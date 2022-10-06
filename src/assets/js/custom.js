@@ -94,17 +94,77 @@ $('.b-block-hide-show__button').on('click', function() {
 
 // Слайдер
 let heroSlider = new Swiper('.hero .swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    centeredSlides: true,
-    loop: true,
+    slidesPerView: 1,
+
+    breakpoints: {
+        1280: {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+        }
+    },
 
     pagination: {
         el: '.swiper-pagination',
       },
 
     navigation: {
-        nextEl: '.slider-button--next',
-        prevEl: '.slider-button--prev',
+        nextEl: '.hero .slider-button--next',
+        prevEl: '.hero .slider-button--prev',
     }
+})
+
+let catTabs = new Swiper('.cat__tabs .swiper', {
+    slidesPerView: 'auto',
+    freeMode: true
+})
+
+let catSlider = new Swiper('.cat__container .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 21,
+    freeMode: true,
+
+    navigation: {
+        nextEl: '.cat__container .slider-button--next',
+        prevEl: '.cat__container .slider-button--prev',
+    }
+})
+
+let workSlider = new Swiper('.work__inner .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    breakpoints: {
+        744: {
+            slidesPerView: 'auto',
+        }
+    }
+})
+
+// Меню мобильное
+$('.mobile-burger i').on('click', function() {
+    $('.mobile-burger i').toggleClass('hidden');
+    $('.header__nav').toggleClass('show');
+})
+
+// Поиск мобильный
+$('.header__search .form-submit').on('click', function(e) {
+    if ($(window).width() < 744) {
+        e.preventDefault()
+        $(this).parent().find('input').addClass('show')
+    } else {
+        return;
+    }
+})
+
+$('html').click(function(e) {
+    if (!$(e.target).closest('.header__search').length) {
+        $('.header__search input').removeClass('show');
+      }
+})
+
+// Меню в подвале
+$('.arrow-down').on('click', function() {
+    $(this).next().slideToggle()
 })

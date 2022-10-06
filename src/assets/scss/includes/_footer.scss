@@ -425,35 +425,83 @@
 }
 
 .footer__top {
-    padding: 35px 0 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 30px 0 0;
+
+    @include breakpoint(md) {
+        padding: 35px 0 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .footer__top-item {
-    width: calc((100% / 6) - 10px);
+    position: relative;
+    border-bottom: 1px solid #82838C;
+
+    @include breakpoint(md) {
+        margin-bottom: 35px;
+        width: calc((100% / 3) - 10px);
+        border: none;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 0;
+        width: calc((100% / 6) - 10px);
+    }
+}
+
+.footer__top-item .arrow-down {
+    padding: 15px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+        display: none;
+    }
 }
 
 .footer__menu {
     margin: 0;
     padding: 0;
+    display: none;
     list-style-type: none;
+
+    @include breakpoint(md) {
+        display: block;
+    }
 }
 
 .footer__menu-item {
     margin: 0 0 2px;
 }
 
+.footer__menu-item:last-child {
+
+    @include breakpointMax(md) {
+        margin-bottom: 15px!important;
+    }
+}
+
 .footer__item-link {
-    margin-bottom: 8px;
-    display: inline-block;
+    margin: 15px 0;
+    display: block;
     font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+
+    @include breakpoint(md) {
+        margin-bottom: 8px;
+    }
+
+    @include breakpoint(lg) {
+        display: inline-block;
+    }
 }
 
 .footer__item-link:hover {
@@ -473,12 +521,23 @@
 }
 
 .footer__middle {
-    padding: 20px 0;
+    padding: 16px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #82838C;
+    flex-wrap: wrap;
     border-bottom: 1px solid #82838C;
+
+    @include breakpoint(md) {
+        padding: 20px 0;
+        display: block;
+        border-top: 1px solid #82838C;
+    }
+
+    @include breakpoint(lg) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .footer__middle a {
@@ -488,15 +547,49 @@
 }
 
 .footer__middle-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 28%;
+    width: 50%;
+
+    @include breakpoint(md) {
+        width: auto;
+    }
+
+    @include breakpoint(lg) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 32%;
+    }
+
+    @include breakpoint(hd) {
+        flex-basis: 28%;
+    }
 }
 
 .footer__logo {
-    width: 199px;
-    height: 48px;
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        width: 150px;
+        height: 36px;
+    }
+
+    @include breakpoint(xl) {
+        width: 199px;
+        height: 48px;
+    }
+}
+
+.footer__phone {
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        margin: 20px 0;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+    }
 }
 
 .footer__phone a {
@@ -504,6 +597,14 @@
     font-size: 16px;
     line-height: 140%;
     text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 13px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 16px;
+    }
 }
 
 .footer__phone p {
@@ -513,7 +614,18 @@
 }
 
 .footer__email {
+    margin-left: 28px;
+    width: 50%;
     flex-basis: 10%;
+
+    @include breakpoint(md) {
+        margin: 20px 0;
+        width: auto;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+    }
 }
 
 .footer__email p {
@@ -525,17 +637,45 @@
 }
 
 .footer__address {
-    width: calc(100% / 2);
+    margin-top: 28px;
+
+    @include breakpoint(md) {
+        margin: 0;
+        width: calc(100% / 2);
+    }
 }
 
 .footer__address b {
     font-weight: 600;
 }
 
+.footer__address p:last-child {
+
+    @include breakpointMax(md) {
+        margin: 0;
+    }
+}
+
 .footer__bottom {
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
+    font-size: 14px;
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__bottom > * {
+    margin-bottom: 6px;
+
+    @include breakpoint(md) {
+        margin-bottom: 10px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__bottom a {
@@ -559,7 +699,10 @@
 .footer__dev {
     flex-basis: 25%;
     font-weight: 600;
-    text-align: right;
+
+    @include breakpoint(lg) {
+        text-align: right;
+    }
 }
 
 .footer__dev a {
