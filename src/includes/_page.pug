@@ -45,6 +45,51 @@ html(lang="ru")
                         include _footer
                     // Footer::End
 
+        .c-content-form#modal(style="display: none; max-width: 900px")
+            #b-form__DesignRequest-0.b-form.b-form--DesignRequest.b-form--DesignRequest631873f4530ef
+                .b-form__title Заявка на индивидуальный дизайн
+
+                form#tao-form-DesignRequest-0.b-form__form.b-form--ajax.b-form--DesignRequest.b-form--DesignRequest631873f4530ef(method='post' action='')
+                    input#form__form-design-request--form_id(type='hidden' name='service[form_id]' value='DesignRequest631873f4530ef')
+                    input#form__form-design-request--taoform(type='hidden' name='service[taoform]' value='DesignRequest')
+                    input#form__form-design-request--lang(type='hidden' name='service[lang]' value='ru')
+
+                    .b-form__element.b-form__element--NAME
+                        .b-form__field
+                            label.b-form__label(for='form__form-design-request--NAME-0')
+                                span.b-form__marker *
+                                |  Имя
+                            input#form__form-design-request--NAME-0.b-form__input.text.field-NAME(type='text' name='NAME' value='' placeholder='')
+
+                    .b-form__element.b-form__element--PHONE
+                        .b-form__field
+                            label.b-form__label(for='form__form-design-request--PHONE-0')
+                                span.b-form__marker *
+                                |  Телефон
+                            input#form__form-design-request--PHONE-0.b-form__input.text.field-PHONE(type='text' name='PHONE' value='' placeholder='')
+
+                    .b-form__element.b-form__element--COMMENT
+                        .b-form__field
+                            label.b-form__label(for='form__form-design-request--COMMENT-0')
+                                |  Комментарий
+                            textarea#form__form-design-request--COMMENT-0.b-form__text.COMMENT(placeholder='' name='COMMENT')
+                        .b-form__descr Здесь вы можете описать о вашем проекте, указать понравившиеся модели, желаемые цвета, габариты помещения
+
+                    .b-form__element.b-form__element--FILE
+                        .b-form__field
+                            label.b-form__label(for='form__form-design-request--FILE-0') Прикрепить эскиз
+                            input#form__form-design-request--FILE.b-form__input.upload(type='file' name='FILE' value='')
+
+                    .b-form__element
+                        .b-form__field.c-right-all
+                            .b-form__fast-result
+                            .b-form__button Отправить
+
+                    .b-form__element.b-form__element--small
+                        .b-form__comment
+                            | Нажимая кнопку «Отправить» вы подтверждаете, что даете согласие на обработку персональных данных, указанных в данной форме. Мы не храним Ваши персональные данные.
+                            a(href='#' style='color: #0047ff;') Подробнее...
+
         // Scripts::Start
         include _loadScripts
         // Scripts::End
