@@ -697,7 +697,10 @@
 }
 
 .header__cat p {
-    display: none;
+    
+    @include breakpointMax(lg) {
+        display: none;
+    }
 
     @include breakpoint(md) {
         margin: 6px 0 0;
