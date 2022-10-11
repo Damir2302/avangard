@@ -150,7 +150,7 @@
     content: '\f078';
     position: absolute;
     right: 10px;
-    font-family: $icon;
+    font-family: $fa5;
     font-weight: 700;
     color: red;
 }
@@ -159,7 +159,7 @@
     content: '\f363';
     margin-left: calc(70% - 5px);
     display: inline-block;
-    font-family: $icon;
+    font-family: $fa5;
     font-weight: 500;
     font-size: 14px;
     color: #b1b1b1;
@@ -568,7 +568,7 @@
 .b-product__credit-period-val::after {
     content: '\f078';
     margin-left: 5px;
-    font-family: $icon;
+    font-family: $fa5;
     font-weight: 500;
     font-size: 14px;
 }
