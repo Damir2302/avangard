@@ -780,7 +780,7 @@ body .b-block-bottom-text__title h1 {
     padding-top: calc((100vw / 1.7) / 3.333);
     padding-left: calc((100vw / 1.7) / 22);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: calc(100vw / 1.7);
     min-height: 220px;
 
@@ -970,6 +970,8 @@ body .b-block-bottom-text__title h1 {
 .cat__image {
     padding-bottom: 100%;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 5px;
 }
 
@@ -982,10 +984,13 @@ body .b-block-bottom-text__title h1 {
 
 .cat__title {
     margin-top: 12px;
+    height: 48px;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
+
+    @include textLimit(2);
 }
 
 .cat__price {
