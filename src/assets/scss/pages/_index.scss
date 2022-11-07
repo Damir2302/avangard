@@ -985,6 +985,7 @@ body .b-block-bottom-text__title h1 {
 .cat__title {
     margin-top: 12px;
     height: 48px;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -1116,6 +1117,7 @@ body .b-block-bottom-text__title h1 {
     position: relative;
     height: 267px;
     border-radius: 5px;
+    overflow: hidden;
 
     @include breakpoint(md) {
         padding: 56px 15px 22px;
@@ -1222,11 +1224,17 @@ body .b-block-bottom-text__title h1 {
 }
 
 .about__logo {
+    padding: 36px 0 34px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #F0F0F0;
+    border-radius: 5px;
+    overflow: hidden;
 
     @include breakpoint(md) {
+        margin-right: 70px;
+        padding: 0;
         width: calc(((100% / 12) * 5) - 20px);
     }
 }
