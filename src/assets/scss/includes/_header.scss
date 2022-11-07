@@ -733,83 +733,71 @@
 }
 
 .header__nav {
+    margin-top: 30px;
+    padding: 0;
+    background: none;
+    position: static;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav .swiper {
+    margin-left: 0;
+}
+
+.header__nav-mobile {
     padding: 50px 0 30px;
-    background: #333;
+    background: #202020;
     position: fixed;
     top: 0;
     left: 100%;
     width: 100%;
     height: 100%;
+    max-width: 80%;
     transition: all 0.5s ease;
     z-index: 9;
-
-    @include breakpoint(md) {
-        margin-top: 30px;
-        padding: 0;
-        background: none;
-        position: static;
-        display: flex;
-    }
-
-    @include breakpoint(lg) {
-        align-items: center;
-    }
 }
 
-.header__nav.show {
+.header__nav-mobile.show {
     left: 0;
 }
 
 .navbar__menu {
     margin: 0;
     padding: 0;
-    text-align: center;
     list-style: none;
-
-    @include breakpoint(md) {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: unset;
-    }
 }
 
 .navbar__item {
-    margin-bottom: 15px;
-
-    @include breakpoint(md) {
-        margin-bottom: 10px;
-        margin-right: 20px;
-    }
-
-    @include breakpoint(hd) {
-        margin: 0;
-    }
-}
-
-.navbar__item ~ .navbar__item {
-
-    @include breakpoint(hd) {
-        margin-left: 23px;
-    }
+    margin-bottom: 0;
+    width: auto;
 }
 
 .navbar__item-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
     text-transform: uppercase;
     text-decoration: none;
+
+    @include breakpoint(md) {
+        font-size: 13px;
+        line-height: 16px;
+    }
 }
 
 .navbar__phone {
-    margin-top: 25px;
-    min-width: 143px;
-    text-align: center;
+    display: none;
 
     @include breakpoint(md) {
-        margin-top: 0;
-        text-align: unset;
+        margin-left: 60px;
+        display: block;
+        min-width: 143px;
     }
+}
+
+.header__nav-mobile .navbar__phone {
+    display: block;
 }
 
 .navbar__phone a {

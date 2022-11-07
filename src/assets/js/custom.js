@@ -142,10 +142,16 @@ let workSlider = new Swiper('.work__inner .swiper', {
     }
 })
 
+let headerNav = new Swiper('.header__nav .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    freeMode: true
+})
+
 // Меню мобильное
 $('.mobile-burger i').on('click', function() {
     $('.mobile-burger i').toggleClass('hidden');
-    $('.header__nav').toggleClass('show');
+    $('.header__nav-mobile').toggleClass('show');
 })
 
 // Поиск мобильный
