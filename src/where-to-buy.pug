@@ -1,85 +1,39 @@
 ---
 title: Avangard | Где купить
-bodyClass: b-layout b-layout--default
-page: where-to-buy
+bodyClass: b-layout b-layout--page-main
+page: main
 ---
 
 extends includes/_page
 
 block main
 
-    main.b-layout__main.no_main
+    main.no__main
 
-        .b-layout__main-global
+        include components/_breadcrumbs
+        +breadcrumbsNew('Где купить', 'Где купить')
 
-        .b-layout__main-content
-            .b-layout__main-content-dots.c-dotted
+        .wtb-section
 
-            include components/_breadcrumbs
-            +breadcrumbs('Где купить')
+            .container
 
-            h1 Где купить
+                // YANDEX MAP URL
+                script(src="https://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU")
 
-            .b-filter
-                .b-filter__group.b-filter__group--cols_3
-                    .b-filter__group-name Локация
-                    .b-filter__group-items
-                        a.b-filter__group-item(href='#') Москва
-                        a.b-filter__group-item(href='#') Московская область
+                .b-block-sorter-taber__taber-item
+                    .b-block-yandex-map(style="background: url('https://static-maps.yandex.ru/1.x/?ll=37.72445739746,55.71176706896&z=5&l=map&size=650,450') center center no-repeat; background-size: cover;" data-auto-load='no' data-load='no' data-map-id='1')
+                        .b-block-yandex-map__preloader
+                        script(type='text/javascript').
+                            var yandexMapOptions_1 = {center: [55.71176706896, 37.72445739746], zoom: 9, };
+                            var yandexMapMarkGeometry_1 = [[55.905447,37.539302],[55.664588,37.63464],[55.70283,37.355722],[55.747363,37.707098],[55.783575,37.867376],[55.573114,37.60809],[55.639664,37.824194],[55.610829,37.723951],[55.751624,38.012274],[55.068334,38.757687],[55.819454,37.320239],[55.674834,37.860944],[55.898689,37.674005],[55.710124,37.654601],[55.713106,37.844738],[55.614561,37.606622],[55.63395308116,37.439217374685],[55.928804,37.75179],[55.367395951739,36.759214066263],[55.831084,38.395244],[55.402148,37.543452],[55.547418,38.191758],[54.935063569745,37.4484645],[55.932616,38.006399],];
+                            var yandexMapMarkProperties_1 = [{balloonContent: 'ТЦ Империя', },{balloonContent: 'ТЦ Каширский двор', },{balloonContent: 'ТК Три Кита', },{balloonContent: 'ТЦ ГОРОД', },{balloonContent: 'ТЦ Мебель', },{balloonContent: 'МебельМаркет (Чайнатаун)', },{balloonContent: 'Гипермаркет Интерьер Плаза', },{balloonContent: 'МебельГрад', },{balloonContent: 'ТЦ Эдельвейс', },{balloonContent: 'ТЦ Большая медведица', },{balloonContent: 'ТЦ Красный кит', },{balloonContent: 'ТЦ Грант', },{balloonContent: 'Твой Дом', },{balloonContent: 'МЦ ROOMER', },{balloonContent: 'ТЦ  Город Косино', },{balloonContent: 'МТК Армада', },{balloonContent: 'БЦ Румянцево', },{balloonContent: 'ТЦ Формат', },{balloonContent: 'Торговый центр «Мебель Молл»', },{balloonContent: 'Мебельгуд', },{balloonContent: 'ТЦ Вагант', },{balloonContent: 'ТЦ Мебель Гуд', },{balloonContent: 'ТЦ «Атлас»', },{balloonContent: 'ТЦ Комод', },];
+                            var yandexMapMarkOptions_1 = [];
 
-            .b-block-sorter-taber
-                .b-block-sorter-taber__header
-                    .b-block-sorter-taber__sorter
-                        .b-sorter
-                            .b-sorter__title Сортировать по:
-                            .b-sorter__items
-                                .b-sorter__items-active станциям метро
-                                .b-sorter__items-list
-                                    a.b-sorter__items-item.b-sorter__items-item--active(href='#') станциям метро
-                                    a.b-sorter__items-item(href='#') дисконт центрам
-
-                    .b-block-sorter-taber__taber-title
-                        .b-block-sorter-taber__taber-name.b-block-sorter-taber__taber-name--active плитка
-                        .b-block-sorter-taber__taber-name на карте
-
-                .b-block-sorter-taber__content
-                    .b-block-sorter-taber__taber-content
-
-                        .b-block-sorter-taber__taber-item.b-block-sorter-taber__taber-item--id_1.b-block-sorter-taber__taber-item--active
-                            .b-block-shops
-                                .b-block-shops__items
-
-                                    .b-block-shops__item
-                                        a.b-block-shops__link(href='#')
-                                        .b-block-shops__icons
-                                        .b-block-shops__image(href='#')
-                                            .b-block-shops__img(style="background-image: url('assets/images/9ccab9d5031babdfd347a25d3cdc4e07.jpg');")
-                                            .b-block-shops__metro
-                                                span.b-block-shops__metro-name
-                                                    span.b-block-shops__metro-ico.c-metro-ico.c-metro-ico--color_gray
-                                                    | Алтуфьево
-                                        .b-block-shops__content
-                                            .b-block-shops__name ТЦ Империя
-                                            .b-block-shops__descr +7 (916) 406-56-89
-
-                                    .b-block-shops__item
-                                        a.b-block-shops__link(href='#')
-                                        .b-block-shops__icons
-                                        .b-block-shops__image(href='#')
-                                            .b-block-shops__img(style="background-image: url('assets/images/bb38db4132f45c02c819fd53ef027622.jpg');")
-                                            .b-block-shops__city
-                                                span.b-block-shops__city-name
-                                                    span.b-block-shops__city-ico.c-pin-ico
-                                                    | Коломна
-                                        .b-block-shops__content
-                                            .b-block-shops__name ТЦ Большая медведица
-                                            .b-block-shops__descr +7 (905) 501-03-76
-
-                        .b-block-sorter-taber__taber-item.b-block-sorter-taber__taber-item--id_2
-                            .b-block-yandex-map(style="background: url('https://static-maps.yandex.ru/1.x/?ll=37.72445739746,55.71176706896&z=5&l=map&size=650,450') center center no-repeat; background-size: cover;" data-auto-load='no' data-load='no' data-map-id='1')
-                                .b-block-yandex-map__preloader
-                                script(type='text/javascript').
-                                    var yandexMapOptions_1 = {center: [55.71176706896, 37.72445739746], zoom: 5, };
-                                    var yandexMapMarkGeometry_1 = [[55.905447,37.539302],[55.664588,37.63464],[55.70283,37.355722],[55.747363,37.707098],[55.783575,37.867376],[55.573114,37.60809],[55.639664,37.824194],[55.610829,37.723951],[55.751624,38.012274],[55.068334,38.757687],[55.819454,37.320239],[55.674834,37.860944],[55.898689,37.674005],[55.710124,37.654601],[55.713106,37.844738],[55.614561,37.606622],[55.63395308116,37.439217374685],[55.928804,37.75179],[55.367395951739,36.759214066263],[55.831084,38.395244],[55.402148,37.543452],[55.547418,38.191758],[54.935063569745,37.4484645],[55.932616,38.006399],];
-                                    var yandexMapMarkProperties_1 = [{balloonContent: 'ТЦ Империя', },{balloonContent: 'ТЦ Каширский двор', },{balloonContent: 'ТК Три Кита', },{balloonContent: 'ТЦ ГОРОД', },{balloonContent: 'ТЦ Мебель', },{balloonContent: 'МебельМаркет (Чайнатаун)', },{balloonContent: 'Гипермаркет Интерьер Плаза', },{balloonContent: 'МебельГрад', },{balloonContent: 'ТЦ Эдельвейс', },{balloonContent: 'ТЦ Большая медведица', },{balloonContent: 'ТЦ Красный кит', },{balloonContent: 'ТЦ Грант', },{balloonContent: 'Твой Дом', },{balloonContent: 'МЦ ROOMER', },{balloonContent: 'ТЦ  Город Косино', },{balloonContent: 'МТК Армада', },{balloonContent: 'БЦ Румянцево', },{balloonContent: 'ТЦ Формат', },{balloonContent: 'Торговый центр «Мебель Молл»', },{balloonContent: 'Мебельгуд', },{balloonContent: 'ТЦ Вагант', },{balloonContent: 'ТЦ Мебель Гуд', },{balloonContent: 'ТЦ «Атлас»', },{balloonContent: 'ТЦ Комод', },];
-                                    var yandexMapMarkOptions_1 = [];
+                .b-filter
+                    .b-filter__group.b-filter__wtb-cities
+                        .b-filter__group-name Локации
+                        .b-filter__group-items
+                            a.b-filter__group-item(href='#') Показать все
+                            a.b-filter__group-item(href='#') Москва
+                            a.b-filter__group-item(href='#') Московская область
+                            a.b-filter__group-item(href='#') Дисконт

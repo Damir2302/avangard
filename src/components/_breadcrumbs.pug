@@ -12,3 +12,33 @@ mixin breadcrumbs(...items)
             else
                 |  —&nbsp;
                 a.b-menu-breadcrumbs__item= item
+
+mixin breadcrumbsNew(title, ...items)
+
+    .breadcrumbs
+
+        .container
+
+            .breadcrumbs-wrapper
+
+                .breadcrumbs-item
+                    a(href='/') Главная
+
+                each item in items
+
+                    if item == items[items.length - 1]
+                        span.breadcrumbs-separator —
+                        .breadcrumbs-item
+                            span= item
+
+                    else
+                        span.breadcrumbs-separator
+                        .breadcrumbs-item
+                            a(href="#")= item
+
+                a.breadcrumbs-home(href="javascript:history.back()")
+                    i.far.fa-arrow-left
+                    span Назад
+
+            if title != ''
+                h1.page-title= title
