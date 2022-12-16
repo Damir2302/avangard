@@ -174,3 +174,15 @@ $('html').click(function(e) {
 $('.arrow-down').on('click', function() {
     $(this).next().slideToggle()
 })
+
+
+// ГДЕ КУПИТЬ
+let locationUrl = new Swiper('.b-filter__group-items.swiper', {
+    slidesPerView: 'auto',
+    freeMode: true,
+
+    navigation: {
+        nextEl: '.b-slider-arrow-next',
+        prevEl: '.b-slider-arrow-prev',
+    }
+})

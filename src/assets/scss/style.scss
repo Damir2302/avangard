@@ -1591,7 +1591,7 @@ body.overflow-hidden {
     background: #EE1D24;
     text-decoration: none;
     margin-left: 55px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .breadcrumbs-home i {
@@ -1604,7 +1604,13 @@ body.overflow-hidden {
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
-    color: #222222
+    color: #222222;
+
+    @include breakpointMax(md) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
 }
 
 .page-sections {

@@ -2162,7 +2162,11 @@ body .animate--slide-up.visible>* {
     position: relative;
     width: 100%;
     height: 625px;
-    margin-bottom: 1.2rem
+    margin-bottom: 1.2rem;
+
+    @include breakpointMaxCustom(1200px) {
+        height: 275px;
+    }
 }
 
 .b-block-yandex-map__preloader {
