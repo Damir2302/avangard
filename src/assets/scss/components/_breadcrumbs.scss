@@ -11,3 +11,95 @@
 .b-menu-breadcrumbs__item--last {
     color: #c2bdba
 }
+
+.breadcrumbs {
+    margin-top: 30px
+}
+
+.breadcrumbs-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+}
+
+.breadcrumbs-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include breakpointMax(md) {
+        margin-bottom: 10px;
+    }
+}
+
+.breadcrumbs-item a {
+    text-decoration: none;
+    color: #222222
+}
+
+.breadcrumbs-item span {
+    color: #8D8D8D
+}
+
+.breadcrumbs-separator {
+    margin: 0 5px;
+
+    @include breakpointMax(md) {
+        margin-bottom: 10px;
+    }
+}
+
+.breadcrumbs-home {
+    margin-top: 20px;
+    display: inline-block;
+    max-width: 145px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    background: #EE1D24;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-left: 55px;
+    }
+}
+
+.breadcrumbs-home i {
+    margin-right: 10px
+}
+
+.page-title {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #222222;
+
+    @include breakpointMax(md) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}

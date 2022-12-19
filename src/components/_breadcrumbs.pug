@@ -21,24 +21,27 @@ mixin breadcrumbsNew(title, ...items)
 
             .breadcrumbs-wrapper
 
-                .breadcrumbs-item
-                    a(href='/') Главная
+                .breadcrumbs-inner
 
-                each item in items
+                    .breadcrumbs-item
+                        a(href='/') Главная
 
-                    if item == items[items.length - 1]
-                        span.breadcrumbs-separator —
-                        .breadcrumbs-item
-                            span= item
+                    each item in items
 
-                    else
-                        span.breadcrumbs-separator
-                        .breadcrumbs-item
-                            a(href="#")= item
+                        if item == items[items.length - 1]
+                            span.breadcrumbs-separator —
+                            .breadcrumbs-item
+                                span= item
 
-                a.breadcrumbs-home(href="javascript:history.back()")
-                    i.far.fa-arrow-left
-                    span Назад
+                        else
+                            span.breadcrumbs-separator —
+                            .breadcrumbs-item
+                                a(href="#")= item
+
+                .breadcrumbs-home-wrap
+                    a.breadcrumbs-home(href="javascript:history.back()")
+                        i.far.fa-arrow-left
+                        span Назад
 
             if title != ''
                 h1.page-title= title
